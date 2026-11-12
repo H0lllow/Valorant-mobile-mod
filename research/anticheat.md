@@ -49,8 +49,14 @@
 - No OLLVM deobfuscation needed for this wall.
 
 ## Revised plan
-- Do NOT inject frida-gadget into the APK (detected, causes crash)
-- Options instead:
-  1. Root device (Magisk+Zygisk) + frida-server — standard runtime injection, no APK repack
-  2. Frida without root: spawn via `frida` against a re-signed-only APK + USB, no gadget baked in (requires root anyway for frida-server/frida-inject on a locked device)
-- Since user wants to avoid root: test whether tersafe/UE4 do further checks once in a live match (this test only reached splash/menu, not live gameplay) before committing to a runtime-injection plan
+- apktool-based gadget injection (objection patchapk) is detected — crashes on launch
+- Root cause likely: apktool decode/rebuild cycle changes APK zip structure (resources.arsc re-encoding, entry order/compression), tripping tprt's zip-integrity check — not the gadget content itself
+
+## New method: LIEF ELF injection (no apktool, no DEX changes)
+- Source: https://lief.re/doc/stable/tutorials/09_frida_lief.html
+- Adds `NEEDED libgadget.so` directly into a native lib's ELF dynamic section (`lief.add_library()`)
+- Target: `libWGRecorderApi.so` (small, non-anti-cheat lib loaded by GameActivity after tersafe)
+- Zip stays otherwise byte-identical to original: only the target .so replaced + gadget .so/.config.so added, same compression per-entry, no apktool involved, no DEX/manifest touch
+- Built: `apk/original/base_lief_signed.apk` — signed, apksigner verify clean
+- Script: `scripts/lief_inject.py`; probe script: `frida/lief_test.js`
+- NOT YET installed/tested on device — next step pending user go-ahead
