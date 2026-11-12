@@ -1,6 +1,7 @@
 apk/original/*.apk
 apk/decompiled/
 research/memory_dumps/*.bin
+research/libs/*.so
 tools/*.jar
 tools/frida-server*
 *.keystore
