@@ -52,11 +52,29 @@
 - apktool-based gadget injection (objection patchapk) is detected — crashes on launch
 - Root cause likely: apktool decode/rebuild cycle changes APK zip structure (resources.arsc re-encoding, entry order/compression), tripping tprt's zip-integrity check — not the gadget content itself
 
-## New method: LIEF ELF injection (no apktool, no DEX changes)
+## New method: LIEF ELF injection (no apktool, no DEX changes) — TESTED
 - Source: https://lief.re/doc/stable/tutorials/09_frida_lief.html
 - Adds `NEEDED libgadget.so` directly into a native lib's ELF dynamic section (`lief.add_library()`)
-- Target: `libWGRecorderApi.so` (small, non-anti-cheat lib loaded by GameActivity after tersafe)
-- Zip stays otherwise byte-identical to original: only the target .so replaced + gadget .so/.config.so added, same compression per-entry, no apktool involved, no DEX/manifest touch
-- Built: `apk/original/base_lief_signed.apk` — signed, apksigner verify clean
-- Script: `scripts/lief_inject.py`; probe script: `frida/lief_test.js`
-- NOT YET installed/tested on device — next step pending user go-ahead
+- Zip stays byte-identical to original except: target .so replaced + gadget .so/.config.so added
+- Script: `scripts/lief_inject.py`
+
+### Test 1: target `libWGRecorderApi.so` (tiny, 5.8KB)
+- Installed, launched: process (PID 13498) survived splash, loaded a provider, ~15s of normal activity
+- Then: `F/libc: Fatal signal 7 (SIGBUS), code 1 (BUS_ADRALN), fault addr 0x0000000000000bb6 in tid ... (Thread-7)`
+- `pc 0000000000000bb6 <unknown>` in backtrace — jump through a near-null/garbage function pointer
+- Process died ~1s after the signal, native tombstone generated
+
+### Test 2: target `libpxauth.so` (1MB, "normal" profile matching the LIEF tutorial's Telegram example)
+- Installed, launched: process (PID 17049) progressed much further — full activity lifecycle, GAME_START, provider loaded, `:plugin` service started successfully
+- Then, later (much longer uptime than test 1): **identical crash signature**: `F/libc: Fatal signal 7 (SIGBUS), code 1 (BUS_ADRALN), fault addr 0x...f35 in tid ... (Thread-7)`
+- Same thread name ("Thread-7"), same signal/code, only the exact fault address and timing differ
+
+### Interpretation
+Two different target libraries, two different injection points, two different crash timings — but the **exact same crash signature** (SIGBUS/BUS_ADRALN, tiny/garbage fault address, thread "Thread-7"). This is not a structural ELF bug from LIEF (checked dynamic section entries — well-formed, correct NEEDED count, no missing tags). The pattern matches a **deliberate, delayed, obfuscated anti-tamper response**: instead of calling `abort()`/`exit()` (easy to hook/detect), the protector corrupts a function pointer so the crash looks like a random bug. This lines up with tersafe's documented self-defense strings (`set_inline_hook_error`, `inline_hook_opcode_dismatch`, `ms_hook_opcode`) — ACE detecting the Frida gadget's presence in-process (regardless of how it was injected — apktool smali patch or LIEF ELF patch, both load the same gadget) and punishing it after a delay, not at load time.
+
+### Conclusion
+The wall is **not** the zip/signature check (that one is bypassed fine by both resign-only and LIEF-injection). The wall is **tersafe/ACE detecting the Frida gadget's runtime presence** and killing the process via an obfuscated crash. Any Frida gadget baked into this APK — by any injection method — will likely hit this same detection once it initializes.
+
+### Next directions (unexplored)
+- Anti-Frida-detection techniques exist in the wild for Tencent-hardened apps (found during research: community threads on bypassing a "加固"'s Sept 2023 Frida detection). These typically: rename the gadget library/thread names, strip Frida signature strings, delay/unload the gadget after initial hooks are set, or avoid common detection vectors (checking `/proc/self/maps`, named pipes, `TracerPid`).
+- This is a deeper rabbit hole than the zip-check fix and not guaranteed to work — tersafe's self-defense is specifically designed to catch this.
