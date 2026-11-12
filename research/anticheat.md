@@ -34,7 +34,20 @@
 1. **Self-integrity / anti-inline-hook** inside tersafe: patching its .text triggers `inline_hook_opcode_dismatch` → abort. Must neutralize the self-check before/with any patch.
 2. **Server validation**: cert_md5 + crc are sent upstream. A perfect local patch still reports a wrong cert to Tencent → server-side ban risk even if client runs.
 
+## Packer (confirmed via jadx)
+- `com.tencent.tpshell.TPShellApplication` is the app shell (加固 packer)
+- `static { System.loadLibrary("tprt"); }` then `attachBaseContext()` calls native `initialize()`
+- tprt `initialize()` unpacks the real DEX at runtime + runs integrity checks
+- `catch (Exception e2) {}` swallows "initialize failed." → real DEX never loaded → startup crash
+- tprt CANNOT be skipped: without initialize() no real code runs
+- libtprt.so is OLLVM-obfuscated (control-flow flattening, confirmed in decompiler output)
+
+## Discriminating test (decides the path)
+- `apk/original/base_resign.apk`: original code, only re-signed with our key (v1+v2+v3 verified)
+- If it crashes on launch → tprt signature check confirmed → OLLVM deobf path (3c)
+- If it runs → frida gadget was the crash cause → stealth-gadget path instead
+
 ## Next
-- Ghidra headless disassembly of libtprt first (smaller, it's the startup crash)
-- Find APK-verify function + abort call site; map control flow to the kill
+- Run discriminating test on device
+- If signature check confirmed: find verdict branch inside flattened tprt code (Ghidra GUI manual work)
 - Then tersafe: locate self-check gate and `ano_ignore_detect` usage
