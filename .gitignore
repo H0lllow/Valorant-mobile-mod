@@ -6,3 +6,5 @@ tools/*.jar
 tools/frida-server*
 tools/jadx/
 *.keystore
+
+apk/patch.log
