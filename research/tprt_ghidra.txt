@@ -1,0 +1,7 @@
+=== PROGRAM libtprt.so ===
+
+--- STRING XREFS ---
+
+--- CALLERS OF ABORT/EXIT/PTRACE ---
+
+--- DECOMPILED (0 functions) ---

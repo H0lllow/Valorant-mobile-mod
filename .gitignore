@@ -8,3 +8,14 @@ tools/jadx/
 *.keystore
 
 apk/patch.log
+tools/ghidra/
+research/ghidra_proj/
+tools/jdk25/
+apk/original/*.idsig
+apk/original/install.log
+apk/original/uninstall.log
+apk/crash_hits.txt
+research/dex/
+research/jadx_out/
+research/*.log
+tools/*.log
