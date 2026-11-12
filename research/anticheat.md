@@ -42,12 +42,15 @@
 - tprt CANNOT be skipped: without initialize() no real code runs
 - libtprt.so is OLLVM-obfuscated (control-flow flattening, confirmed in decompiler output)
 
-## Discriminating test (decides the path)
+## Discriminating test — RESULT
 - `apk/original/base_resign.apk`: original code, only re-signed with our key (v1+v2+v3 verified)
-- If it crashes on launch → tprt signature check confirmed → OLLVM deobf path (3c)
-- If it runs → frida gadget was the crash cause → stealth-gadget path instead
+- Installed + launched on device: process PID alive (main + `:plugin` + `:xg_vip_service`), no crash, no tombstone
+- **Conclusion: tprt accepts re-signing.** The earlier crash was caused by the Frida gadget injection (objection patchapk), not by the APK signature check.
+- No OLLVM deobfuscation needed for this wall.
 
-## Next
-- Run discriminating test on device
-- If signature check confirmed: find verdict branch inside flattened tprt code (Ghidra GUI manual work)
-- Then tersafe: locate self-check gate and `ano_ignore_detect` usage
+## Revised plan
+- Do NOT inject frida-gadget into the APK (detected, causes crash)
+- Options instead:
+  1. Root device (Magisk+Zygisk) + frida-server — standard runtime injection, no APK repack
+  2. Frida without root: spawn via `frida` against a re-signed-only APK + USB, no gadget baked in (requires root anyway for frida-server/frida-inject on a locked device)
+- Since user wants to avoid root: test whether tersafe/UE4 do further checks once in a live match (this test only reached splash/menu, not live gameplay) before committing to a runtime-injection plan
