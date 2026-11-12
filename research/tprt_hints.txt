@@ -1,0 +1,16 @@
+HINT 'incorrect header check' @ 002202ae
+HINT 'incorrect data check' @ 002202d5
+HINT 'Zip-bug' @ 0022054a
+HINT 'Zip-bug' @ 00220579
+HINT 'Zip-bug' @ 002205a0
+HINT 'Zip-bug' @ 002205cf
+HINT 'Zip-bug' @ 002205fe
+HINT 'magisk' @ 00222217
+HINT 'debuggable' @ 0021feca
+HINT 'TracerPid' NOT FOUND
+HINT 'safe_ptrace' NOT FOUND
+HINT 'cert_md5' NOT FOUND
+HINT 'inline_hook' NOT FOUND
+HINT 'code_size' NOT FOUND
+
+=== DECOMPILED 0 FUNCTIONS ===
