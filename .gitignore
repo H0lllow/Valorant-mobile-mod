@@ -4,4 +4,5 @@ research/memory_dumps/*.bin
 research/libs/*.so
 tools/*.jar
 tools/frida-server*
+tools/jadx/
 *.keystore
