@@ -41,7 +41,10 @@
 |---|---|---|
 | 1 | Project structure + repo | done |
 | 2 | Static analysis (APK, libs, engine) | done |
-| 3 | Frida gadget injection into APK | in progress |
+| 3 | Frida gadget injection into APK | done (blocked by ACE) |
+| 3b | Anti-cheat static analysis (tprt/tersafe) | in progress |
+| 3c | Patch tprt APK-verify + tersafe self-check | pending |
+| 3d | Handle server-side cert/crc handshake | pending (hard) |
 | 4 | Runtime SDK dump (GWorld, GNames, offsets) | pending |
 | 5 | Wallhack/ESP | pending |
 | 6 | Aimbot + humanizer | pending |
