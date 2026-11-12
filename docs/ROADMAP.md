@@ -34,3 +34,18 @@
 | `frida/cleanup.js` | post-match memory + state reset |
 | `frida/bypass/ssl_pinning.js` | certificate pinning bypass |
 | `frida/overlay.js` | in-game menu overlay trigger |
+
+## Roadmap
+
+| Phase | Task | Status |
+|---|---|---|
+| 1 | Project structure + repo | done |
+| 2 | Static analysis (APK, libs, engine) | done |
+| 3 | Frida gadget injection into APK | in progress |
+| 4 | Runtime SDK dump (GWorld, GNames, offsets) | pending |
+| 5 | Wallhack/ESP | pending |
+| 6 | Aimbot + humanizer | pending |
+| 7 | Network stats patch + SSL pinning bypass | pending |
+| 8 | Post-match cleanup lifecycle | pending |
+| 9 | In-game overlay menu | pending |
+| 10 | Bake gadget+scripts into final repacked APK | pending |
