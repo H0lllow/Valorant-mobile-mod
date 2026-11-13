@@ -1,0 +1,3 @@
+PROGRAM libtprt.so base=00100000
+000f1008 -> no function contains it
+001f1008 -> no function contains it

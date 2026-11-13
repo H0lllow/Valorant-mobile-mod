@@ -1,0 +1,102 @@
+=== TARGET 001f1008 ===
+nearest defined function at/before target: FUN_001f0f94 @ 001f0f94 size 116
+001f0f6c  add x8,x0,#0xc
+001f0f70  str x9,[x0]
+001f0f74  strb wzr,[x0, #0x8]
+001f0f78  mov x0,x8
+001f0f7c  b 0x001f1040
+001f0f80  adrp x8,0x23f000
+001f0f84  add x8,x8,#0x300
+001f0f88  str x8,[x0], #0xc
+001f0f8c  b 0x001f1048
+001f0f90  brk #0x1
+001f0f94  str x19,[sp, #-0x20]!
+001f0f98  stp x29,x30,[sp, #0x10]
+001f0f9c  add x29,sp,#0x10
+001f0fa0  ldrb w8,[x0, #0x8]
+001f0fa4  cbz w8,0x001f0fb0
+001f0fa8  mov w19,wzr
+001f0fac  b 0x001f0ff8
+001f0fb0  mov x19,x0
+001f0fb4  add x1,x0,#0xc
+001f0fb8  add x0,sp,#0x8
+001f0fbc  bl 0x001f1054
+001f0fc0  ldrb w8,[x19, #0x8]
+001f0fc4  cbz w8,0x001f0fd0
+001f0fc8  mov w19,wzr
+001f0fcc  b 0x001f0ff0
+001f0fd0  adrp x0,0x1f1000
+001f0fd4  mov w8,#0x1
+001f0fd8  add x0,x0,#0x8
+001f0fdc  mov w2,#0x80000
+001f0fe0  mov x1,x19
+001f0fe4  strb w8,[x19, #0x8]
+001f0fe8  bl 0x001f0ec8
+001f0fec  mov w19,w0
+001f0ff0  add x0,sp,#0x8
+001f0ff4  bl 0x001f1060
+001f0ff8  ldp x29,x30,[sp, #0x10]
+001f0ffc  mov w0,w19
+001f1000  ldr x19,[sp], #0x20
+001f1004  ret
+001f1008  str x19,[sp, #-0x20]! <== TARGET
+001f100c  stp x29,x30,[sp, #0x10]
+001f1010  add x29,sp,#0x10
+001f1014  ldr x8,[x0]
+001f1018  mov x19,x0
+001f101c  ldr x8,[x8, #0x10]
+001f1020  blr x8
+001f1024  strb wzr,[x19, #0x8]
+001f1028  ldp x29,x30,[sp, #0x10]
+001f102c  mov x0,xzr
+001f1030  ldr x19,[sp], #0x20
+001f1034  ret
+001f1038  ldrb w0,[x0, #0x8]
+001f103c  ret
+001f1040  mov x1,xzr
+001f1044  b 0x0015db00
+001f1048  b 0x0015d9a0
+001f104c  b 0x0015de80
+001f1050  b 0x0015e090
+001f1054  str x1,[x0]
+001f1058  mov x0,x1
+001f105c  b 0x0015de80
+001f1060  ldr x0,[x0]
+001f1064  b 0x0015e090
+001f1068  stp x20,x19,[sp, #-0x20]!
+001f106c  stp x29,x30,[sp, #0x10]
+001f1070  add x29,sp,#0x10
+001f1074  adrp x20,0x25e000
+001f1078  ldr x19,[x20, #0x570]
+001f107c  cbnz x19,0x001f10b0
+001f1080  adrp x0,0x25e000
+001f1084  adrp x1,0x1f1000
+001f1088  add x0,x0,#0x578
+001f108c  add x1,x1,#0xc0
+001f1090  bl 0x0015da10
+001f1094  ldr x19,[x20, #0x570]
+001f1098  cbnz x19,0x001f10b0
+001f109c  mov w0,#0x28
+001f10a0  bl 0x0015dcd0
+001f10a4  mov x19,x0
+001f10a8  bl 0x001f1040
+001f10ac  str x19,[x20, #0x570]
+001f10b0  ldp x29,x30,[sp, #0x10]
+001f10b4  mov x0,x19
+001f10b8  ldp x20,x19,[sp], #0x20
+001f10bc  ret
+001f10c0  stp x20,x19,[sp, #-0x20]!
+001f10c4  stp x29,x30,[sp, #0x10]
+001f10c8  add x29,sp,#0x10
+001f10cc  adrp x20,0x25e000
+001f10d0  ldr x8,[x20, #0x570]
+001f10d4  cbnz x8,0x001f10ec
+001f10d8  mov w0,#0x28
+001f10dc  bl 0x0015dcd0
+001f10e0  mov x19,x0
+001f10e4  bl 0x001f1040
+001f10e8  str x19,[x20, #0x570]
+001f10ec  ldp x29,x30,[sp, #0x10]
+001f10f0  ldp x20,x19,[sp], #0x20
+001f10f4  ret
+001f10f8  b 0x001f1068

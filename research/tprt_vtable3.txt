@@ -1,0 +1,18 @@
+=== VTABLE @ 0x33f300 ===
+slot[0] @ 0023f300 = 0x1f0f80
+slot[1] @ 0023f308 = 0x1f0f90
+slot[2] @ 0023f310 = 0x2611a8
+slot[3] @ 0023f318 = 0x225020
+slot[4] @ 0023f320 = 0x225027
+slot[5] @ 0023f328 = 0x22502f
+slot[6] @ 0023f330 = 0x225035
+slot[7] @ 0023f338 = 0x22503c
+=== SLOT2 TARGET 002611a8 ===
+function: __cxa_pure_virtual @ 002611a8
+no instructions defined at slot2 target (not disassembled by Ghidra)
+=== CALLERS of FUN_001f0f94 ===
+  <- 0022b504 in ?
+  <- 00236a28 in ?
+  <- 0017a10c in FUN_00179434@00179434
+  <- 0016dc60 in FUN_0016d948@0016d948
+  <- 0016dd24 in FUN_0016d948@0016d948
