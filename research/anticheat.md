@@ -106,3 +106,15 @@ The wall is **not** the zip/signature check (that one is bypassed fine by both r
 - Injection + signing done: `apk/original/base_lief4_signed.apk` (v1/v2/v3 verified true)
 - Not installed on device yet — awaiting user go-ahead per project rule.
 - Caveat from phantom-frida's own docs: marker absence does not prove resistance to behavioral/integrity/timing detection — tersafe's crash pattern in tests 1-3 did not key off simple string markers, so this is a deeper patch set than undetected-frida but still not a guarantee.
+
+## Test 4 (executed on device): phantom-frida gadget — RESULT: FAILED
+- Installed `base_lief4_signed.apk`, launched cleanly (no overlapping adb commands), full logcat captured
+- `GAME_START` at 11:20:20.611 (main pid 19654)
+- `:plugin` process (pid 26008) crashed ~8.5s later: `Fatal signal 7 (SIGBUS), code 1 (BUS_ADRALN), fault addr 0xb93`, thread `Thread-6` — same pattern as tests 1-3
+- ~6.7s after that, the **main** process (pid 19654) also crashed, this time with a **different signal**: `Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x5f5`, again thread `Thread-6` — near-null fault address, same obfuscated-crash shape as the SIGBUS variant, just a different signal number
+- Main process declared dead at 11:20:37.161 (~16.5s total uptime)
+- **Conclusion: phantom-frida's deeper patch set (recursive symbol renaming, runtime string aliasing, `--strict-wx` memory hardening, forbidden-marker verification) is still detected by tersafe/ACE.** The detection is not defeated by renaming strings/symbols or hardening W^X memory — it appears to key off something more fundamental (likely scanning loaded library code/behavior directly, independent of specific symbol names).
+- This rules out both `undetected-frida` and `phantom-frida` as solutions for this specific anti-cheat (tersafe/ACE in this APK). Both are well-regarded stealth-gadget projects; neither got past this wall.
+
+## Overall conclusion on no-root Frida injection
+Four independent attempts (stock gadget via LIEF on two different libraries, `undetected-frida`, `phantom-frida`) all end in the same obfuscated-crash pattern (near-null fault address, thread named "Thread-N", first in a secondary process then the main process) within seconds to tens of seconds of the gadget initializing. This strongly suggests tersafe/ACE detects the Frida runtime itself (code/behavior-based), not just known strings or file names — a wall that gadget renaming/hardening tools are not designed to defeat. Remaining options: root/Zygisk-based injection (different attack surface, was deferred pending new phone), or a much deeper investigation into tersafe's detection routine itself (static reverse engineering of the OLLVM-obfuscated detection code) to find and patch the specific check — both are larger efforts than gadget substitution.
