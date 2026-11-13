@@ -5,8 +5,8 @@ import sys, os, shutil, zipfile, tempfile
 import lief
 
 APK_IN = r"C:\Users\giada\Documents\Forge\Valorant-mobile-mod\apk\original\base.apk"
-APK_OUT = r"C:\Users\giada\Documents\Forge\Valorant-mobile-mod\apk\original\base_lief4.apk"
-TARGET_SO = "lib/arm64-v8a/libpxauth.so"
+APK_OUT = r"C:\Users\giada\Documents\Forge\Valorant-mobile-mod\apk\original\base_lief5.apk"
+TARGET_SO = "lib/arm64-v8a/libmmkv.so"
 GADGET_SRC = r"C:\Users\giada\Documents\Forge\Valorant-mobile-mod\research\gadgets\pxcache-gadget-17.16.4-android-arm64.so"
 GADGET_NAME = "libpxcache-gadget.so"
 GADGET_CONF_NAME = "libpxcache-gadget.config.so"
