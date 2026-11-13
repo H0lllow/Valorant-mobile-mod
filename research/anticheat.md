@@ -84,3 +84,15 @@ The wall is **not** the zip/signature check (that one is bypassed fine by both r
 - `scripts/lief_inject.py` updated: `GADGET_SRC` → stealth gadget, `APK_OUT` → `apk/original/base_lief3.apk`
 - Injection + signing done: `apk/original/base_lief3_signed.apk` (v1/v2/v3 verified true, same as prior working builds)
 - Not installed on device yet — awaiting user go-ahead per project rule.
+
+## Test 3 (executed on device): undetected-frida stealth gadget — RESULT: FAILED
+- Installed `base_lief3_signed.apk`, launched via monkey, live logcat capture
+- App progressed much further than any prior test: full UE4 GameActivity lifecycle, video decoder init, audio tracks, TGPA cloud config, GameManager/oiface bind — all normal, ~12s uptime
+- Then: **same crash signature as test 1/2** — `signal 7 (SIGBUS), code 1 (BUS_ADRALN), fault addr 0x0000000000000dc5`, pc/lr/x8 all equal to the fault addr (jump through near-null pointer), named thread `Thread-6`, tombstone written
+- Difference from tests 1/2: this time the crash hit the `:plugin` sub-process (pid 20026), not the main process
+- ~6s later the main process also died (OPPO `theia` diagnostic logger recorded `appCrash_com.tencent.tmgp.codev` at the same timestamp as the plugin crash, full app log bundle captured by the OEM crash reporter)
+- **Conclusion: renaming the gadget binary, RPC strings, thread names, and pipe name (undetected-frida's patch set) is not sufficient.** tersafe/ACE's detection does not rely purely on those strings — it still finds and kills the gadget, now manifesting in a different process. The obfuscated near-null-pointer-jump crash pattern is consistent across stock gadget and stealth gadget.
+
+### Next direction
+- `undetected-frida` (fixed string/name patches) ruled out as a solution on its own.
+- Remaining options: `phantom-frida` (deeper patch set, 90 patches/16 vectors — may hit vectors undetected-frida doesn't cover, e.g. `--strict-wx` memory protection scanning) or root/Zygisk once the new phone arrives.
