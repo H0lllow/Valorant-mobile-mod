@@ -1,0 +1,507 @@
+11-13 11:16:24.084  1704  2965 D OplusPackageInstallInterceptManager: installStage send adb install pkg:com.tencent.tmgp.codev   path: /data/app/vmdl1478070161.tmp/base.apk installFlags:5242994
+11-13 11:16:24.084  1704  2965 D PackageManager: installStage com.tencent.tmgp.codev, dir=/data/app/vmdl1478070161.tmp, installerPackageName=pc, installerUid=2000, full=false
+11-13 11:16:24.087  1704  2965 D PackageManager: installStage com.tencent.tmgp.codev0
+11-13 11:16:24.109  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #21
+11-13 11:16:24.109  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #28
+11-13 11:16:24.109  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #29
+11-13 11:16:24.122  1704  2845 W PackageManager: Package com.tencent.tmgp.codev attempting to redeclare system permission android.permission.ACCESS_NETWORK_STATE; ignoring new declaration
+11-13 11:16:24.269  1704  2093 I ActivityManager: Force stopping com.tencent.tmgp.codev appid=10904 user=-1: installPackageLI
+11-13 11:16:24.269  1704  2845 I PackageManager: Update package com.tencent.tmgp.codev code path from /data/app/~~wlDNCUjvpiY3_6KR19_flg==/com.tencent.tmgp.codev-4t5t5_PkymRtHxQQiwDdwQ== to /data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA==; Retain data and using new
+11-13 11:16:24.522  1704  2845 D OplusPackageAbiHelper: notifyPackageAddOrChange :com.tencent.tmgp.codev primaryabi = arm64-v8a secondabi = null
+11-13 11:16:24.613  1704  2845 E ArtManagerService: Failed to prepare profile for com.tencent.tmgp.codev:/data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA==/base.apk
+11-13 11:16:24.621  1704  2845 D OplusDexSceneManager: Starting attach context  for  com.tencent.tmgp.codev reason: install
+11-13 11:16:26.867  4054  4541 D iopgp   : OnPackageChangeEvent:Received PackageChangeEvent{packageName=com.tencent.tmgp.codev,version=3465,lastUpdateTimeMillis=1794564984269}
+11-13 11:16:26.867  4054  4541 D iopgp   : Same version package com.tencent.tmgp.codev with version 3465
+11-13 11:16:26.870  4054  4541 D iopgp   : Clean up files for package com.tencent.tmgp.codev with version 3465
+11-13 11:16:27.051  1704  2845 D UserUninstallRecorder: not care com.tencent.tmgp.codev installed.
+11-13 11:16:27.052  1704  2845 D OplusOsPackageManager: addPkgToNotLaunchedList com.tencent.tmgp.codev
+11-13 11:16:27.063  1704  2845 I ActivityManager: Force stopping com.tencent.tmgp.codev appid=10904 user=0: pkg removed
+11-13 11:16:27.115  1704  1704 D OplusCustomizeService: UninstallBroadcastReceiver, pkgName=com.tencent.tmgp.codev, isReInstall=true
+11-13 11:16:27.135  1704  2056 V AutofillManagerService: onPackageUpdateStarted(): com.tencent.tmgp.codev
+11-13 11:16:27.232  1704  1704 D DeviceIdleHelper: pacakge removed: name=com.tencent.tmgp.codev not in PowerSaveWhitelist
+11-13 11:16:27.268  1704  2845 I ActivityManager: Force stopping com.tencent.tmgp.codev appid=10904 user=0: pkg removed
+11-13 11:16:27.308  1704  1704 I GameManagerService: Disabling downscale for com.tencent.tmgp.codev
+11-13 11:16:27.310  1704  1704 D OplusSecurityPermissionManager: AppUninstallReceiver: uid=10904, userId=0, package=com.tencent.tmgp.codev
+11-13 11:16:27.541  1704  1704 D OplusCustomizeService: pkgName = com.tencent.tmgp.codev
+11-13 11:16:27.542  1704  1704 D OplusCustomizeService: Add packages name is :com.tencent.tmgp.codev;dir:/data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA==/base.apk
+11-13 11:16:27.654  1704  1704 V GameManagerService_GamePackageConfiguration: No android.game_mode_config meta-data found for package com.tencent.tmgp.codev
+11-13 11:16:27.654  1704  1704 W GameManagerService: Invalid package config for com.tencent.tmgp.codev:[Name:com.tencent.tmgp.codev Modes: {}]
+11-13 11:16:27.656  1704  1704 I GameManagerService: Disabling downscale for com.tencent.tmgp.codev
+11-13 11:16:27.993  1704  2819 E VerityUtils: Failed to measure fs-verity, errno 1: /data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA==/base.apk
+11-13 11:16:28.115  1704  4549 I SecurityPermissionService: updateCachedPermission pkgName:com.tencent.tmgp.codev, userId:0, delete:false
+11-13 11:16:30.842  1704  2819 E VerityUtils: Failed to measure fs-verity, errno 1: /data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA==/base.apk
+11-13 11:16:31.679  1704  2056 V AutofillManagerService: onPackageUpdateFinished(): com.tencent.tmgp.codev
+11-13 11:16:31.679  1704  2056 V AutofillManagerService: onPackageModified(): com.tencent.tmgp.codev
+11-13 11:16:35.241  1704 24060 D OplusOsPackageManager: uploadInstallAppInfos:{code=3465, abi1=arm64-v8a, abi2=null, update=1, cert=45FC14FF9F;, targetSdkVersion=30, source=pc, app_pkg=com.tencent.tmgp.codev, version=1.25.0, md5=be711f0dc07f2916510a52f96e4cd062},path=/data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA==/base.apk,installerPackageName:pc
+11-13 11:16:38.661  1704  3693 D OplusOsPackageManager: removePkgFromNotLaunchedList com.tencent.tmgp.codev
+11-13 11:16:38.663  1704  3693 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity mCallingUid=2000} from uid 2000
+11-13 11:16:38.686  1704  3693 I OplusScreenSecurityMask: onStackAdded task = Task{df32450 #57 type=standard A=10904:com.tencent.tmgp.codev U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=0} record = null displayId = 0
+11-13 11:16:38.690  1704  3693 D TaskFragmentExtImpl: add ActivityRecord{a46924d u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t57} to mActivityRecordSum = Counter{ com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity(1) }
+11-13 11:16:38.694  1704  3693 D ActivityTaskManager: getStartingWindowType: newTask=true, taskSwitch=true, processRunning=false, allowTaskSnapshot=true, activityCreated=false, snapshot=null, record:ActivityRecord{a46924d u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t57}
+11-13 11:16:38.715  1704  3693 D OplusZoomWindowRUSConfigManager: isSupportZoomModeWithPolicyLocked: target = com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity
+11-13 11:16:38.715  1704  3693 D OplusZoomWindowRUSConfigManager: targetPkg = com.tencent.tmgp.codev
+11-13 11:16:38.762  1704  2094 I ActivityManager: Start proc 16137:com.tencent.tmgp.codev/u0a904 for next-top-activity {com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}
+11-13 11:16:38.766  1704  5621 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 0
+11-13 11:16:38.768  1704  5621 I WindowManager: addWindow: New client android.os.BinderProxy@52da8bd : window=Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev}
+11-13 11:16:38.770  1704  5763 D CoreBackPreview: Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@c804180, mPriority=0}
+11-13 11:16:38.796  1704  3693 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 0
+11-13 11:16:38.796  1704  3693 V WindowManager: Relayout Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev}: viewVisibility=0, oldvis=0, req=1080x2400
+11-13 11:16:38.797  1704  3693 I WindowManager: Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+11-13 11:16:38.830  1704  3961 I WindowManager: Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:16:38.830  1704  3961 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev}
+11-13 11:16:38.833  1704  2016 I WindowManager: Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:16:38.867  1704  2016 I WindowManager: Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+11-13 11:16:38.869  1704  2016 D OplusGameRotationService: stopRotationInGame: check windowContainer = ActivityRecord{a46924d u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t57}
+11-13 11:16:38.869  1704  2016 I WindowManager: Display id 0 rotation changed to 1 from 0, lastOrientation 6ActivityRecord{a46924d u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t57}
+11-13 11:16:38.878  1704  3961 I OplusAppSwitchManagerService: appswitch hasProcess ActivityRecord{a46924d u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t57}
+11-13 11:16:38.880  1704  3961 I OplusAppSwitchManagerService: appswitch hasProcess ActivityRecord{a46924d u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t57}
+11-13 11:16:38.882  1704  3961 D ActivityTaskManager: onWindowFocusChanged Task{df32450 #57 type=standard A=10904:com.tencent.tmgp.codev U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1} would transfer to compact
+11-13 11:16:38.886  1704  2158 E OplusThermalStats: Error getting package info: com.tencent.tmgp.codev
+11-13 11:16:38.908  1704  4134 D OplusAppSwitchListener: Detect com.tencent.tmgp.codev switch to foreground
+11-13 11:16:38.908  1704  4134 D OplusEapManager: mTargetEnterName :com.tencent.tmgp.codev
+11-13 11:16:38.908  1704  4134 D VRR [OPlusFrontAppManager]: OnAppSwitchObserver: onAppEnter , info.targetName = com.tencent.tmgp.codev
+11-13 11:16:38.908  1704  4134 D VRR [OPlusFrontAppManager]: packageName: com.tencent.tmgp.codev
+11-13 11:16:38.911  1704  2808 D VRR [OPlusRefreshRateService]: handleFrontAppChange pkgName: com.tencent.tmgp.codev
+11-13 11:16:38.911  1704  2808 D VRR [OPlusExternalRefreshRateManager]: setFrontPackageName pkgName: com.tencent.tmgp.codev CurPkgName: null
+11-13 11:16:39.067  1704  2015 D OplusCompactWindowManagerService: updateRotation setDeviceFolded oldRotation =:0 ,newRotation=:1 ,mFoldState =:0 ,processTasks =:true ,DisplayId =:0 ,oritentationSource ActivityRecord{a46924d u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t57}
+11-13 11:16:39.078  1704  2015 I WindowStateExtImpl: onSurfaceShowChange show = true mPackageName = com.tencent.tmgp.codev parentPkgName = com.tencent.tmgp.codev
+11-13 11:16:39.121  1704  5611 V WindowManager: Relayout Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev}: viewVisibility=0, oldvis=0, req=2285x1080
+11-13 11:16:39.131  1704  2015 D OplusKeepAliveManager: TOP_APP is ProcessRecord{9b49e5a 16137:com.tencent.tmgp.codev/u0a904} uid is 10904
+11-13 11:16:39.132 16137 24300 D ActivityThread: Loading provider com.tencent.tmgp.codev.XG_SETTINGS_PROVIDER: com.tencent.tpns.baseapi.base.SettingsContentProvider
+11-13 11:16:39.204  1704  3961 D OplusAppListInterceptManager: shouldFilterTask::packageName = com.tencent.tmgp.codev
+11-13 11:16:39.226  1704  3416 I GameManagerServiceExt-GameBackground: Now current pkg is : com.tencent.tmgp.codev
+11-13 11:16:39.226  1704  3416 I GameManagerServiceExt: setting write: g mode true, p com.tencent.tmgp.codev
+11-13 11:16:39.437  1704  5763 D VRR [OPlusRefreshRateService]:  setFrameRateTargetControl [ 0.0 , com.tencent.tmgp.codev , false , com.oplus.cosa ]
+11-13 11:16:39.437  1704  5763 D VRR [OPlusExternalRefreshRateManager]:  [FRTC] FrameRate : 0 com.tencent.tmgp.codev false com.oplus.cosa 19617 10146
+11-13 11:16:39.437  1704  2808 D VRR [OPlusSurfaceFlingerController]:  add frtc FrameRate : 0 com.tencent.tmgp.codev false com.oplus.cosa
+11-13 11:16:39.446  6522  6592 I Quality : 17001301:16137 com.tencent.tmgp.codev GAME_START
+11-13 11:16:40.027  1704  2094 I ActivityManager: Start proc 24412:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i29 for  {com.tencent.tmgp.codev/org.chromium.content.app.SandboxedProcessService0:0}
+11-13 11:16:40.186  1704  4517 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 0
+11-13 11:16:40.189  1704  4517 V WindowManager: Changing focus from null to Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity},diplayid=0
+11-13 11:16:40.192  1704  4517 I WindowManager: addWindow: New client android.os.BinderProxy@cf558ac : window=Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}
+11-13 11:16:40.196 16137 16137 I Quality : ActivityThread: activityStart delay 821 com.tencent.tmgp.codev 16137
+11-13 11:16:40.200  1704  4517 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:16:40.202  1704  4517 I WindowManager: addWindow: New client android.os.BinderProxy@3603ae : window=Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}
+11-13 11:16:40.202  1704  5610 D CoreBackPreview: Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3de89e5, mPriority=0}
+11-13 11:16:40.203 16137 16137 I Quality : ActivityThread: activityLifecycle delay 830 com.tencent.tmgp.codev 16137
+11-13 11:16:40.210 16137 16137 I Quality : Skipped: false 1 cost 13.315833 refreshRate 11241606 bit true processName com.tencent.tmgp.codev
+11-13 11:16:40.217  1704  5621 D CoreBackPreview: Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@570d2c8, mPriority=0}
+11-13 11:16:40.377  1704  5621 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 0
+11-13 11:16:40.377  1704  5621 V WindowManager: Relayout Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}: viewVisibility=0, oldvis=0, req=2285x1080
+11-13 11:16:40.377  1704  5621 I WindowManager: Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+11-13 11:16:40.402  1704  5621 D VRR [OPlusExternalRefreshRateManager]: isPkgTfcEnable: pkgName = com.tencent.tmgp.codev, enable = false
+11-13 11:16:40.402  1704  5621 D VRR [OPlusExternalRefreshRateManager]: getTfcMinFramerate: pkgName = com.tencent.tmgp.codev, min framerate = 0
+11-13 11:16:40.557 16137 24326 I Quality : ActivityThread: setSurface delay 160 com.tencent.tmgp.codev 16137
+11-13 11:16:40.699  1704  4466 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:16:40.699  1704  4466 V WindowManager: Relayout Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}: viewVisibility=0, oldvis=4, req=2400x1080
+11-13 11:16:40.699  1704  4466 I WindowManager: Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+11-13 11:16:40.711 16137 16137 I Quality : Skipped: false 43 cost 489.36124 refreshRate 11242916 bit true processName com.tencent.tmgp.codev
+11-13 11:16:40.711  1704  4466 I WindowManager: Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:16:40.711  1704  4466 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}
+11-13 11:16:40.714  1704  2016 I WindowManager: Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:16:40.717  1704  4466 V WindowManager: Relayout Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}: viewVisibility=0, oldvis=0, req=0x0
+11-13 11:16:40.720  1704  3638 I WindowManager: Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:16:40.720  1704  3638 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}
+11-13 11:16:40.729  1704  2016 I WindowManager: Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:16:40.745  1704  2016 D OplusStartingWindowManager: interceptRemoveStartingWindow: packageName=com.tencent.tmgp.codev, isSnapshot=false, startingSurfaceRunnable=null
+11-13 11:16:40.748  1704  2016 I WindowManager: Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+11-13 11:16:40.749  1704  2016 I WindowManager: Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+11-13 11:16:40.756  1704  5612 V WindowManager: Relayout Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}: viewVisibility=0, oldvis=0, req=0x0
+11-13 11:16:40.761 16137 16137 I Quality : Skipped: false 3 cost 34.059246 refreshRate 11241120 bit true processName com.tencent.tmgp.codev
+11-13 11:16:40.767  1704  4549 D InputMethodManagerService: isSecurity: attribute.packageName = com.tencent.tmgp.codev mCurMethodId = com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME isSecurity = false ( enable = false needShow = false inBlackList = false isExist = true )
+11-13 11:16:40.786  1704  2003 I Quality : LaunchTime2.0: com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity 1 2044 com.android.shell 175 215 17235 382 185843712 0 0 Task-data:Please enable this feature first!!!;
+11-13 11:16:41.108  1704  5621 V WindowManager: Relayout Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev}: viewVisibility=8, oldvis=0, req=2285x1080
+11-13 11:16:41.109  1704  5621 I SurfaceAnimationRunner: startAnimation requiresEdgeExtension=false, animationLeash=Surface(name=Surface(name=d089eb2 Splash Screen com.tencent.tmgp.codev)/@0x2777d65 - animation-leash of window_animation)/@0x6335a3a, runningAnim=com.android.server.wm.SurfaceAnimationRunner$RunningAnimation@c3746eb, mPreProcessingAnimations={}
+11-13 11:16:41.116  1704  5610 D CoreBackPreview: Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev EXITING}: Setting back callback null
+11-13 11:16:41.117  1704  2018 D SurfaceAnimationRunner: onAnimationStart:Surface(name=Surface(name=d089eb2 Splash Screen com.tencent.tmgp.codev)/@0x2777d65 - animation-leash of window_animation)/@0x6335a3a
+11-13 11:16:41.266  1704  2018 D SurfaceAnimationRunner: onAnimationEnd:Surface(name=Surface(name=d089eb2 Splash Screen com.tencent.tmgp.codev)/@0x2777d65 - animation-leash of window_animation)/@0x6335a3a
+11-13 11:16:41.266  1704  2016 I WindowStateExtImpl: onSurfaceShowChange show = false mPackageName = com.tencent.tmgp.codev parentPkgName = com.tencent.tmgp.codev
+11-13 11:16:41.267  1704  2016 I WindowManager: Window{d089eb2 u0 Splash Screen com.tencent.tmgp.codev EXITING} state from HAS_DRAWN to NO_SURFACE; reason: destroySurface
+11-13 11:16:44.023  1704  3638 D CoreBackPreview: Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}: Setting back callback null
+11-13 11:16:44.026  1704  3638 I WindowManager: Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from HAS_DRAWN to NO_SURFACE; reason: destroySurface
+11-13 11:16:44.028  1704  3638 V WindowManager: Changing focus from Window{ad3e257 u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} to Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity},diplayid=0
+11-13 11:16:44.048  1704  3638 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN flg=0x10000 cmp=com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity (has extras) mCallingUid=10904} from uid 10904
+11-13 11:16:44.058  1704  3638 D OplusZoomWindowRUSConfigManager: isSupportZoomModeWithPolicyLocked: target = com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity
+11-13 11:16:44.058  1704  3638 D OplusZoomWindowRUSConfigManager: targetPkg = com.tencent.tmgp.codev
+11-13 11:16:44.061  1704  3638 D TaskFragmentExtImpl: add ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57} to mActivityRecordSum = Counter{ com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity(1) com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity(1) }
+11-13 11:16:44.061  1704  3638 D ActivityTaskManager: getStartingWindowType: newTask=false, taskSwitch=false, processRunning=true, allowTaskSnapshot=true, activityCreated=false, snapshot=null, record:ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57}
+11-13 11:16:44.061  1704  3638 D OplusZoomWindowRUSConfigManager: isSupportZoomModeWithPolicyLocked: target = com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity
+11-13 11:16:44.061  1704  3638 D OplusZoomWindowRUSConfigManager: targetPkg = com.tencent.tmgp.codev
+11-13 11:16:44.070 16137 16137 I Quality : Skipped: false 2 cost 37.472347 refreshRate 16666666 bit true processName com.tencent.tmgp.codev
+11-13 11:16:44.072  1704  5620 W ActivityTaskManager: Duplicate finish request for r=ActivityRecord{a46924d u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t57 f}}
+11-13 11:16:44.073  1704  5620 I ActivityTaskManager: The Process com.tencent.tmgp.codev Already Exists in BG. So sending its PID: 16137
+11-13 11:16:44.079  1704  5620 V WindowManager: Changing focus from Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} to null,diplayid=0
+11-13 11:16:44.083  1704  4388 D InputMethodManagerService: isSecurity: attribute.packageName = com.tencent.tmgp.codev mCurMethodId = com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME isSecurity = false ( enable = false needShow = false inBlackList = false isExist = true )
+11-13 11:16:45.230  1704  3638 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:16:45.231  1704  3638 I WindowManager: addWindow: New client android.os.BinderProxy@e612fdd : window=Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:16:45.233  1704  3961 D CoreBackPreview: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@fca4b20, mPriority=0}
+11-13 11:16:45.533  1704  2094 I ActivityManager: Start proc 24685:com.tencent.tmgp.codev:plugin/u0a904 for service {com.tencent.tmgp.codev/com.sirius.flutter.im.MeemoBGService}
+11-13 11:16:45.550  1704  2008 D OplusGameRotationService: stopRotationInGame: check windowContainer = ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57}
+11-13 11:16:45.550  1704  2008 I WindowManager: Display id 0 rotation changed to 3 from 1, lastOrientation 6ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57}
+11-13 11:16:45.550  1704  2008 D DisplayRotationExtImpl: forceSeamlesslyRotated w:Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}, reason:camera launch from keyguard, packageName:com.tencent.tmgp.codev, rotationAnimation:0, mSeamlesslyRotated:false, reason:camera launch from keyguard
+11-13 11:16:45.676  1704  2015 D OplusCompactWindowManagerService: updateRotation setDeviceFolded oldRotation =:0 ,newRotation=:3 ,mFoldState =:0 ,processTasks =:true ,DisplayId =:0 ,oritentationSource ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57}
+11-13 11:16:45.679  1704  2015 I WindowManager: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from NO_SURFACE to DRAW_PENDING; reason: updateResizingWindowIfNeeded
+11-13 11:16:45.706 16137 16137 I Quality : ActivityThread: activityStart delay 1622 com.tencent.tmgp.codev 16137
+11-13 11:16:45.762  1704  1722 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:16:45.764  1704  1722 I WindowManager: addWindow: New client android.os.BinderProxy@4ed20c : window=Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:16:45.766  1704  3638 D CoreBackPreview: Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@db7a5b, mPriority=0}
+11-13 11:16:45.768 16137 16137 I Quality : Skipped: false 3 cost 60.84896 refreshRate 16857114 bit true processName com.tencent.tmgp.codev
+11-13 11:16:45.777  1704  3638 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:16:45.777  1704  3638 V WindowManager: Relayout Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=0, req=2400x1080
+11-13 11:16:45.945  1704  3638 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:16:45.945  1704  3638 V WindowManager: Relayout Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=4, req=2400x1080
+11-13 11:16:45.945  1704  3638 I WindowManager: Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+11-13 11:16:45.948  1704  3638 V WindowManager: Changing focus from null to Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity},diplayid=0
+11-13 11:16:45.985  1704  3961 I WindowManager: Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:16:45.985  1704  3961 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:16:45.985  1704  3961 I WindowManager: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:16:45.985  1704  3961 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:16:45.989  1704  2015 I WindowManager: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:16:45.989  1704  2015 I WindowManager: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from READY_TO_SHOW to DRAW_PENDING; reason: updateResizingWindowIfNeeded
+11-13 11:16:45.989  1704  2015 I WindowManager: Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:16:45.989  1704  2015 I WindowManager: Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from READY_TO_SHOW to DRAW_PENDING; reason: updateResizingWindowIfNeeded
+11-13 11:16:45.992  1704  2015 I OplusAppSwitchManagerService:  handleAppVisible , r = ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57}
+11-13 11:16:45.993  1704  2015 I OplusAppSwitchManagerService:  handleAppVisible , r = ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57}
+11-13 11:16:46.013 16137 16137 I Quality : Skipped: false 14 cost 245.11862 refreshRate 16860707 bit true processName com.tencent.tmgp.codev
+11-13 11:16:46.030  1704  4517 V WindowManager: Relayout Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=0, req=2400x1080
+11-13 11:16:46.043  1704  4517 I WindowManager: Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:16:46.043  1704  4517 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:16:46.044  1704  4517 I WindowManager: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:16:46.044  1704  4517 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:16:46.051  1704  2015 I WindowManager: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:16:46.051  1704  2015 I WindowManager: Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:16:46.061  1704  2016 I WindowManager: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+11-13 11:16:46.061  1704  2016 I WindowManager: Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+11-13 11:16:46.064  1704  2016 D WindowManager: Acquiring screen wakelock due to Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:16:46.072  1704  1722 V WindowManager: Relayout Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}: viewVisibility=8, oldvis=0, req=2400x1080
+11-13 11:16:46.133  1704  4517 I WindowManager: Window{2b2c54f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} state from HAS_DRAWN to NO_SURFACE; reason: destroySurface
+11-13 11:16:46.142  1704  4517 W PackageManager: package unknown uid 10904 pid 24685 call SetEnabledSetting(com.tencent.tmgp.codev component = androidx.work.impl.background.systemjob.SystemJobService, 1, 0)
+11-13 11:16:46.150  1704  5620 D InputMethodManagerService: isSecurity: attribute.packageName = com.tencent.tmgp.codev mCurMethodId = com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME isSecurity = false ( enable = false needShow = false inBlackList = false isExist = true )
+11-13 11:16:46.151  1704  1722 E WindowManager: setOnBackInvokedCallback(): No window state for package:com.tencent.tmgp.codev
+11-13 11:16:46.153  1704  3638 D TaskFragmentExtImpl: remove ActivityRecord{a46924d u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t-1 f}} to mActivityRecordSum = Counter{ com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity(1) }
+11-13 11:16:46.159 16137 16137 I Quality : Skipped: false 2 cost 36.443516 refreshRate 16863099 bit true processName com.tencent.tmgp.codev
+11-13 11:16:47.659  1704  4517 D OplusAppListInterceptManager: shouldFilterTask::packageName = com.tencent.tmgp.codev
+11-13 11:16:48.241  1704  2056 V AutofillManagerService: onPackageModified(): com.tencent.tmgp.codev
+11-13 11:16:51.661  1704  4466 D OplusBatteryServiceFeature: setSmartCoolDown: coolDown = 3, normalCoolDown = 3, pkgName = com.tencent.tmgp.codev
+11-13 11:16:51.667  1704  4466 D VRR [OPlusRefreshRateService]:  setFrameRateTargetControl [ 0.0 , com.tencent.tmgp.codev , false , com.oplus.battery ]
+11-13 11:16:51.667  1704  4466 D VRR [OPlusExternalRefreshRateManager]:  [FRTC] FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery 0 1000
+11-13 11:16:51.668  1704  2808 D VRR [OPlusSurfaceFlingerController]:  add frtc FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery
+11-13 11:16:51.995  1704  1722 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:16:51.995  1704  1722 V WindowManager: Relayout Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=0, req=2400x1080
+11-13 11:16:53.444  1704  3979 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:16:53.445  1704  3979 V WindowManager: Relayout Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=0, req=2400x1080
+11-13 11:16:57.409  1704  4517 D CoreBackPreview: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: Setting back callback null
+11-13 11:16:57.419  1704  4517 I WindowManager: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from HAS_DRAWN to NO_SURFACE; reason: destroySurface
+11-13 11:16:57.426 16137 16137 I Quality : Skipped: false 4 cost 71.70018 refreshRate 16864946 bit true processName com.tencent.tmgp.codev
+11-13 11:17:01.719 16137 24635 V SystemSensorManagerExtImpl: RegisterListener mmc5603x Magnetometer Non-wakeup type:2 delay:20000us by com.epicgames.ue4.GameActivity@e1a179c from com.tencent.tmgp.codev
+11-13 11:17:01.747 16137 24635 V SystemSensorManagerExtImpl: RegisterListener bmi160 Gyroscope Non-wakeup type:4 delay:20000us by com.epicgames.ue4.GameActivity@e1a179c from com.tencent.tmgp.codev
+11-13 11:17:01.878  1529  2811 I SurfaceFlinger: [SF client] REMOVE (0xb400007c6952a840) for (16137:com.tencent.tmgp.codev)
+11-13 11:17:01.878  1529  1646 I SurfaceFlinger: [SF client] REMOVE (0xb400007c6952a000) for (16137:com.tencent.tmgp.codev)
+11-13 11:17:01.906  4152  4273 D ControllerBackup: Check if it has been changed by user ---- Property record for: pkg: com.tencent.tmgp.codev; property: priority; record key: com.tencent.tmgp.codev_splitter_10904_splitter_permission_trigger_channel_splitter_priority; record: null; can be changed: false
+11-13 11:17:01.907  4152  4273 D ControllerBackup: Check if it has been changed by user ---- Property record for: pkg: com.tencent.tmgp.codev; property: show_icon; record key: com.tencent.tmgp.codev_splitter_10904_splitter_permission_trigger_channel_splitter_show_icon; record: null; can be changed: false
+11-13 11:17:01.911 16137 24635 V GetApkAbsPath: getapkpath success, path:/data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA==/base.apk
+11-13 11:17:01.944 16137 24964 D cent.tmgp.codev: PlayerBase::PlayerBase()
+11-13 11:17:01.944 16137 24964 D cent.tmgp.codev: TrackPlayerBase::TrackPlayerBase()
+11-13 11:17:01.948  4152  4273 D ControllerBackup: Check if it has been changed by user ---- Property record for: pkg: com.tencent.tmgp.codev; property: priority; record key: com.tencent.tmgp.codev_splitter_10904_splitter_permission_trigger_channel_splitter_priority; record: null; can be changed: false
+11-13 11:17:01.951  4152  4273 D ControllerBackup: Check if it has been changed by user ---- Property record for: pkg: com.tencent.tmgp.codev; property: show_icon; record key: com.tencent.tmgp.codev_splitter_10904_splitter_permission_trigger_channel_splitter_show_icon; record: null; can be changed: false
+11-13 11:17:01.995  5049 25268 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:01.998  5049 25268 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:02.005  1704  1704 D TaskFragmentExtImpl: add ActivityRecord{c0ec2cf u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} t57} to mActivityRecordSum = Counter{ com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity(1) com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity(1) }
+11-13 11:17:02.028 16137 24967 D cent.tmgp.codev: PlayerBase::stop() from IPlayer
+11-13 11:17:02.066  1704  3686 I OplusHansManager : resumeTaskAffinityIfNeedLocked uid: 10904 packageName: com.tencent.tmgp.codev
+11-13 11:17:02.068  1704  3686 I OplusHansManager : front pkg: com.google.android.permissioncontroller, uid: 10254, prev pkg: com.tencent.tmgp.codev, prev uid: 10904
+11-13 11:17:02.070  1704  3333 I Osense-DecisionMaker: notifySceneToAthenaPolicy: SCENE_APP_SWITCH, bundle: Bundle[{prevPkgName=com.tencent.tmgp.codev, curUid=10254, curPkgName=com.google.android.permissioncontroller, prevUid=10904}]
+11-13 11:17:02.071  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev enter SM
+11-13 11:17:02.071  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev R enter(), D stay=23
+11-13 11:17:02.076  1704  3970 I OplusResourcePreloadManager: resume pkg: com.google.android.permissioncontroller, uid:10254, prev pkg: com.tencent.tmgp.codev, prev uid: 10904
+11-13 11:17:02.116  5049 24990 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:02.118  5049 24990 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:02.122  1704  4134 D OplusAppSwitchListener: Detect com.tencent.tmgp.codev switch to background
+11-13 11:17:02.122  1704  4134 D OplusEapManager: mTargetExitName :com.tencent.tmgp.codev
+11-13 11:17:02.126  1704  4134 V DCSEX-AppSwitchManager: OnAppSwitchObserver: onAppExit, resuming = com.google.android.permissioncontroller, target = com.tencent.tmgp.codev, is ResumingFirstStart =  false, is ResumingMultiApp =  false, extensionInfo =  Bundle[{taskId=57, uid=10254}]
+11-13 11:17:02.126  1704 11416 D DCSEX-AppLaunchEventRecorder: onAppSwitch from = com.tencent.tmgp.codev to = com.google.android.permissioncontroller
+11-13 11:17:02.127  1704  4134 D VRR [OPlusFrontAppManager]: OnAppSwitchObserver: onAppExit , info.targetName = com.tencent.tmgp.codev
+11-13 11:17:02.130  1704 11416 D DCSEX-AppLaunchEventRecorder: recordExitApp = com.tencent.tmgp.codev
+11-13 11:17:02.131  1704  3686 V WindowManager: Changing focus from Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} to null,diplayid=0
+11-13 11:17:02.136  1704  2808 D VRR [OPlusExternalRefreshRateManager]: setFrontPackageName pkgName: null CurPkgName: com.tencent.tmgp.codev
+11-13 11:17:02.141  4099 20050 I Athena  : AthenaDynamicReceiver: pre_app:com.tencent.tmgp.codev, next_app:com.google.android.permissioncontroller(10254|22045)
+11-13 11:17:02.168  1704  2015 D OplusUIFirst_FB: com.tencent.tmgp.codev toForeOps: []
+11-13 11:17:02.210  1704  3638 D VRR [OPlusRefreshRateService]:  setFrameRateTargetControl [ 0.0 , com.tencent.tmgp.codev , false , com.oplus.battery ]
+11-13 11:17:02.210  1704  3638 D VRR [OPlusExternalRefreshRateManager]:  [FRTC] FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery 0 1000
+11-13 11:17:02.210  1704  2808 D VRR [OPlusSurfaceFlingerController]:  add frtc FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery
+11-13 11:17:02.210  1529  2811 I VRR [FRTC]: setFrameRateTarget with [0, com.tencent.tmgp.codev, 0, com.oplus.battery, 1, 0, 1000]
+11-13 11:17:02.210  1529  2811 W VRR [FRTC]: invalid param { fps 0, proc_name com.tencent.tmgp.codev, strict_mode 0, description com.oplus.battery, proc_id 0, rate_status 0, backend Surface, version 1, pid 0, uid 1000, enable at 2026-11-13 11:17:02, disable waiting } for current status.
+11-13 11:17:02.402 16137 24967 D cent.tmgp.codev: PlayerBase::stop() from IPlayer
+11-13 11:17:02.403 16137 24980 D cent.tmgp.codev: PlayerBase::pause() from IPlayer
+11-13 11:17:02.408  5049 25270 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:02.411  5049 25270 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:02.476  5049 25268 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:02.477  5049 25268 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:02.518  1704  3638 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:17:02.518  1704  3638 V WindowManager: Relayout Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=0, req=2400x1080
+11-13 11:17:02.757 16137 24868 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:17:02.839  1704  2965 E PackageInstallerSession: pc drops manifest attribute android:installLocation in base.apk for com.tencent.tmgp.codev
+11-13 11:17:02.967 27664 27689 D SceneSDK.1.0.4-SNAPSHOT.27664.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=0, eventType=2, targetName=com.tencent.tmgp.codev, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.google.android.permissioncontroller, resumingActivityName=com.android.permissioncontroller.permission.ui.GrantPermissionsActivity, isResumingMultiApp=false, isResumingFirstStart=false)
+11-13 11:17:02.970 27664 27689 I metis_v2_AppSwitchDataCollector: AppExitEvent =  com.tencent.tmgp.codev, NextAppName = com.google.android.permissioncontroller
+11-13 11:17:02.973 27664 27689 D metis_v2_AppInfoUtils: getTopAppInfos is [OplusAppInfo{windowingMode=1, activityType=1, taskId=57, appBounds=Rect(0, 0 - 2400, 1080), appInfo=ApplicationInfo{3ab4b0e com.tencent.tmgp.codev}, topActivity=ComponentInfo{com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}, displayId=0, orientation=6, userId=0, launchedFromPackage=com.tencent.tmgp.codev, isRootActivity=true, extension=Bundle[EMPTY_PARCEL]}]
+11-13 11:17:02.973 27664 27689 D metis_v2_AppSwitchDataCollector: Delete Top Application: com.tencent.tmgp.codev
+11-13 11:17:02.990 27664 27689 D metis_v2_AppInfoUtils: getTopAppInfos is [OplusAppInfo{windowingMode=1, activityType=1, taskId=57, appBounds=Rect(0, 0 - 2400, 1080), appInfo=ApplicationInfo{ba1692f com.tencent.tmgp.codev}, topActivity=ComponentInfo{com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}, displayId=0, orientation=6, userId=0, launchedFromPackage=com.tencent.tmgp.codev, isRootActivity=true, extension=Bundle[EMPTY_PARCEL]}]
+11-13 11:17:02.992 27664 27689 D metis_v2_AppInfoUtils: getTopAppInfos is [OplusAppInfo{windowingMode=1, activityType=1, taskId=57, appBounds=Rect(0, 0 - 2400, 1080), appInfo=ApplicationInfo{b204b3c com.tencent.tmgp.codev}, topActivity=ComponentInfo{com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}, displayId=0, orientation=6, userId=0, launchedFromPackage=com.tencent.tmgp.codev, isRootActivity=true, extension=Bundle[EMPTY_PARCEL]}]
+11-13 11:17:03.196 16137 16137 D OplusScrollToTopManager: com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity,This DecorView@67fa4d9[GameActivity] change focus to false
+11-13 11:17:04.037 16137 24868 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:17:04.633  1704  3171 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #21
+11-13 11:17:04.633  1704  3171 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #28
+11-13 11:17:04.633  1704  3171 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #29
+11-13 11:17:04.661 17274 17274 I Finsky  : [2] VerifyApps: Install-time verification requested for package com.tencent.tmgp.codev, PackageManager id = 66, Verifier id = 16b57d01-0cda-470d-9e12-a38e50985698
+11-13 11:17:04.733 17274 17541 I Finsky  : [8780] VerifyApps: [ADV] Starting verification task for com.tencent.tmgp.codev (id=66)
+11-13 11:17:04.734 17274 17541 I Finsky  : [8780] VerifyApps: [ADV] Calling Verifier app for com.tencent.tmgp.codev
+11-13 11:17:04.750 17274 17554 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #21
+11-13 11:17:04.750 17274 17554 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #28
+11-13 11:17:04.750 17274 17554 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #29
+11-13 11:17:05.300 22045 22045 I GrantPermissionsViewModel: Logged buttons presented and clicked permissionGroupName=android.permission-group.NOTIFICATIONS uid=10904 package=com.tencent.tmgp.codev presentedButtons=9 clickedButton=8 isPermissionRationaleShown=false sessionId=4415321279986246581 targetSdk=30 prompt=BASIC initialLocationPrecision=0 selectedLocationPrecision=0 locationAccuracyButtonClicked= false
+11-13 11:17:05.303 22045 22045 I GrantPermissionsViewModel: Permission grant result requestId=4415321279986246581 callingUid=10904 callingPackage=com.tencent.tmgp.codev permission=android.permission.POST_NOTIFICATIONS isImplicit=false result=6 isPermissionRationaleShown=falseisPackageRestrictedByEnhancedConfirmation=false
+11-13 11:17:05.318 16137 24868 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:17:05.328  1704  3638 I OplusHansManager : front pkg: com.tencent.tmgp.codev, uid: 10904, prev pkg: com.google.android.permissioncontroller, prev uid: 10254
+11-13 11:17:05.330  1704  3333 I Osense-DecisionMaker: notifySceneToAthenaPolicy: SCENE_BIG_APP_SWITCH, bundle: Bundle[{prevPkgName=com.google.android.permissioncontroller, curUid=10904, curPkgName=com.tencent.tmgp.codev, prevUid=10254}]
+11-13 11:17:05.331  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev R exit SM
+11-13 11:17:05.331  1704  3970 I OplusResourcePreloadManager: resume pkg: com.tencent.tmgp.codev, uid:10904, prev pkg: com.google.android.permissioncontroller, prev uid: 10254
+11-13 11:17:05.331  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev R exit(), R stay=3
+11-13 11:17:05.331  1704  4134 V DCSEX-AppSwitchManager: OnAppSwitchObserver: onAppExit, resuming = com.tencent.tmgp.codev, target = com.google.android.permissioncontroller, is ResumingFirstStart =  false, is ResumingMultiApp =  false, extensionInfo =  Bundle[{taskId=57, uid=10904}]
+11-13 11:17:05.331  1704  3638 D OplusUIFirst_FB: com.tencent.tmgp.codev activity event: []
+11-13 11:17:05.331  1704  3638 D OplusUIFirst_FB: handleParaSwitch com.tencent.tmgp.codev null null 1
+11-13 11:17:05.331  1704 11416 D DCSEX-AppLaunchEventRecorder: onAppSwitch from = com.google.android.permissioncontroller to = com.tencent.tmgp.codev
+11-13 11:17:05.332  1704  3638 I InputDispatcher: setFocusedApplication displayId=0 ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57}
+11-13 11:17:05.332  1704  4134 D OplusAppSwitchListener: Detect com.tencent.tmgp.codev switch to foreground
+11-13 11:17:05.332  1704  4134 D OplusEapManager: mTargetEnterName :com.tencent.tmgp.codev
+11-13 11:17:05.332  1704  4134 D OplusLatencyOptimizerManager: enter pkg: com.tencent.tmgp.codev isPrevBlackAppTop: false mIsBlackAppTop: false
+11-13 11:17:05.332  1704  4134 V DCSEX-AppSwitchManager: OnAppSwitchObserver: onAppEnter, launchedFrom =  com.tencent.tmgp.codev, target =  com.tencent.tmgp.codev, is firstStart =  false, is multiApp =  false, extensionInfo =  Bundle[{taskId=57, pid=16137, uid=10904, versionCode=3465}]
+11-13 11:17:05.332  1704  4134 D VRR [OPlusFrontAppManager]: OnAppSwitchObserver: onAppEnter , info.targetName = com.tencent.tmgp.codev
+11-13 11:17:05.332  1704  4134 D VRR [OPlusFrontAppManager]: packageName: com.tencent.tmgp.codev
+11-13 11:17:05.333  1704  3638 V WindowManager: Changing focus from Window{b0e5fd8 u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} to Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity},diplayid=0
+11-13 11:17:05.333  4099 20050 I Athena  : AthenaDynamicReceiver: pre_app:com.google.android.permissioncontroller, next_app:com.tencent.tmgp.codev(10904|16137)
+11-13 11:17:05.333  1704  2808 D VRR [OPlusRefreshRateService]: handleFrontAppChange pkgName: com.tencent.tmgp.codev
+11-13 11:17:05.333  1704  2808 D VRR [OPlusExternalRefreshRateManager]: setFrontPackageName pkgName: com.tencent.tmgp.codev CurPkgName: null
+11-13 11:17:05.338  1704  2158 E OplusThermalStats: Error getting package info: com.tencent.tmgp.codev
+11-13 11:17:05.340  5148  6309 W Battery : ThermalControlUtils: mForegroundPkg=com.tencent.tmgp.codev
+11-13 11:17:05.342  1704  2015 D OplusKeepAliveManager: TOP_APP is ProcessRecord{9b49e5a 16137:com.tencent.tmgp.codev/u0a904} uid is 10904
+11-13 11:17:05.344  1704  2015 D OplusUIFirst_FB: com.tencent.tmgp.codev moveToTop:[]
+11-13 11:17:05.344  1704  2015 D OplusUIFirst_FB: com.tencent.tmgp.codev boost hint: 16137
+11-13 11:17:05.344  1704  2015 D OplusUIFirst_FB: handleParaSwitch com.tencent.tmgp.codev null null 0
+11-13 11:17:05.350  1704  3638 D TaskFragmentExtImpl: addColorModeOnResume resume=true pkg = com.tencent.tmgp.codev
+11-13 11:17:05.350  1704  2015 D OplusUIFirst_FB: com.tencent.tmgp.codev toForeOps: []
+11-13 11:17:05.355  1704  3214 D OplusBatteryServiceFeature: setSmartCoolDown: coolDown = 7, normalCoolDown = 7, pkgName = com.tencent.tmgp.codev
+11-13 11:17:05.373 16137 16137 V SystemSensorManagerExtImpl: RegisterListener bmi160 Accelerometer Non-wakeup type:1 delay:20000us by com.epicgames.ue4.GameActivity@e1a179c from com.tencent.tmgp.codev
+11-13 11:17:05.386  1704  5620 I FocusResolver: updateFocusedWindow, 6d74755 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity on display 0, reason: setFocusedWindow, result:   FocusedWindows:
+11-13 11:17:05.386  1704  5620 I FocusResolver:     displayId=0, name='6d74755 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity'
+11-13 11:17:05.400 16137 16137 V SystemSensorManagerExtImpl: RegisterListener mmc5603x Magnetometer Non-wakeup type:2 delay:20000us by com.epicgames.ue4.GameActivity@e1a179c from com.tencent.tmgp.codev
+11-13 11:17:05.420 16137 16137 V SystemSensorManagerExtImpl: RegisterListener bmi160 Gyroscope Non-wakeup type:4 delay:20000us by com.epicgames.ue4.GameActivity@e1a179c from com.tencent.tmgp.codev
+11-13 11:17:05.448 16137 16137 I Quality : Skipped: false 6 cost 71.46172 refreshRate 11242977 bit true processName com.tencent.tmgp.codev
+11-13 11:17:05.449  1704  4549 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:17:05.449  1704  4549 V WindowManager: Relayout Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=0, req=2400x1080
+11-13 11:17:05.456 16137 24918 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#5(BLAST Consumer)5](id:3f0900000005,api:1,p:16137,c:16137) disconnect: api 1
+11-13 11:17:05.456  1704  5613 D InputMethodManagerService: isSecurity: attribute.packageName = com.tencent.tmgp.codev mCurMethodId = com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME isSecurity = false ( enable = false needShow = false inBlackList = false isExist = true )
+11-13 11:17:05.457 16137 24918 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#5(BLAST Consumer)5](id:3f0900000005,api:1,p:16137,c:16137) connect: api=1 producerControlledByApp=true
+11-13 11:17:05.462 21265 21265 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1614 onStartInput(EditorInfo{EditorInfo{packageName=com.tencent.tmgp.codev, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=-1, fieldName=null, extras=Bundle[{com.oplus.im.SCENES=8}], hintText=null, hintLocales=[], initialToolType=-1}}, false)
+11-13 11:17:05.470  1704  5613 I MediaFocusControl: requestAudioFocus() from uid/pid 10904/16137 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@55c83b9com.epicgames.ue4.GameActivity$24@992d257 callingPack=com.tencent.tmgp.codev req=1 flags=0x0 sdk=30
+11-13 11:17:05.484 16137 24967 D cent.tmgp.codev: PlayerBase::stop() from IPlayer
+11-13 11:17:05.488  1704  2016 I OplusAppSwitchManagerService:  handleAppVisible , r = ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57}
+11-13 11:17:05.503 16137 24635 D AudioManagerExtImpl: getStreamVolume packageName=com.tencent.tmgp.codev, index=0, streamType=3
+11-13 11:17:05.505  5049 24990 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:05.506  5049 24990 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:17:05.542  1704  5612 D TaskFragmentExtImpl: remove ActivityRecord{c0ec2cf u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} t-1 f}} to mActivityRecordSum = Counter{ com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity(1) }
+11-13 11:17:05.544  5148  6309 W Battery : DeepThinkerProxy: onEventStateChanged DeviceEventResult :	eventType is :205	eventStateType is :0	pid is : 16137		packageName is : com.tencent.tmgp.codev
+11-13 11:17:06.135 27664 27689 D SceneSDK.1.0.4-SNAPSHOT.27664.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=0, eventType=2, targetName=com.google.android.permissioncontroller, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.tencent.tmgp.codev, resumingActivityName=com.epicgames.ue4.GameActivity, isResumingMultiApp=false, isResumingFirstStart=false)
+11-13 11:17:06.135 27664 27689 I metis_v2_AppSwitchDataCollector: AppExitEvent =  com.google.android.permissioncontroller, NextAppName = com.tencent.tmgp.codev
+11-13 11:17:06.138 27664 27689 D metis_v2_AppInfoUtils: getTopAppInfos is [OplusAppInfo{windowingMode=1, activityType=1, taskId=57, appBounds=Rect(0, 0 - 2400, 1080), appInfo=ApplicationInfo{1480c5 com.tencent.tmgp.codev}, topActivity=ComponentInfo{com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}, displayId=0, orientation=6, userId=0, launchedFromPackage=com.tencent.tmgp.codev, isRootActivity=true, extension=Bundle[EMPTY_PARCEL]}]
+11-13 11:17:06.149 27664 27689 D SceneSDK.1.0.4-SNAPSHOT.27664.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=0, eventType=1, targetName=com.tencent.tmgp.codev, firstStart=false, multiApp=false, windowMode=1, resumingPackageName=, resumingActivityName=, isResumingMultiApp=false, isResumingFirstStart=false)
+11-13 11:17:06.149 27664 27689 I metis_v2_AppSwitchDataCollector: AppEnterEvent =  com.tencent.tmgp.codev, windowMode = 1
+11-13 11:17:06.150 27664 27689 D metis_v2_AppInfoUtils: getTopAppInfos is [OplusAppInfo{windowingMode=1, activityType=1, taskId=57, appBounds=Rect(0, 0 - 2400, 1080), appInfo=ApplicationInfo{5550a1a com.tencent.tmgp.codev}, topActivity=ComponentInfo{com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}, displayId=0, orientation=6, userId=0, launchedFromPackage=com.tencent.tmgp.codev, isRootActivity=true, extension=Bundle[EMPTY_PARCEL]}]
+11-13 11:17:06.153 27664 27689 D metis_v2_AppInfoUtils: getTopAppInfos is [OplusAppInfo{windowingMode=1, activityType=1, taskId=57, appBounds=Rect(0, 0 - 2400, 1080), appInfo=ApplicationInfo{865694b com.tencent.tmgp.codev}, topActivity=ComponentInfo{com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}, displayId=0, orientation=6, userId=0, launchedFromPackage=com.tencent.tmgp.codev, isRootActivity=true, extension=Bundle[EMPTY_PARCEL]}]
+11-13 11:17:06.455 16137 16137 D OplusScrollToTopManager: com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity,This DecorView@67fa4d9[GameActivity] change focus to true
+11-13 11:17:06.600 16137 24868 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:17:06.621 17274 17555 I Finsky  : [8784] VerifyApps: [ADV] Calling Verifier app for com.tencent.tmgp.codev
+11-13 11:17:06.621 17274 17555 I Finsky  : [8784] VerifyApps: [ADV] Call Strategy for com.tencent.tmgp.codev (id=66): CALL_VERIFIER_APP
+11-13 11:17:06.626 17274 17555 I Finsky  : [8784] VerifyApps: [ADV] Calling Verifier app for com.tencent.tmgp.codev (id=66)
+11-13 11:17:06.744 23425 23451 I VerificationCheck: Verifying com.tencent.tmgp.codev (id: 4c11e7c80cfb652c297344ccfbb2fc80)
+11-13 11:17:06.775 23425 23462 I VerificationCheck: Verification finished for com.tencent.tmgp.codev. Result: Pass(reason=UNSPECIFIED, message=null)
+11-13 11:17:06.789 17274 17553 I Finsky  : [8782] VerifyApps: [ADV] Verifier app returned response for com.tencent.tmgp.codev (id=66): verdict=1, reason=0
+11-13 11:17:06.790 17274 17553 I Finsky  : [8782] VerifyApps: [ADV] Scan finished for com.tencent.tmgp.codev (id=66) with verdict 0
+11-13 11:17:06.795 17274 17553 I Finsky  : [8782] VerifyApps: [ADV] Enforcing policy 0 for com.tencent.tmgp.codev. Scan verdict: 0
+11-13 11:17:06.795 17274 17553 I Finsky  : [8782] VerifyApps: [ADV] Enforced verdict for com.tencent.tmgp.codev: VERIFICATION_ALLOW
+11-13 11:17:06.795 17274 17553 I Finsky  : [8782] VerifyApps: [ADV] Policy enforced for com.tencent.tmgp.codev (id=66). Verdict: VERIFICATION_ALLOW
+11-13 11:17:06.796 17274 23407 I Finsky  : [9030] VerifyApps: Anti-malware verification task started for package=com.tencent.tmgp.codev
+11-13 11:17:07.878 16137 24868 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:17:09.160 16137 24868 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:17:09.613 17274 23407 I Finsky  : [9030] VerifyApps: chooseScanResult for package=com.tencent.tmgp.codev with timeout=15000ms
+11-13 11:17:09.628 17274 17553 I Finsky  : [8782] VerifyApps: Starting APK Analysis scan for com.tencent.tmgp.codev.
+11-13 11:17:09.630 17274 17553 I Finsky  : [8782] Scanning package com.tencent.tmgp.codev contents with client side protections. File: [5mbmxZ73wkFB9bu0SMh0WOfWozuZO2SGYzhxV0OogXg]
+11-13 11:17:09.630 17274 17553 I Finsky  : [8782] VerifyApps: APK Analysis scan finished for com.tencent.tmgp.codev. Verdict: 0
+11-13 11:17:09.631 17274 23407 I Finsky  : [9030] VerifyApps: firstScanResult for package=com.tencent.tmgp.codev: 0
+11-13 11:17:09.916 17274 23408 I Finsky  : [9031] VerifyApps: Verification package=com.tencent.tmgp.codev, id=66, response=0, upload_requested=false, enable_ecm=false
+11-13 11:17:09.931 17274 23408 I Finsky  : [9031] VerifyApps: PAM result saving to datastore delayed for package: com.tencent.tmgp.codev
+11-13 11:17:09.932 17274 23407 I Finsky  : [9030] VerifyApps: overallScanResult for package=com.tencent.tmgp.codev: 0
+11-13 11:17:09.932 17274 23407 I Finsky  : [9030] VerifyApps: chooseScanResult returning verdict 0 for package=com.tencent.tmgp.codev
+11-13 11:17:09.959  1704  2965 D OplusPackageInstallInterceptManager: installStage send adb install pkg:com.tencent.tmgp.codev   path: /data/app/vmdl1549324566.tmp/base.apk installFlags:5242994
+11-13 11:17:09.959  1704  2965 D PackageManager: installStage com.tencent.tmgp.codev, dir=/data/app/vmdl1549324566.tmp, installerPackageName=pc, installerUid=2000, full=false
+11-13 11:17:09.960  1704  2965 D PackageManager: installStage com.tencent.tmgp.codev0
+11-13 11:17:09.959 17274 17274 I Finsky  : [2] VerifyApps: Install-time verification complete: id=66, package_name=com.tencent.tmgp.codev
+11-13 11:17:09.996  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #21
+11-13 11:17:09.996  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #28
+11-13 11:17:09.996  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #29
+11-13 11:17:10.010  1704  2845 W PackageManager: Package com.tencent.tmgp.codev attempting to redeclare system permission android.permission.ACCESS_NETWORK_STATE; ignoring new declaration
+11-13 11:17:10.181  1704  2093 I ActivityManager: Force stopping com.tencent.tmgp.codev appid=10904 user=-1: installPackageLI
+11-13 11:17:10.183  1704  2845 I PackageManager: Update package com.tencent.tmgp.codev code path from /data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA== to /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==; Retain data and using new
+11-13 11:17:10.184  1704  2093 D OplusUIFirst_FB: com.tencent.tmgp.codev remove pid: 16137
+11-13 11:17:10.185  1704  2093 I ActivityManager: Killing 16137:com.tencent.tmgp.codev/u0a904 (adj 0): stop com.tencent.tmgp.codev due to installPackageLI
+11-13 11:17:10.212  1704  2093 W ActivityTaskManager: Force removing ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57 f}}: app died, no saved state
+11-13 11:17:10.236  1704  2093 V WindowManager: Changing focus from Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} to null,diplayid=0
+11-13 11:17:10.239  1704  2093 D WindowManager: Releasing screen wakelock due to Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:17:10.240  1704  2093 W InputManager-JNI: Input channel object '6d74755 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity (client)' was disposed without first being removed with the input manager!
+11-13 11:17:10.241  1704  2093 I WindowManager: Window{6d74755 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from HAS_DRAWN to NO_SURFACE; reason: destroySurface
+11-13 11:17:10.255  1529  1529 D Layer   : reparent to null sequence=5044, seq[8], name=com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity#5044
+11-13 11:17:10.255  1529  1529 D Layer   : reparent to null sequence=5037, seq[9], name=6d74755 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity#5037
+11-13 11:17:10.296  1704  2093 I OplusScreenSecurityMask: onStackRemoved task = Task{df32450 #57 type=standard A=10904:com.tencent.tmgp.codev U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=0} record = null displayId = 0
+11-13 11:17:10.296  1704  2093 D OplusAlwaysAliveManager: removing: 57, ComponentInfo{com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}
+11-13 11:17:10.296  1704  2093 D TaskFragmentExtImpl: remove ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t-1 f}} to mActivityRecordSum = Counter{ }
+11-13 11:17:10.300  1433  1555 W ANDR-PERF-LM: MetaMeter: handleAsync() 171: GameOptimization Invalid state for appName com.tencent.tmgp.codev 
+11-13 11:17:10.410  1704  2845 D OplusPackageAbiHelper: notifyPackageAddOrChange :com.tencent.tmgp.codev primaryabi = arm64-v8a secondabi = null
+11-13 11:17:10.433  1704  2093 I OplusHansManager : front pkg: com.android.launcher, uid: 10184, prev pkg: com.tencent.tmgp.codev, prev uid: 10904
+11-13 11:17:10.433  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev enter SM
+11-13 11:17:10.434  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev R enter(), D stay=5
+11-13 11:17:10.435  1704  3252 D ConnectivityService: releasing NetworkRequest [ REQUEST id=3185, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ] (release request)
+11-13 11:17:10.438  1704  3333 I Osense-DecisionMaker: notifySceneToAthenaPolicy: SCENE_LAUNCHER, bundle: Bundle[{prevPkgName=com.tencent.tmgp.codev, curUid=10184, curPkgName=com.android.launcher, prevUid=10904}]
+11-13 11:17:10.439  1704  3252 D ConnectivityService: releasing NetworkRequest [ REQUEST id=3187, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ] (release request)
+11-13 11:17:10.440  1704  3970 I OplusResourcePreloadManager: resume pkg: com.android.launcher, uid:10184, prev pkg: com.tencent.tmgp.codev, prev uid: 10904
+11-13 11:17:10.446  1529  2806 I SurfaceFlinger: [SF client] REMOVE (0xb400007c7c3f2000) for (16137:com.tencent.tmgp.codev)
+11-13 11:17:10.446  1529  2806 I SurfaceFlinger: [SF client] REMOVE (0xb400007c6952a780) for (16137:com.tencent.tmgp.codev)
+11-13 11:17:10.459  1704  4134 D OplusAppSwitchListener: Detect com.tencent.tmgp.codev switch to background
+11-13 11:17:10.459  1704  4134 D OplusEapManager: mTargetExitName :com.tencent.tmgp.codev
+11-13 11:17:10.464  1704  4134 V DCSEX-AppSwitchManager: OnAppSwitchObserver: onAppExit, resuming = com.android.launcher, target = com.tencent.tmgp.codev, is ResumingFirstStart =  false, is ResumingMultiApp =  false, extensionInfo =  Bundle[{taskId=6, uid=10184}]
+11-13 11:17:10.465  1704  4134 D VRR [OPlusFrontAppManager]: OnAppSwitchObserver: onAppExit , info.targetName = com.tencent.tmgp.codev
+11-13 11:17:10.465  1704 11416 D DCSEX-AppLaunchEventRecorder: onAppSwitch from = com.tencent.tmgp.codev to = com.android.launcher
+11-13 11:17:10.465  1704 11416 D DCSEX-AppLaunchEventRecorder: recordExitApp = com.tencent.tmgp.codev
+11-13 11:17:10.465  1704  2808 D VRR [OPlusExternalRefreshRateManager]: setFrontPackageName pkgName: null CurPkgName: com.tencent.tmgp.codev
+11-13 11:17:10.467  1529  1529 D Layer   : reparent to null sequence=5028, seq[6], name=ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}#5028
+11-13 11:17:10.470  1704  5763 D VRR [OPlusRefreshRateService]:  setFrameRateTargetControl [ 0.0 , com.tencent.tmgp.codev , false , com.oplus.battery ]
+11-13 11:17:10.470  1704  5763 D VRR [OPlusExternalRefreshRateManager]:  [FRTC] FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery 0 1000
+11-13 11:17:10.472  1704  2808 D VRR [OPlusSurfaceFlingerController]:  add frtc FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery
+11-13 11:17:10.472  1529  2811 I VRR [FRTC]: setFrameRateTarget with [0, com.tencent.tmgp.codev, 0, com.oplus.battery, 1, 0, 1000]
+11-13 11:17:10.472  1529  2811 W VRR [FRTC]: invalid param { fps 0, proc_name com.tencent.tmgp.codev, strict_mode 0, description com.oplus.battery, proc_id 0, rate_status 0, backend Surface, version 1, pid 0, uid 1000, enable at 2026-11-13 11:17:10, disable waiting } for current status.
+11-13 11:17:10.477  4099 20050 I Athena  : AthenaDynamicReceiver: pre_app:com.tencent.tmgp.codev, next_app:com.android.launcher(10184|3839)
+11-13 11:17:10.486  1704  2093 D OplusUIFirst_FB: com.tencent.tmgp.codev remove pid: 24685
+11-13 11:17:10.487  1704  2093 I ActivityManager: Killing 24685:com.tencent.tmgp.codev:plugin/u0a904 (adj 800): stop com.tencent.tmgp.codev due to installPackageLI
+11-13 11:17:10.491  1704  2845 E ArtManagerService: Failed to prepare profile for com.tencent.tmgp.codev:/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk
+11-13 11:17:10.497  1704  4096 I OplusHansManager : onUidGone(), 10904 com.tencent.tmgp.codev exit SM
+11-13 11:17:10.498  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev R exit SM
+11-13 11:17:10.498  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev R exit(), R stay=0
+11-13 11:17:10.527  1704  3979 D OplusWifiService: notifyGameInfoJsonStr: gameInfo = {"PKG_NAME":"com.tencent.tmgp.codev","GAME_PLAYING":0}
+11-13 11:17:10.541  1704  2845 D OplusDexSceneManager: Starting attach context  for  com.tencent.tmgp.codev reason: install
+11-13 11:17:10.541  1704  2845 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk pkg=com.tencent.tmgp.codev isa=arm64 dexoptFlags=boot_complete,profile_guided,public,enable_hidden_api_checks targetFilter=speed-profile oatDir=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/oat classLoaderContext=PCL[]{PCL[/system/framework/org.apache.http.legacy.jar]#PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]}
+11-13 11:17:10.546  1883 18446 V installd: DexInv: --- BEGIN '/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk' ---
+11-13 11:17:10.549  1883 18446 V installd: Running /apex/com.android.art/bin/dex2oat64 in=base.apk out=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/oat/arm64/base.odex
+11-13 11:17:10.562  1704  3979 D OplusSlaGameSwitch: notifyGamePlayingStatusChange:pkgName:com.tencent.tmgp.codev,playing:false
+11-13 11:17:10.563  1704  3979 D OplusGameFirstManager: notifyGamePlayingState:com.tencent.tmgp.codev:false
+11-13 11:17:10.599  1704  7048 D OplusUIFirst_FB: com.tencent.tmgp.codev remove pid: 24412
+11-13 11:17:10.608  1704  6734 V ActivityManager: Got obituary of 16137:com.tencent.tmgp.codev
+11-13 11:17:10.639  1704  3587 V ActivityManager: Got obituary of 24685:com.tencent.tmgp.codev:plugin
+11-13 11:17:10.678  4681  5051 D OplusAtlasFeedback: uploadMMCollectData MM_FB_EventID#20002#StreamType#3#ChannelCount#2#PackageName#com.tencent.tmgp.codev#EffectChains#0#StartTime#2026/11/13 11:16:57#UsingDevice#2#StreamVolume#0#Flag#6#AppName#µùáþòÅÕÑæþ¦ª´+Üµ¦ÉÞâ¢ÞíîÕè¿#SampleRate#48000#Format#1#IsSpatialized#0#TotalTime#13158#Id#13#AudioID#1d467974c4f9
+11-13 11:17:10.713  4681  5051 D OplusAtlasFeedback: uploadMMCollectData MM_FB_EventID#20002#StreamType#3#ChannelCount#2#PackageName#com.tencent.tmgp.codev#EffectChains#0#StartTime#2026/11/13 11:17:05#UsingDevice#2#StreamVolume#0#Flag#6#AppName#µùáþòÅÕÑæþ¦ª´+Üµ¦ÉÞâ¢ÞíîÕè¿#SampleRate#48000#Format#1#IsSpatialized#0#TotalTime#5205#Id#13#AudioID#e103f2281ebe
+11-13 11:17:10.744  5148 13278 W Battery : DeepThinkerProxy: onEventStateChanged DeviceEventResult :	eventType is :205	eventStateType is :1	pid is : 16137		packageName is : com.tencent.tmgp.codev
+11-13 11:17:10.758  1704  6029 D VRR [OPlusRefreshRateService]:  setFrameRateTargetControl [ -1.0 , com.tencent.tmgp.codev , false , com.oplus.cosa ]
+11-13 11:17:10.759  1704  6029 D VRR [OPlusExternalRefreshRateManager]:  [FRTC] FrameRate : -1 com.tencent.tmgp.codev false com.oplus.cosa 19617 10146
+11-13 11:17:10.759  1704  2808 D VRR [OPlusSurfaceFlingerController]:  add frtc FrameRate : -1 com.tencent.tmgp.codev false com.oplus.cosa
+11-13 11:17:10.759  1529  2811 I VRR [FRTC]: setFrameRateTarget with [-1, com.tencent.tmgp.codev, 0, com.oplus.cosa, 1, 19617, 10146]
+11-13 11:17:10.759  1529  2811 W VRR [FRTC]: invalid param { fps -1, proc_name com.tencent.tmgp.codev, strict_mode 0, description com.oplus.cosa, proc_id 0, rate_status 0, backend Surface, version 1, pid 19617, uid 10146, enable at 2026-11-13 11:17:10, disable waiting } for current status.
+11-13 11:17:10.778  1463  1570 I gameoptHal: config is ---- packageName=com.tencent.tmgp.codev~feature_flag=null~gpa_config=null~fpsStabilizer=null~thermal_frame=null~unityGameBoost=null
+11-13 11:17:11.001  1704  5620 D OplusAppListInterceptManager: shouldFilterTask::packageName = com.tencent.tmgp.codev
+11-13 11:17:11.007  1704  3784 D OplusWifiService: Get notifyGameModeState: state = false pkgName = com.tencent.tmgp.codev
+11-13 11:17:11.019  1704  4550 D OplusAppListInterceptManager: shouldFilterTask::packageName = com.tencent.tmgp.codev
+11-13 11:17:11.043 25097 25097 W dex2oat64: /apex/com.android.art/bin/dex2oat64 --zip-fd=7 --zip-location=base.apk --oat-fd=8 --oat-location=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/oat/arm64/base.odex --input-vdex-fd=-1 --output-vdex-fd=9 --swap-fd=10 --classpath-dir=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg== --class-loader-context=PCL[]{PCL[/system/framework/org.apache.http.legacy.jar]#PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]} --compact-dex-level=none --instruction-set=arm64 --instruction-set-features=default --instruction-set-variant=generic --compiler-filter=speed-profile --compilation-reason=install --max-image-block-size=524288 --resolve-startup-const-strings=true --generate-mini-debug-info --runtime-arg -Xtarget-sdk-version:30 --runtime-arg -Xhidden-api-policy:enabled -j4 --runtime-arg -Xms64m --runtime-arg -Xmx512m
+11-13 11:17:11.044 25097 25097 I dex2oat64: /apex/com.android.art/bin/dex2oat64 --input-vdex-fd=-1 --output-vdex-fd=9 --classpath-dir=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg== --class-loader-context=PCL[]{PCL[/system/framework/org.apache.http.legacy.jar]#PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]} --compact-dex-level=none --compiler-filter=speed-profile --compilation-reason=install --max-image-block-size=524288 --resolve-startup-const-strings=true --generate-mini-debug-info -j4
+11-13 11:17:11.059  1704  3978 D OplusWifiService: notifyGameInfoJsonStr: gameInfo = {"PKG_NAME":"com.tencent.tmgp.codev","APP_BACKGROUND":true}
+11-13 11:17:11.275 27664 32257 D SceneSDK.1.0.4-SNAPSHOT.27664.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=0, eventType=2, targetName=com.tencent.tmgp.codev, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.android.launcher, resumingActivityName=com.android.launcher.Launcher, isResumingMultiApp=false, isResumingFirstStart=false)
+11-13 11:17:11.275 27664 32257 I metis_v2_AppSwitchDataCollector: AppExitEvent =  com.tencent.tmgp.codev, NextAppName = com.android.launcher
+11-13 11:17:11.294 27664 32257 D metis_v2_AppSwitchDataCollector: Delete Top Application: com.tencent.tmgp.codev
+11-13 11:17:13.082  1883 18446 V InstalldExtImpl: record_dex2oat_info savedContent:time:1794565033074,pid:25097,alt:2533,rea:install,flt:speed-profile,rlt:0,path:/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk
+11-13 11:17:13.085  1883 18446 V installd: DexInv: --- END '/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk' (success) ---
+11-13 11:17:13.125  4054  4541 D iopgp   : OnPackageChangeEvent:Received PackageChangeEvent{packageName=com.tencent.tmgp.codev,version=3465,lastUpdateTimeMillis=1794565030184}
+11-13 11:17:13.125  4054  4541 D iopgp   : Same version package com.tencent.tmgp.codev with version 3465
+11-13 11:17:13.130  4054  4541 D iopgp   : Clean up files for package com.tencent.tmgp.codev with version 3465
+11-13 11:17:13.269  1704  2845 D UserUninstallRecorder: not care com.tencent.tmgp.codev installed.
+11-13 11:17:13.269  1704  2845 D OplusOsPackageManager: addPkgToNotLaunchedList com.tencent.tmgp.codev
+11-13 11:17:13.273  1704  2845 I ActivityManager: Force stopping com.tencent.tmgp.codev appid=10904 user=0: pkg removed
+11-13 11:17:13.298  4681  4681 E OplusQConfigSetting: not whitelist com.tencent.tmgp.codev
+11-13 11:17:13.306  1704  3970 I OplusResourcePreloadManager: onPackageStatusChange ACTION_PACKAGE_REMOVED pkgName: com.tencent.tmgp.codev uid: 10904
+11-13 11:17:13.308  1704  2056 V AutofillManagerService: onPackageUpdateStarted(): com.tencent.tmgp.codev
+11-13 11:17:13.324  4681  4681 D OplusAtlasService_ListHelper: ACTION_PACKAGE_REMOVED packageName:com.tencent.tmgp.codev
+11-13 11:17:13.325  4681  4938 D OplusAtlas.OplusMessageHandler: handleMessage: Msg { when=0 what=3 obj=com.tencent.tmgp.codev target=com.oplus.atlas.OplusMessageHandler$MyHandler }
+11-13 11:17:13.325  4681  4938 D OplusAtlasService_ListHelper: removeUidMap uid:10904 packageName:com.tencent.tmgp.codev
+11-13 11:17:13.329  1966  2935 D MMListService: removeUidPackageMap uid:10904 packageName com.tencent.tmgp.codev mapSize 331
+11-13 11:17:13.337  1704  1704 D OplusCustomizeService: UninstallBroadcastReceiver, pkgName=com.tencent.tmgp.codev, isReInstall=true
+11-13 11:17:13.343  5148  5717 W System.err: android.content.pm.PackageManager$NameNotFoundException: package:com.tencent.tmgp.codev
+11-13 11:17:13.365  5502  5502 I MediaProvider: Invalidating LocalCallingIdentity cache for package com.tencent.tmgp.codev. Reason: package android.intent.action.PACKAGE_REMOVED
+11-13 11:17:13.373  5502  5502 W MediaProvider: WorkProfileOwnerApps cache miss for package com.tencent.tmgp.codev
+11-13 11:17:13.384 27475 27475 D ONet:DbsManager: (LoadedApk.java:1888)onReceive(), action=android.intent.action.PACKAGE_REMOVED, packageName=com.tencent.tmgp.codev
+11-13 11:17:13.395  1704  2845 I ActivityManager: Force stopping com.tencent.tmgp.codev appid=10904 user=0: pkg removed
+11-13 11:17:13.396  5148  5717 W Battery : AppInfoManager: affairType:1102 replace:truepkg:com.tencent.tmgp.codev
+11-13 11:17:13.409  5314 25217 W yAF.TPLog.FrameworkUpdateListener: PACKAGE_REMOVED intent came late : com.tencent.tmgp.codev
+11-13 11:17:13.465 27475 27475 D ONet:AppChangeObserver: (LoadedApk.java:1888)onReceive: intent.action=android.intent.action.PACKAGE_REMOVED, packageName=intent.getData().getSchemeSpecificPart()=com.tencent.tmgp.codev
+11-13 11:17:13.465 27475 27475 D ONet:AppChangeObserver: (LoadedApk.java:1888)onReceive(), action=android.intent.action.PACKAGE_REMOVED, packageName=com.tencent.tmgp.codev
+11-13 11:17:13.475 27475 27855 D ONet:DeviceServicesBean: (DeviceServicesBean.java:10)getAppId: get appId failed, packageName=com.tencent.tmgp.codev
+11-13 11:17:13.475 27475 27855 D ONet:DeviceServicesBean: (DeviceServicesBean.java:10)getAppId: get appId failed, packageName=com.tencent.tmgp.codev
+11-13 11:17:13.485  1704  1704 D DeviceIdleHelper: pacakge removed: name=com.tencent.tmgp.codev not in PowerSaveWhitelist
+11-13 11:17:13.499  4681  4681 E OplusQConfigSetting: not whitelist com.tencent.tmgp.codev
+11-13 11:17:13.504  1704  3970 I OplusResourcePreloadManager: onPackageStatusChange ACTION_PACKAGE_ADDED pkgName: com.tencent.tmgp.codev uid: 10904
+11-13 11:17:13.508  1704  3312 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10904, mPackageName='com.tencent.tmgp.codev, mAppProcessToken='null'}
+11-13 11:17:13.514 17274 17274 I Finsky  : [2] AIM: AppInfoCacheUpdater -> invalidating apps: [com.tencent.tmgp.codev]
+11-13 11:17:13.530  4681  4938 D OplusAtlas.OplusMessageHandler: handleMessage: Msg { when=0 what=2 obj=com.tencent.tmgp.codev target=com.oplus.atlas.OplusMessageHandler$MyHandler }
+11-13 11:17:13.530 17529 17658 I Finsky:background: [8821] IQ:PSL: skipping onPackageRemoved(replacing=true) for untracked package=com.tencent.tmgp.codev
+11-13 11:17:13.531  1505  8980 D AudioFlingerExtImpl: AudioFlingerExtImpl oplusSetParameters: keyvalue add_uidmap=10904:com.tencent.tmgp.codev
+11-13 11:17:13.531  1966  2935 D MMListService: addUidPackageMap uid:10904 packageName com.tencent.tmgp.codev mapSize 331
+11-13 11:17:13.532  1295  2913 D audio_hw_primary: adev_set_parameters: enter: add_uidmap=10904:com.tencent.tmgp.codev
+11-13 11:17:13.538  5148  5717 W Battery : AppInfoManager: affairType:1101 replace:truepkg:com.tencent.tmgp.codev
+11-13 11:17:13.543  5314 25241 I yAF.TPLog.FrameworkUpdateListener: App installed: com.tencent.tmgp.codev
+11-13 11:17:13.546 27475 27475 D ONet:DbsManager: (LoadedApk.java:1888)onReceive(), action=android.intent.action.PACKAGE_ADDED, packageName=com.tencent.tmgp.codev
+11-13 11:17:13.554  1704  1704 I GameManagerService: Disabling downscale for com.tencent.tmgp.codev
+11-13 11:17:13.554  1704  1704 D StdID   : pkgName:com.tencent.tmgp.codev,isreplace=true
+11-13 11:17:13.554  1704  1704 D OplusSecurityPermissionManager: AppUninstallReceiver: uid=10904, userId=0, package=com.tencent.tmgp.codev
+11-13 11:17:13.555 17469 17469 D SystemAlertManager: receive pkg install:com.tencent.tmgp.codev
+11-13 11:17:13.573 27475 27475 D ONet:AppChangeObserver: (LoadedApk.java:1888)onReceive: intent.action=android.intent.action.PACKAGE_ADDED, packageName=intent.getData().getSchemeSpecificPart()=com.tencent.tmgp.codev
+11-13 11:17:13.573 27475 27475 D ONet:AppChangeObserver: (LoadedApk.java:1888)onReceive(), action=android.intent.action.PACKAGE_ADDED, packageName=com.tencent.tmgp.codev
+11-13 11:17:13.577 17274 17554 I Finsky  : [8783] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [com.tencent.tmgp.codev]
+11-13 11:17:13.581 27475 27752 D ONet:RetrieveAppServices: (R8$$SyntheticClass:238)retrieveSingleAppServices: configFilePath is null in packageName=com.tencent.tmgp.codev, metaDataKey=ONetMaskServicesLocation
+11-13 11:17:13.581  5314 25241 E AF.SDK.XmlReader: No meta data found with key: AccessoryServicesLocation in com.tencent.tmgp.codev
+11-13 11:17:13.581  5314 25241 W AF.SDK.k: configFileLocationGroup is empty,config error with com.tencent.tmgp.codev
+11-13 11:17:13.586 27475 27752 D ONet:RetrieveAppServices: (R8$$SyntheticClass:272)retrieveSingleAppServices: configFilePath is null in packageName=com.tencent.tmgp.codev, metaDataKey=ONetPlainServicesLocation
+11-13 11:17:13.611  1704  1704 D OplusCustomizeService: pkgName = com.tencent.tmgp.codev
+11-13 11:17:13.611  1704  1704 D OplusCustomizeService: Add packages name is :com.tencent.tmgp.codev;dir:/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk
+11-13 11:17:13.639  4681  4681 E OplusQConfigSetting: not whitelist com.tencent.tmgp.codev
+11-13 11:17:13.643  1704  3312 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10904, mPackageName='com.tencent.tmgp.codev, mAppProcessToken='null'}
+11-13 11:17:13.727  1704  1704 V GameManagerService_GamePackageConfiguration: No android.game_mode_config meta-data found for package com.tencent.tmgp.codev
+11-13 11:17:13.727  1704  1704 W GameManagerService: Invalid package config for com.tencent.tmgp.codev:[Name:com.tencent.tmgp.codev Modes: {}]
+11-13 11:17:13.727  1704  1704 I GameManagerService: Disabling downscale for com.tencent.tmgp.codev
+11-13 11:17:13.735  1704  1704 D StdID   : pkgName:com.tencent.tmgp.codev,isreplace=true
+11-13 11:17:13.815 17274 17274 I Finsky  : [2] AIM: AppInfoCacheUpdater -> invalidating apps: [com.tencent.tmgp.codev]
+11-13 11:17:13.824 17274 17541 I Finsky  : [8780] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [com.tencent.tmgp.codev]
+11-13 11:17:13.844 17274 25251 I Finsky  : [9087] Asset module broadcast after update successful for package com.tencent.tmgp.codev.
+11-13 11:17:13.928  4068  4068 D CarrierSvcBindHelper: onPackageUpdateFinished: com.tencent.tmgp.codev
+11-13 11:17:13.929  4068  4068 D CarrierSvcBindHelper: onPackageModified: com.tencent.tmgp.codev
+11-13 11:17:13.954 12721 25263 I ProximityAuth: [RecentAppsMediator] Package added: (user=UserHandle{0}) com.tencent.tmgp.codev
+11-13 11:17:13.961  4068  4068 D ImsResolver: maybeAddedImsService, packageName: com.tencent.tmgp.codev
+11-13 11:17:14.032  1704  1704 D TrimMemoryHandler: ProcessRecord{9b49e5a 0:com.tencent.tmgp.codev/u0a904} hasForegroundActivities, skip trim
+11-13 11:17:14.080  1704  2819 E VerityUtils: Failed to measure fs-verity, errno 1: /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk
+11-13 11:17:14.394  1704  5612 I SecurityPermissionService: updateCachedPermission pkgName:com.tencent.tmgp.codev, userId:0, delete:false
+11-13 11:17:15.472  5148  5926 D AppSwitchObserverHelper: packageName: com.tencent.tmgp.codev,com.tencent.tmgp.codev
+11-13 11:17:18.060 25218 25418 W PhoneManager.AppUsageHelper: getAppUsageData end get data:1794565037809#{20261113={0={com.android.vending=DateAppUsageInfo{appPackage='com.*7*.vending.', day=20261113, hour=0, count=3, usedMillis=16712}, com.android.settings=DateAppUsageInfo{appPackage='com.*7*.settings.', day=20261113, hour=0, count=3, usedMillis=27869}}, 10={com.google.android.googlequicksearchbox=DateAppUsageInfo{appPackage='com.*6*.android.googlequicksearchbox.', day=20261113, hour=10, count=7, usedMillis=70601}, com.android.vending=DateAppUsageInfo{appPackage='com.*7*.vending.', day=20261113, hour=10, count=3, usedMillis=14455}, com.oplus.camera=DateAppUsageInfo{appPackage='com.*5*.camera.', day=20261113, hour=10, count=2, usedMillis=13748}, com.teacapps.barcodescanner=DateAppUsageInfo{appPackage='com.*8*.barcodescanner.', day=20261113, hour=10, count=5, usedMillis=2525}}, 11={com.tencent.tmgp.codev=DateAppUsageInfo{appPackage='com.*7*.tmgp.codev.', day=20261113, hour=11, count=3, usedMillis=27772}, com.android.vending=DateAppUsageInfo{appPackage='com.*7*.vending.', day=20261113, hour=11, count=1, usedMillis=4005}}}}#[AppUsageEntity(packageName=com.android.vending, count=3, usedMillis=16712, beginTimeMillis=1794524400000, savedTimeMillis=1794565037809, timeWindow=3600000), AppUsageEntity(packageName=com.android.settings, count=3, usedMillis=27869, beginTimeMillis=1794524400000, savedTimeMillis=1794565037809, timeWindow=3600000), AppUsageEntity(packageName=com.google.android.googlequicksearchbox, count=7, usedMillis=70601, beginTimeMillis=1794560400000, savedTimeMillis=1794565037809, timeWindow=3600000), AppUsageEntity(packageName=com.android.vending, count=3, usedMillis=14455, beginTimeMillis=1794560400000, savedTimeMillis=1794565037809, timeWindow=3600000), AppUsageEntity(packageName=com.oplus.camera, count=2, usedMillis=13748, beginTimeMillis=1794560400000, savedTimeMillis=1794565037809, timeWindow=3600000), AppUsageEntity(packageName=com.teacapps.barcodescanner, count=5, usedMillis=2525, beginTimeMillis=1794560400000, savedTimeMillis=1794565037809, timeWindow=3600000), AppUsageEntity(packageName=com.tencent.tmgp.codev, count=3, usedMillis=27772, beginTimeMillis=1794564000000, savedTimeMillis=1794565037809, timeWindow=3600000), AppUsageEntity(packageName=com.android.vending, count=1, usedMillis=4005, beginTimeMillis=1794564000000, savedTimeMillis=1794565037809, timeWindow=3600000)]
+11-13 11:17:18.589  5314 25241 W yAF.TPLog.FrameworkUpdateListener: [com.tencent.tmgp.codev] removed. Stop sending intent
+11-13 11:17:18.918  1704  2056 V AutofillManagerService: onPackageUpdateFinished(): com.tencent.tmgp.codev
+11-13 11:17:18.919  1704  2056 V AutofillManagerService: onPackageModified(): com.tencent.tmgp.codev
+11-13 11:17:20.685  1704  2819 E VerityUtils: Failed to measure fs-verity, errno 1: /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk
+11-13 11:17:21.887  1704  4945 E AppSearchIcing: document-validator.cc:82: Schema type config 'android$apps-db/builtin:MobileApplication-com.tencent.tmgp.codev' not found Error while validating document (android$apps-db/apps, com.tencent.tmgp.codev)
+11-13 11:17:21.887  1704  4945 W AppSearchIcing: status-util.h:31: Error: 5, Message: Schema type config 'android$apps-db/builtin:MobileApplication-com.tencent.tmgp.codev' not found
+11-13 11:17:21.892  1704  4955 E AppSearchAppIndxrHlp: Ran into error while indexing apps: [FAILURE(6)]: Schema type config 'android$apps-db/builtin:MobileApplication-com.tencent.tmgp.codev' not found
+11-13 11:17:23.400  1704 25215 D OplusOsPackageManager: uploadInstallAppInfos:{code=3465, abi1=arm64-v8a, abi2=null, update=1, cert=45FC14FF9F;, targetSdkVersion=30, source=pc, app_pkg=com.tencent.tmgp.codev, version=1.25.0, md5=be711f0dc07f2916510a52f96e4cd062},path=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk,installerPackageName:pc
+11-13 11:17:27.385  1704  4945 E AppSearchIcing: document-validator.cc:82: Schema type config 'android$apps-db/builtin:MobileApplication-com.tencent.tmgp.codev' not found Error while validating document (android$apps-db/apps, com.tencent.tmgp.codev)
+11-13 11:17:27.385  1704  4945 W AppSearchIcing: status-util.h:31: Error: 5, Message: Schema type config 'android$apps-db/builtin:MobileApplication-com.tencent.tmgp.codev' not found
+11-13 11:17:27.386  1704  4955 E AppSearchAppIndxrHlp: Ran into error while indexing apps: [FAILURE(6)]: Schema type config 'android$apps-db/builtin:MobileApplication-com.tencent.tmgp.codev' not found
+11-13 11:17:27.899  1704  5613 D OplusAppListInterceptManager: shouldFilterTask::packageName = com.tencent.tmgp.codev

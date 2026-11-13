@@ -1,0 +1,40 @@
+11-13 11:39:38.227  1704  2845 D PackageInstallerSession: Marking session 1832924043 as failed: INSTALL_FAILED_VERIFICATION_FAILURE: Install not allowed
+11-13 11:39:38.299  1704  2965 E PackageInstallerSession: Failed to verify session 1832924043
+11-13 11:39:47.090  1704  3693 I OplusAppSwitchManagerService: appswitch registerAppSwitchObserver pName = com@@oplus@@melody observer = com.oplus.app.IOplusAppSwitchObserver$Stub$Proxy@3dd1319 config = OplusAppSwitchConfig = {  mConfigs = {1=[TOM@@tencent@@tmgp@@pubgmhd, TOM@@netease@@hyxd@@nearme@@gamecenter, TOM@@crisisfire@@android@@nearme@@gamecenter, TOM@@netease@@cfxf@@nearme@@gamecenter, TOM@@tencent@@tmgp@@cf, TOM@@tencent@@tmgp@@cod, TOM@@netease@@lztg@@nearme@@gamecenter, TOM@@yingxiong@@heroo@@nearme@@gamecenter, TOM@@tencent@@ig, TOM@@tencent@@tmgp@@codev, TOM@@tencent@@tmgp@@dfm, TOM@@dts@@freefireth, TOM@@activision@@callofduty@@shooter, TOM@@garena@@game@@codm], 2=[TOM@@tencent@@tmgp@@pubgmhd, TOM@@netease@@hyxd@@nearme@@gamecenter, TOM@@crisisfire@@android@@nearme@@gamecenter, TOM@@netease@@cfxf@@nearme@@gamecenter, TOM@@tencent@@tmgp@@cf, TOM@@tencent@@tmgp@@cod, TOM@@netease@@lztg@@nearme@@gamecenter, TOM@@yingxiong@@heroo@@nearme@@gamecenter, TOM@@tencent@@ig, TOM@@tencent@@tmgp@@codev, TOM@@tencent@@tmgp@@dfm, TOM@@dts@@freefireth, TOM@@activision@@callofduty@@shooter, TOM@@garena@@game@@codm]} observerFingerPrint = 48473786}
+11-13 11:39:52.044  1704  4548 I OplusAppSwitchManagerService: appswitch unregisterAppSwitchObserver pkgName = com.oplus.melody config = OplusAppSwitchConfig = {  mConfigs = {1=[TOM@@tencent@@tmgp@@pubgmhd, TOM@@netease@@hyxd@@nearme@@gamecenter, TOM@@crisisfire@@android@@nearme@@gamecenter, TOM@@netease@@cfxf@@nearme@@gamecenter, TOM@@tencent@@tmgp@@cf, TOM@@tencent@@tmgp@@cod, TOM@@netease@@lztg@@nearme@@gamecenter, TOM@@yingxiong@@heroo@@nearme@@gamecenter, TOM@@tencent@@ig, TOM@@tencent@@tmgp@@codev, TOM@@tencent@@tmgp@@dfm, TOM@@dts@@freefireth, TOM@@activision@@callofduty@@shooter, TOM@@garena@@game@@codm], 2=[TOM@@tencent@@tmgp@@pubgmhd, TOM@@netease@@hyxd@@nearme@@gamecenter, TOM@@crisisfire@@android@@nearme@@gamecenter, TOM@@netease@@cfxf@@nearme@@gamecenter, TOM@@tencent@@tmgp@@cf, TOM@@tencent@@tmgp@@cod, TOM@@netease@@lztg@@nearme@@gamecenter, TOM@@yingxiong@@heroo@@nearme@@gamecenter, TOM@@tencent@@ig, TOM@@tencent@@tmgp@@codev, TOM@@tencent@@tmgp@@dfm, TOM@@dts@@freefireth, TOM@@activision@@callofduty@@shooter, TOM@@garena@@game@@codm]} observerFingerPrint = 48473786}
+11-13 11:45:43.187  1704  3784 D PackageInstallerSessionExtImpl: no pre: undesired name
+11-13 11:45:43.197  1704  2965 D PackageInstallerSessionExtImpl: not get pre-parsed ret
+11-13 11:45:47.084  1704  2965 E PackageInstallerSession: pc drops manifest attribute android:installLocation in base.apk for com.tencent.tmgp.codev
+11-13 11:45:47.101  1704  2965 D PackageInstallerSessionExtImpl: hasPreExtract: false
+11-13 11:45:48.883  1704  3171 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #21
+11-13 11:45:48.883  1704  3171 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #28
+11-13 11:45:48.883  1704  3171 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #29
+11-13 11:45:48.896  1704  3171 W AppIntegrityManagerServiceImpl: Cannot parse package com.tencent.tmgp.codev
+11-13 11:45:49.138 27950 27950 I Finsky  : [2] VerifyApps: Install-time verification requested for package com.tencent.tmgp.codev, PackageManager id = 71, Verifier id = c497f540-aca6-4a12-a27a-686b4481cff9
+11-13 11:45:49.235 27950 30056 I Finsky  : [9378] VerifyApps: [ADV] Starting verification task for com.tencent.tmgp.codev (id=71)
+11-13 11:45:49.235 27950 30056 I Finsky  : [9378] VerifyApps: [ADV] Calling Verifier app for com.tencent.tmgp.codev
+11-13 11:45:49.253 27950 30068 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #21
+11-13 11:45:49.253 27950 30068 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #28
+11-13 11:45:49.254 27950 30068 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #29
+11-13 11:45:53.501 27950 30053 I Finsky  : [9375] VerifyApps: [ADV] Calling Verifier app for com.tencent.tmgp.codev
+11-13 11:45:53.501 27950 30053 I Finsky  : [9375] VerifyApps: [ADV] Call Strategy for com.tencent.tmgp.codev (id=71): CALL_VERIFIER_APP
+11-13 11:45:53.503 27950 30053 I Finsky  : [9375] VerifyApps: [ADV] Calling Verifier app for com.tencent.tmgp.codev (id=71)
+11-13 11:45:53.602 23425 23464 I VerificationCheck: Verifying com.tencent.tmgp.codev (id: 1526893154ccb3c28cd0e3c497da7b09)
+11-13 11:45:53.615 23425 23451 I VerificationCheck: Verification finished for com.tencent.tmgp.codev. Result: Pass(reason=SHELL_INSTALL, message=null)
+11-13 11:45:53.641 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Verifier app returned response for com.tencent.tmgp.codev (id=71): verdict=1, reason=2
+11-13 11:45:53.642 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Scan finished for com.tencent.tmgp.codev (id=71) with verdict 0
+11-13 11:45:53.642 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Enforcing policy 0 for com.tencent.tmgp.codev. Scan verdict: 0
+11-13 11:45:53.642 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Enforced verdict for com.tencent.tmgp.codev: VERIFICATION_ALLOW
+11-13 11:45:53.642 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Policy enforced for com.tencent.tmgp.codev (id=71). Verdict: VERIFICATION_ALLOW
+11-13 11:45:53.644 27950 30043 I Finsky  : [9365] VerifyApps: Anti-malware verification task started for package=com.tencent.tmgp.codev
+11-13 11:45:53.649 27950 30043 I Finsky  : [9365] VerifyApps: Skipping anti malware verification (preconditions not met). package=com.tencent.tmgp.codev
+11-13 11:45:53.663  1704  2965 D OplusPackageInstallInterceptManager: installStage send adb install pkg:com.tencent.tmgp.codev   path: /data/app/vmdl1532210737.tmp/base.apk installFlags:5242994
+11-13 11:45:53.663  1704  2965 D PackageManager: installStage com.tencent.tmgp.codev, dir=/data/app/vmdl1532210737.tmp, installerPackageName=pc, installerUid=2000, full=false
+11-13 11:45:53.663 27950 27950 I Finsky  : [2] VerifyApps: Install-time verification complete: id=71, package_name=com.tencent.tmgp.codev
+11-13 11:45:53.667  1704  2965 D PackageManager: installStage com.tencent.tmgp.codev0
+11-13 11:45:53.677  1704  2845 D PackageManager: installStage use for0
+11-13 11:45:53.687  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #21
+11-13 11:45:53.687  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #28
+11-13 11:45:53.687  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #29
+11-13 11:45:53.694  1704  2845 W PackageManager: Failed parse during installPackageLI: Targeting R+ (version 30 and above) requires the resources.arsc of installed APKs to be stored uncompressed and aligned on a 4-byte boundary
+11-13 11:45:53.761  1704  2845 D PackageInstallerSession: Marking session 1532210737 as failed: -124: Failed parse during installPackageLI: Targeting R+ (version 30 and above) requires the resources.arsc of installed APKs to be stored uncompressed and aligned on a 4-byte boundary

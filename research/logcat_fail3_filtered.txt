@@ -1,0 +1,5 @@
+11-13 11:51:37.268  1704  2965 D PackageManager: installStage com.tencent.tmgp.codev0
+11-13 11:51:37.273  1704  2845 D PackageManager: installStage use for0
+11-13 11:51:37.432  1704  2093 I ActivityManager: Force stopping com.tencent.tmgp.codev appid=10905 user=-1: installPackageLI
+11-13 11:51:41.090  1704  2845 D PackageInstallerSessionExtImpl: recordSotaAppResult stagedSession is null
+11-13 11:51:41.090  1704  2845 D PackageInstallerSession: Marking session 1319730291 as applied

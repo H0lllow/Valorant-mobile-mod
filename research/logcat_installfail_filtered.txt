@@ -1,0 +1,60 @@
+11-13 11:45:49.197 27950 27950 I Finsky  : [2] VerifyApps: Updating ADI Warn Mode activity enabled state
+11-13 11:45:49.197 27950 30053 I Finsky  : [9375] VerifyApps: Resolving target for ADI Warn Mode activity
+11-13 11:45:49.234 27950 30056 W Finsky  : [9378] VerifyApps: [ADV] AdvReportCollector not found in coroutine context.
+11-13 11:45:49.234 27950 30056 W Finsky  : [9378] VerifyApps: [ADV] No verification policy was set for user 0. Using default policy.
+11-13 11:45:49.234 27950 30056 I Finsky  : [9378] VerifyApps: [ADV] Initial fallback verdict decided: 1
+11-13 11:45:49.235 27950 30056 I Finsky  : [9378] VerifyApps: [ADV] Starting verification task for com.tencent.tmgp.codev (id=71)
+11-13 11:45:49.235 27950 30056 I Finsky  : [9378] VerifyApps: [ADV] Calling Verifier app for com.tencent.tmgp.codev
+11-13 11:45:49.253 27950 30068 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #21
+11-13 11:45:49.253 27950 30068 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #28
+11-13 11:45:49.254 27950 30068 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #29
+11-13 11:45:49.359  1704  3693 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.verifier.impl.scan.adi.AdiWarnModeTrampolineActivity, 1, 0)
+11-13 11:45:49.359 27950 30053 I Finsky  : [9375] VerifyApps: Successfully updated the ADI Warn Mode activity to enabled
+11-13 11:45:49.361  1704  3693 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.verifier.impl.scan.adi.ColorOsAdiWarnModeTrampolineActivity, 1, 0)
+11-13 11:45:49.361  1704  3693 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.verifier.impl.scan.adi.OplusAdiWarnModeTrampolineActivity, 1, 0)
+11-13 11:45:49.362 27950 30053 I Finsky  : [9375] VerifyApps: Successfully updated Oppo ADI Warn Mode aliases to enabled
+11-13 11:45:49.633  1704  6041 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.hibernation.impl.UnhibernateActivity, 1, 0)
+11-13 11:45:49.634  1704  6041 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.activities.DebugActivity, 2, 0)
+11-13 11:45:49.637  1704  4466 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.systemupdateactivity.SystemUpdateActivityAlias, 1, 0)
+11-13 11:45:49.639  1704  4466 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.systemupdateactivity.SystemUpdateActivityV2Alias, 2, 0)
+11-13 11:45:49.644  1704  4466 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.systemcomponentupdateui.common.SystemComponentUpdateActivity, 1, 0)
+11-13 11:45:53.501 27950 30053 W Finsky  : [9375] VerifyApps: [ADV] AdvReportCollector not found in coroutine context.
+11-13 11:45:53.501 27950 30053 I Finsky  : [9375] VerifyApps: [ADV] Calling Verifier app for com.tencent.tmgp.codev
+11-13 11:45:53.501 27950 30053 I Finsky  : [9375] VerifyApps: [ADV] Call Strategy for com.tencent.tmgp.codev (id=71): CALL_VERIFIER_APP
+11-13 11:45:53.502 27950 30053 W Finsky  : [9375] VerifyApps: [ADV] No verification policy was set for user 0. Using default policy.
+11-13 11:45:53.503 27950 30053 I Finsky  : [9375] VerifyApps: [ADV] Calling Verifier app for com.tencent.tmgp.codev (id=71)
+11-13 11:45:53.521 27950 30053 I Finsky  : [9375] VerifyApps: [ADV] Added the Verifier app to the temp allowlist for PT30S
+11-13 11:45:53.602 23425 23464 I VerificationCheck: Verifying com.tencent.tmgp.codev (id: 1526893154ccb3c28cd0e3c497da7b09)
+11-13 11:45:53.615 23425 23451 I VerificationCheck: Verification finished for com.tencent.tmgp.codev. Result: Pass(reason=SHELL_INSTALL, message=null)
+11-13 11:45:53.634 27950 30084 I Finsky  : [9397] VerifyApps: [ADV] Received getInstallerInfo request. VerificationId: 71
+11-13 11:45:53.634 27950 30084 I Finsky  : [9397] VerifyApps: [ADV] Returning installer info for 71: 
+11-13 11:45:53.641 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Verifier app returned response for com.tencent.tmgp.codev (id=71): verdict=1, reason=2
+11-13 11:45:53.642 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Scan finished for com.tencent.tmgp.codev (id=71) with verdict 0
+11-13 11:45:53.642 27950 30055 W Finsky  : [9377] VerifyApps: [ADV] AdvReportCollector not found in coroutine context.
+11-13 11:45:53.642 27950 30055 W Finsky  : [9377] VerifyApps: [ADV] AdvReportCollector not found in coroutine context.
+11-13 11:45:53.642 27950 30055 W Finsky  : [9377] VerifyApps: [ADV] No verification policy was set for user 0. Using default policy.
+11-13 11:45:53.642 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Enforcing policy 0 for com.tencent.tmgp.codev. Scan verdict: 0
+11-13 11:45:53.642 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Enforced verdict for com.tencent.tmgp.codev: VERIFICATION_ALLOW
+11-13 11:45:53.642 27950 30055 I Finsky  : [9377] VerifyApps: [ADV] Policy enforced for com.tencent.tmgp.codev (id=71). Verdict: VERIFICATION_ALLOW
+11-13 11:45:53.644 27950 30043 I Finsky  : [9365] VerifyApps: Anti-malware verification task started for package=com.tencent.tmgp.codev
+11-13 11:45:53.649 27950 30043 I Finsky  : [9365] VerifyApps: Skipping verification. Disabled by user setting
+11-13 11:45:53.649 27950 30043 I Finsky  : [9365] VerifyApps: Skipping anti malware verification (preconditions not met). package=com.tencent.tmgp.codev
+11-13 11:45:53.650 27950 30043 I Finsky  : [9365] VerifyApps AdvancedProtection: Verify AP install started
+11-13 11:45:53.650 27950 30043 I Finsky  : [9365] VerifyApps AdvancedProtection: Allowing install because there are no Advanced Protection users
+11-13 11:45:53.656 27950 27950 I Finsky  : [2] VerifyApps AdvancedProtection: Reported Advanced Protection verification result: ALLOW
+11-13 11:45:53.660 27950 30043 I Finsky  : [9365] VerifyApps: Returning package verification result id=71, result=ALLOW
+11-13 11:45:53.663  1704  2965 D OplusPackageInstallInterceptManager: installStage send adb install pkg:com.tencent.tmgp.codev   path: /data/app/vmdl1532210737.tmp/base.apk installFlags:5242994
+11-13 11:45:53.663  1704  2965 D PackageManager: installStage com.tencent.tmgp.codev, dir=/data/app/vmdl1532210737.tmp, installerPackageName=pc, installerUid=2000, full=false
+11-13 11:45:53.663 27950 27950 I Finsky  : [2] VerifyApps: Install-time verification complete: id=71, package_name=com.tencent.tmgp.codev
+11-13 11:45:53.667  1704  2965 D PackageManager: installStage com.tencent.tmgp.codev0
+11-13 11:45:53.677  1704  2845 D PackageManager: installStage use for0
+11-13 11:45:53.687  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #21
+11-13 11:45:53.687  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #28
+11-13 11:45:53.687  1704  2845 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.tencent.tmgp.codev at: Binary XML file line #29
+11-13 11:45:53.694  1704  2845 W PackageManager: Failed parse during installPackageLI: Targeting R+ (version 30 and above) requires the resources.arsc of installed APKs to be stored uncompressed and aligned on a 4-byte boundary
+11-13 11:45:53.761  1704  2845 D PackageInstallerSession: Marking session 1532210737 as failed: -124: Failed parse during installPackageLI: Targeting R+ (version 30 and above) requires the resources.arsc of installed APKs to be stored uncompressed and aligned on a 4-byte boundary
+11-13 11:45:59.118  1704  4466 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.android.vending.AssetBrowserActivity, 1, 0)
+11-13 11:45:59.209  1704  3638 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.wearsupport.WearSupportService, 2, 0)
+11-13 11:45:59.211 27950 30057 I Finsky  : [9379] Component class com.google.android.finsky.wearsupport.WearSupportService disabled via PackageManager.
+11-13 11:45:59.212  1704  3784 W PackageManager: package unknown uid 10097 pid 27950 call SetEnabledSetting(com.android.vending component = com.google.android.finsky.wearsupport.WearChangeListenerService, 2, 0)
+11-13 11:45:59.213 27950 30057 I Finsky  : [9379] Component class com.google.android.finsky.wearsupport.WearChangeListenerService disabled via PackageManager.

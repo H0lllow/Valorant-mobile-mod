@@ -1,0 +1,2 @@
+11-13 11:16:45.676  1704  2015 D OplusCompactWindowManagerService: updateRotation setDeviceFolded oldRotation =:0 ,newRotation=:3 ,mFoldState =:0 ,processTasks =:true ,DisplayId =:0 ,oritentationSource ActivityRecord{1b013d8 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t57}
+11-13 11:16:45.679  1704  2015 I WindowManager: Window{de4e752 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from NO_SURFACE to DRAW_PENDING; reason: updateResizingWindowIfNeeded

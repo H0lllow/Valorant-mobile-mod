@@ -1,0 +1,430 @@
+11-13 11:20:19.956  1704  3967 D OplusOsPackageManager: removePkgFromNotLaunchedList com.tencent.tmgp.codev
+11-13 11:20:19.956  1704  3967 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity mCallingUid=2000} from uid 2000
+11-13 11:20:19.975  1704  3967 I OplusScreenSecurityMask: onStackAdded task = Task{49f585a #58 type=standard A=10904:com.tencent.tmgp.codev U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=0} record = null displayId = 0
+11-13 11:20:19.978  1704  3967 D TaskFragmentExtImpl: add ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58} to mActivityRecordSum = Counter{ com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity(1) }
+11-13 11:20:19.980  1704  3967 D ActivityTaskManager: getStartingWindowType: newTask=true, taskSwitch=true, processRunning=false, allowTaskSnapshot=true, activityCreated=false, snapshot=null, record:ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58}
+11-13 11:20:19.982  1704  3967 D OplusZoomWindowRUSConfigManager: isSupportZoomModeWithPolicyLocked: target = com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity
+11-13 11:20:19.982  1704  3967 D OplusZoomWindowRUSConfigManager: targetPkg = com.tencent.tmgp.codev
+11-13 11:20:20.011  1704  5612 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 0
+11-13 11:20:20.013  1704  5612 I WindowManager: addWindow: New client android.os.BinderProxy@37aa214 : window=Window{8114abd u0 Splash Screen com.tencent.tmgp.codev}
+11-13 11:20:20.028  1704  5613 D CoreBackPreview: Window{8114abd u0 Splash Screen com.tencent.tmgp.codev}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6ab8dfe, mPriority=0}
+11-13 11:20:20.032  1704  3638 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 0
+11-13 11:20:20.032  1704  3638 V WindowManager: Relayout Window{8114abd u0 Splash Screen com.tencent.tmgp.codev}: viewVisibility=0, oldvis=0, req=1080x2400
+11-13 11:20:20.032  1704  3638 I WindowManager: Window{8114abd u0 Splash Screen com.tencent.tmgp.codev} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+11-13 11:20:20.055  1704  5611 I WindowManager: Window{8114abd u0 Splash Screen com.tencent.tmgp.codev} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:20:20.055  1704  5611 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{8114abd u0 Splash Screen com.tencent.tmgp.codev}
+11-13 11:20:20.057  1704  2094 I ActivityManager: Start proc 19654:com.tencent.tmgp.codev/u0a904 for next-top-activity {com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}
+11-13 11:20:20.060  1704  2016 I WindowManager: Window{8114abd u0 Splash Screen com.tencent.tmgp.codev} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:20:20.114  1704  2016 I WindowManager: Window{8114abd u0 Splash Screen com.tencent.tmgp.codev} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+11-13 11:20:20.115  1704  2016 D OplusGameRotationService: stopRotationInGame: check windowContainer = ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58}
+11-13 11:20:20.115  1704  2016 I WindowManager: Display id 0 rotation changed to 1 from 0, lastOrientation 6ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58}
+11-13 11:20:20.187  1704  2016 I WindowStateExtImpl: onSurfaceShowChange show = true mPackageName = com.tencent.tmgp.codev parentPkgName = com.tencent.tmgp.codev
+11-13 11:20:20.214  1704  5613 I OplusAppSwitchManagerService: appswitch hasProcess ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58}
+11-13 11:20:20.214  1704  5613 I OplusAppSwitchManagerService: appswitch hasProcess ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58}
+11-13 11:20:20.216  1704  5613 D ActivityTaskManager: onWindowFocusChanged Task{49f585a #58 type=standard A=10904:com.tencent.tmgp.codev U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1} would transfer to compact
+11-13 11:20:20.223  1704  4134 D OplusAppSwitchListener: Detect com.tencent.tmgp.codev switch to foreground
+11-13 11:20:20.223  1704  4134 D OplusEapManager: mTargetEnterName :com.tencent.tmgp.codev
+11-13 11:20:20.224  1704  2158 E OplusThermalStats: Error getting package info: com.tencent.tmgp.codev
+11-13 11:20:20.224  1704  4134 D VRR [OPlusFrontAppManager]: OnAppSwitchObserver: onAppEnter , info.targetName = com.tencent.tmgp.codev
+11-13 11:20:20.224  1704  4134 D VRR [OPlusFrontAppManager]: packageName: com.tencent.tmgp.codev
+11-13 11:20:20.225  1704  2808 D VRR [OPlusRefreshRateService]: handleFrontAppChange pkgName: com.tencent.tmgp.codev
+11-13 11:20:20.225  1704  2808 D VRR [OPlusExternalRefreshRateManager]: setFrontPackageName pkgName: com.tencent.tmgp.codev CurPkgName: null
+11-13 11:20:20.228  1704  2015 D OplusKeepAliveManager: TOP_APP is ProcessRecord{f837003 19654:com.tencent.tmgp.codev/u0a904} uid is 10904
+11-13 11:20:20.323  1704  2015 D OplusCompactWindowManagerService: updateRotation setDeviceFolded oldRotation =:0 ,newRotation=:1 ,mFoldState =:0 ,processTasks =:true ,DisplayId =:0 ,oritentationSource ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58}
+11-13 11:20:20.325  1704  2015 D ActivityTaskManager: Checking to restart ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58}: changed=0x = 80; handles=0x3; 
+11-13 11:20:20.350  1704  2015 I WindowManager: Window{8114abd u0 Splash Screen com.tencent.tmgp.codev} state from HAS_DRAWN to DRAW_PENDING; reason: updateResizingWindowIfNeeded
+11-13 11:20:20.455 19654 25849 D ActivityThread: Loading provider com.tencent.tmgp.codev.XG_SETTINGS_PROVIDER: com.tencent.tpns.baseapi.base.SettingsContentProvider
+11-13 11:20:20.477  1704  3416 I GameManagerServiceExt-GameBackground: Now current pkg is : com.tencent.tmgp.codev
+11-13 11:20:20.478  1704  3416 I GameManagerServiceExt: setting write: g mode true, p com.tencent.tmgp.codev
+11-13 11:20:20.592  1704  5620 D VRR [OPlusRefreshRateService]:  setFrameRateTargetControl [ 0.0 , com.tencent.tmgp.codev , false , com.oplus.cosa ]
+11-13 11:20:20.592  1704  5620 D VRR [OPlusExternalRefreshRateManager]:  [FRTC] FrameRate : 0 com.tencent.tmgp.codev false com.oplus.cosa 19617 10146
+11-13 11:20:20.592  1704  2808 D VRR [OPlusSurfaceFlingerController]:  add frtc FrameRate : 0 com.tencent.tmgp.codev false com.oplus.cosa
+11-13 11:20:20.611  6522  6588 I Quality : 17001301:19654 com.tencent.tmgp.codev GAME_START
+11-13 11:20:20.783  1704  3693 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN flg=0x10000 cmp=com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity (has extras) mCallingUid=10904} from uid 10904
+11-13 11:20:20.791  1704  3693 D OplusZoomWindowRUSConfigManager: isSupportZoomModeWithPolicyLocked: target = com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity
+11-13 11:20:20.791  1704  3693 D OplusZoomWindowRUSConfigManager: targetPkg = com.tencent.tmgp.codev
+11-13 11:20:20.794  1704  3693 D TaskFragmentExtImpl: add ActivityRecord{820d58c u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t58} to mActivityRecordSum = Counter{ com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity(1) com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity(1) }
+11-13 11:20:20.795  1704  3693 D OplusZoomWindowRUSConfigManager: isSupportZoomModeWithPolicyLocked: target = com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity
+11-13 11:20:20.795  1704  3693 D OplusZoomWindowRUSConfigManager: targetPkg = com.tencent.tmgp.codev
+11-13 11:20:20.802  1704  5611 D ActivityTaskManager: finishIfPossible mOpeningApps remove r=ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58 f}}
+11-13 11:20:20.829  1704  4549 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN flg=0x10000 cmp=com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity (has extras) mCallingUid=10904} from uid 10904
+11-13 11:20:20.833  1704  4549 D OplusZoomWindowRUSConfigManager: isSupportZoomModeWithPolicyLocked: target = com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity
+11-13 11:20:20.833  1704  4549 D OplusZoomWindowRUSConfigManager: targetPkg = com.tencent.tmgp.codev
+11-13 11:20:20.838  1704  3978 W ActivityTaskManager: Duplicate finish request for r=ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58 f}}
+11-13 11:20:20.843  1704  3923 I ActivityTaskManager: The Process com.tencent.tmgp.codev Already Exists in BG. So sending its PID: 19654
+11-13 11:20:21.580 19654 19654 I MmapHeap: OFF: no valid mmapheap_<poolMB>_<minKB>[_<prefetch>[_<diskReserveMB>]].flag for package='com.tencent.tmgp.codev' (checked external and internal files dirs) -> using binned
+11-13 11:20:21.714 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libUE4.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:21.717 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libWGRecorderApi.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:21.719 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libWGRecorder.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:21.720 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libGCloudVoice.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:21.780 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libpxauth.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:21.781 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libc++_shared.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:21.791 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libUE4.so using class loader ns clns-7 (caller=<unknown>): ok
+11-13 11:20:21.795  1704  3923 D SensorServiceExtImpl: isAllowOplusAMD opPackageName = com.tencent.tmgp.codev
+11-13 11:20:21.805  1529  1647 I SurfaceFlinger: [SF client] NEW(0xb400007c7c3f23c0) for (19654:com.tencent.tmgp.codev)
+11-13 11:20:21.960  1529  2805 I SurfaceFlinger: [SF client] NEW(0xb400007c9fe4aa40) for (19654:com.tencent.tmgp.codev)
+11-13 11:20:21.970 19654 19654 D WindowManager: Add to mViews: DecorView@e0f9418[GameActivity],pkg= com.tencent.tmgp.codev
+11-13 11:20:21.980  1704  5613 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:20:21.983  1704  5613 I WindowManager: addWindow: New client android.os.BinderProxy@b6e1d98 : window=Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:20:21.985  1704  3923 D CoreBackPreview: Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@cd2b457, mPriority=0}
+11-13 11:20:22.048  1529  1647 I SurfaceFlinger: [SF client] NEW(0xb400007c7c382a40) for (19654:com.tencent.tmgp.codev)
+11-13 11:20:22.056 19654 19654 I GCloudCore: [2026-11-13 11:20:22 056] | Info | [GCloudCore] |19654| (:0)|| [[GCloudCore]]AppPath:/data/user/0/com.tencent.tmgp.codev/,CachePath:/storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/,DataPath:/storage/emulated/0/Android/data/com.tencent.tmgp.codev/files/
+11-13 11:20:22.059 19654 19654 I GCloud  : SetPaths AppPath:/data/user/0/com.tencent.tmgp.codev/, DataPath:/storage/emulated/0/Android/data/com.tencent.tmgp.codev/files/, CachePath:/storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/
+11-13 11:20:22.062  1704  4549 D ConnectivityService: requestNetwork for uid/pid:10904/19654 activeRequest: null callbackRequest: 3211 [NetworkRequest [ REQUEST id=3212, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC
+11-13 11:20:22.063 19654 19654 I GCloudCore: [2026-11-13 11:20:22 063] | Info | [GCloudCore] |19654| (AFileLogger.cpp:154)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/GCloudSDKLog/GCloudCore/GCloudCore_2026111311.log
+11-13 11:20:22.066 19654 19654 I GCloud  : AppPath:/data/user/0/com.tencent.tmgp.codev/,CachePath:/storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/,DataPath:/storage/emulated/0/Android/data/com.tencent.tmgp.codev/files/
+11-13 11:20:22.066  1704  3221 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=3212, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]
+11-13 11:20:22.066 19654 19654 I GCloud  : SetPaths AppPath:/data/user/0/com.tencent.tmgp.codev/, DataPath:/storage/emulated/0/Android/data/com.tencent.tmgp.codev/files/, CachePath:/storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/
+11-13 11:20:22.067  1704  3221 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3212, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]
+11-13 11:20:22.067  1704  3221 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3212, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]
+11-13 11:20:22.068  1704  5613 D ConnectivityService: requestNetwork for uid/pid:10904/19654 activeRequest: null callbackRequest: 3213 [NetworkRequest [ REQUEST id=3214, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC
+11-13 11:20:22.068  1704  3221 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3212, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]
+11-13 11:20:22.069 19654 19654 I TDM     : [TDM][I][2026-11-13 11:20:22 069][0x70b4db060c][(TSystem.cpp:172) RouteTestEnviorment] : /data/user/0/com.tencent.tmgp.codev/files
+11-13 11:20:22.072 19654 19654 I TDM     : [TDM][I][2026-11-13 11:20:22 072][0x70b4db060c][(TDataMasterEventManager.cpp:105) Initialize] : App Info: [AppID: 256572112, AppChannel: -1, AppVersion: 1.25.0(3465), BundleID:com.tencent.tmgp.codev]
+11-13 11:20:22.072  1704  3221 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=3214, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]
+11-13 11:20:22.073  1704  3221 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3214, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]
+11-13 11:20:22.074  1704  3221 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3214, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]
+11-13 11:20:22.074  1704  3221 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3214, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ]
+11-13 11:20:22.086 19654 19654 I GCloudCore: [2026-11-13 11:20:22 086] | Info | [GCloudCore] |19654| (TraceIdManager.cpp:40)|TraceIdManager| [GTrace] TraceConfig LowerLimit:5, UpperLimit:60, RequestCount:30, StoreFileName:/storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/traceids.store
+11-13 11:20:22.095 19654 19654 I GCloudCore: [2026-11-13 11:20:22 095] | Info | [GCloudCore] |19654| (ConfigureImpl.cpp:257)|Request| comParams: {"app_ver":"1.25.0.3465","bid":"com.tencent.tmgp.codev","cid":"0","date":"2026-11-13","did":"63EE91A2E2A2B99CBB8870F8B984F8","gid":"256572112","mfrs":"OPPO","mtype":"CPH2145","oid":"","os":"Android","os_ver":"13","sdk_list":{"GCloud":{"ver":"2.16.02.202102"},"GCloudCore":{"ver":"1.6.01.3499"},"GPMSDK":{"ver":"3.0.0202.1078"},"GRobot":{"ver":"5.2.6"},"HttpDNS":{"ver":"1.3.02.192"},"MSDK":{"ver":"5.35.000.8960"},"PluginCrosCurl":{"ver":"1.0.000.1037"},"TDM":{"ver":"1.37.001.2289"},"TSS":{"ver":"7.0.047.34014"},"crashsight":{"ver":"GCLOUD_VERSION_CRASHSIGHT_4.3.1(967)"}},"spid":""}
+11-13 11:20:22.095 19654 19654 I GCloudCore: [2026-11-13 11:20:22 095] | Info | [GCloudCore] |19654| (UrlRequest.cpp:126)|Initialize| UrlRequest::Initialize https://cloudctrl.gcloud.qq.com/cfgpush/getConfig?com_params=%7B%22app_ver%22%3A%221.25.0.3465%22%2C%22bid%22%3A%22com.tencent.tmgp.codev%22%2C%22cid%22%3A%220%22%2C%22date%22%3A%222026-11-13%22%2C%22did%22%3A%2263EE91A2E2A2B99CBB8870F8B984F8%22%2C%22gid%22%3A%22256572112%22%2C%22mfrs%22%3A%22OPPO%22%2C%22mtype%22%3A%22CPH2145%22%2C%22oid%22%3A%22%22%2C%22os%22%3A%22Android%22%2C%22os_ver%22%3A%2213%22%2C%22sdk_list%22%3A%7B%22GCloud%22%3A%7B%22ver%22%3A%222.16.02.202102%22%7D%2C%22GCloudCore%22%3A%7B%22ver%22%3A%221.6.01.3499%22%7D%2C%22GPMSDK%22%3A%7B%22ver%22%3A%223.0.0202.1078%22%7D%2C%22GRobot%22%3A%7B%22ver%22%3A%225.2.6%22%7D%2C%22HttpDNS%22%3A%7B%22ver%22%3A%221.3.02.192%22%7D%2C%22MSDK%22%3A%7B%22ver%22%3A%225.35.000.8960%22%7D%2C%22PluginCrosCurl%22%3A%7B%22ver%22%3A%221.0.000.1037%22%7D%2C%22TDM%22%3A%7B%22ver%22%3A%221.37.001.2289%22%7D%2C%22TSS%22%3A%7B%22ver%22%3A%227.0.047.34014%22%7
+11-13 11:20:22.095 19654 19654 I GCloudCore: [2026-11-13 11:20:22 095] | Info | [GCloudCore] |19654| (ConfigureImpl.cpp:282)|Request| RemoteConfig host:https://cloudctrl.gcloud.qq.com, url: [https://cloudctrl.gcloud.qq.com/cfgpush/getConfig?com_params=%7B%22app_ver%22%3A%221.25.0.3465%22%2C%22bid%22%3A%22com.tencent.tmgp.codev%22%2C%22cid%22%3A%220%22%2C%22date%22%3A%222026-11-13%22%2C%22did%22%3A%2263EE91A2E2A2B99CBB8870F8B984F8%22%2C%22gid%22%3A%22256572112%22%2C%22mfrs%22%3A%22OPPO%22%2C%22mtype%22%3A%22CPH2145%22%2C%22oid%22%3A%22%22%2C%22os%22%3A%22Android%22%2C%22os_ver%22%3A%2213%22%2C%22sdk_list%22%3A%7B%22GCloud%22%3A%7B%22ver%22%3A%222.16.02.202102%22%7D%2C%22GCloudCore%22%3A%7B%22ver%22%3A%221.6.01.3499%22%7D%2C%22GPMSDK%22%3A%7B%22ver%22%3A%223.0.0202.1078%22%7D%2C%22GRobot%22%3A%7B%22ver%22%3A%225.2.6%22%7D%2C%22HttpDNS%22%3A%7B%22ver%22%3A%221.3.02.192%22%7D%2C%22MSDK%22%3A%7B%22ver%22%3A%225.35.000.8960%22%7D%2C%22PluginCrosCurl%22%3A%7B%22ver%22%3A%221.0.000.1037%22%7D%2C%22TDM%22%3A%7B%22ver%22%3A%221.37.001.2289%22%7D%2C%22TSS%22%3A%7
+11-13 11:20:22.107 19654 25976 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libitophttpdns.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!classes2.dex): ok
+11-13 11:20:22.149 19654 19654 E openSDK_LOG: com.tencent.tmgp.codev SDK_VERSION:3.5.15
+11-13 11:20:22.168 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libmmkv.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!classes2.dex): ok
+11-13 11:20:22.169 19654 19654 I MMKV    : <MMKV.cpp:225::initializeMMKV> root dir: /data/user/0/com.tencent.tmgp.codev/files/mmkv
+11-13 11:20:22.172 19654 25990 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x95], /data/user/0/com.tencent.tmgp.codev/files/mmkv/rdelivery_common_storage
+11-13 11:20:22.172 19654 25990 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x70bfe33000], oldPtr [0x0], [/data/user/0/com.tencent.tmgp.codev/files/mmkv/rdelivery_common_storage]
+11-13 11:20:22.172 19654 25990 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x96], /data/user/0/com.tencent.tmgp.codev/files/mmkv/rdelivery_common_storage.crc
+11-13 11:20:22.172 19654 25990 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x70bfddb000], oldPtr [0x0], [/data/user/0/com.tencent.tmgp.codev/files/mmkv/rdelivery_common_storage.crc]
+11-13 11:20:22.173 19654 19654 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x97], /data/user/0/com.tencent.tmgp.codev/files/mmkv/busi_report_data_f474cfd7ad_10010__APP
+11-13 11:20:22.173 19654 19654 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x70bfdda000], oldPtr [0x0], [/data/user/0/com.tencent.tmgp.codev/files/mmkv/busi_report_data_f474cfd7ad_10010__APP]
+11-13 11:20:22.173 19654 19654 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x98], /data/user/0/com.tencent.tmgp.codev/files/mmkv/busi_report_data_f474cfd7ad_10010__APP.crc
+11-13 11:20:22.173 19654 19654 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x70bfdd9000], oldPtr [0x0], [/data/user/0/com.tencent.tmgp.codev/files/mmkv/busi_report_data_f474cfd7ad_10010__APP.crc]
+11-13 11:20:22.176 19654 19654 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x99], /data/user/0/com.tencent.tmgp.codev/files/mmkv/f474cfd7ad_10010_null_541e16cc-2688-46c1-a083-8cc850f4bf88_APP
+11-13 11:20:22.176 19654 19654 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x70bfdd8000], oldPtr [0x0], [/data/user/0/com.tencent.tmgp.codev/files/mmkv/f474cfd7ad_10010_null_541e16cc-2688-46c1-a083-8cc850f4bf88_APP]
+11-13 11:20:22.176 19654 19654 I MMKV    : <MemoryFile.cpp:98::open> open fd[0x9a], /data/user/0/com.tencent.tmgp.codev/files/mmkv/f474cfd7ad_10010_null_541e16cc-2688-46c1-a083-8cc850f4bf88_APP.crc
+11-13 11:20:22.176 19654 19654 I MMKV    : <MemoryFile.cpp:203::mmap> mmap to address [0x70bfdbf000], oldPtr [0x0], [/data/user/0/com.tencent.tmgp.codev/files/mmkv/f474cfd7ad_10010_null_541e16cc-2688-46c1-a083-8cc850f4bf88_APP.crc]
+11-13 11:20:22.188 19654 19654 I GCloudCore: [2026-11-13 11:20:22 188] | Info | [GCloudCore] |19654| (AFileLogger.cpp:154)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/GCloudSDKLog/GCloud/GCloud_2026111311.log
+11-13 11:20:22.196 19654 19654 D FanjiSdk: checkIfNFCLauncher:Intent { act=android.intent.action.MAIN flg=0x10010000 cmp=com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity (has extras) mCallingUid=10904 }
+11-13 11:20:22.203 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libmarsxlog.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!classes2.dex): ok
+11-13 11:20:22.207 19654 19654 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libCrashSight.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!classes3.dex): ok
+11-13 11:20:22.212 19654 19654 I GVoiceAndroidLog: targetSdkVersion = 30pack neame: com.tencent.tmgp.codev
+11-13 11:20:22.228  1704  2094 I ActivityManager: Start proc 26008:com.tencent.tmgp.codev:plugin/u0a904 for service {com.tencent.tmgp.codev/com.sirius.flutter.im.MeemoBGService}
+11-13 11:20:22.228  1704  2094 D OplusUIFirst_FB: com.tencent.tmgp.codev proc start: 10904 26008 false com.tencent.tmgp.codev:plugin
+11-13 11:20:22.228  1704  2094 D OplusUIFirst_FB: com.tencent.tmgp.codev start process: []
+11-13 11:20:22.236 19654 19654 D AudioManager: setMode mode=0 from com.tencent.tmgp.codev
+11-13 11:20:22.244  4681 25841 D OplusAtlasService: getAttributeByAppName module:oplus-getStreamMaxVolume packageName:com.tencent.tmgp.codev
+11-13 11:20:22.246  4641  4657 D OplusBluetoothAudioGuard: oplusSetMode, mode 0, pid 19654, pkg com.tencent.tmgp.codev
+11-13 11:20:22.252 19654 19654 I GVoiceAndroidLog: storageCfgPath: /storage/emulated/0/Android/data/com.tencent.tmgp.codev/files/GCloudVoice/config.json
+11-13 11:20:22.255  1704  3961 I MediaFocusControl: requestAudioFocus() from uid/pid 10904/19654 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@93ba161com.gcloudsdk.apollo.ApolloVoiceDeviceMgr$AudioFocusChangeListener@b957486 callingPack=com.tencent.tmgp.codev req=1 flags=0x0 sdk=30
+11-13 11:20:22.256 19654 19654 I GVoiceAndroidLog: Read Dynamic: /data/user/0/com.tencent.tmgp.codev/files/com.gcloudsdk.gcloud.gvoice/config/gvoice.cfg
+11-13 11:20:22.270 26008 26008 D nativeloader: Configuring clns-4 for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=30, uses_libraries=ALL, library_path=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64:/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.tencent.tmgp.codev
+11-13 11:20:22.273 26008 26008 D nativeloader: Configuring clns-5 for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=30, uses_libraries=ALL, library_path=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64:/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.tencent.tmgp.codev
+11-13 11:20:22.276 26008 26008 D nativeloader: Configuring clns-6 for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=30, uses_libraries=ALL, library_path=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64:/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.tencent.tmgp.codev
+11-13 11:20:22.278 26008 26008 I gp.codev:plugin: Failed to add image file: Failed to find OatDexFile for DexFile /data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA==/base.apk (canonical path /data/app/~~hmlCK3m-UmhRORyLFJeFJg==/com.tencent.tmgp.codev-fRyQcqm8kGIz18kLLDTkMA==/base.apk) in OatFile /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/oat/arm64/base.odex
+11-13 11:20:22.279 26008 26008 D nativeloader: Configuring clns-7 for other apk /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk. target_sdk_version=30, uses_libraries=, library_path=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64:/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.tencent.tmgp.codev
+11-13 11:20:22.292 26008 26008 V GraphicsEnvironment: ANGLE Developer option for 'com.tencent.tmgp.codev' set to: 'default'
+11-13 11:20:22.292 26008 26008 V GraphicsEnvironment: ANGLE GameManagerService for com.tencent.tmgp.codev: false
+11-13 11:20:22.296 26008 26008 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libtprt.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:22.319 26008 26008 D MeemoUtil: proc name:com.tencent.tmgp.codev:plugin isDebuggable:false isMain:false isPlugin:true
+11-13 11:20:22.329 26008 26008 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libmeemo_mmkv.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:22.330 26008 26008 I MMKV    : <MMKV.cpp:208::initializeMMKV> root dir: /data/user/0/com.tencent.tmgp.codev/app_flutter/mmkv
+11-13 11:20:22.331 26008 26008 I MMKV    : <MemoryFile.cpp:97::open> open fd[0x54], /data/user/0/com.tencent.tmgp.codev/app_flutter/mmkv/mmkv.default
+11-13 11:20:22.331 26008 26008 I MMKV    : <MemoryFile.cpp:97::open> open fd[0x55], /data/user/0/com.tencent.tmgp.codev/app_flutter/mmkv/mmkv.default.crc
+11-13 11:20:22.333 26008 26008 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libmarsxlog.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:22.343 26008 26008 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libTDataMaster.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk): ok
+11-13 11:20:22.344 26008 26008 I TDM     : [TDM][I][2026-11-13 11:20:22 344][0x70b4db060c][(TSystem.cpp:172) RouteTestEnviorment] : /data/user/0/com.tencent.tmgp.codev/files
+11-13 11:20:22.347  1704  2015 W WindowManager: Force clearing orientation change: Window{8114abd u0 Splash Screen com.tencent.tmgp.codev}
+11-13 11:20:22.350 26008 26008 I TDM     : [TDM][I][2026-11-13 11:20:22 350][0x70b4db060c][(TDataMasterEventManager.cpp:105) Initialize] : App Info: [AppID: 256572112, AppChannel: -1, AppVersion: 1.25.0(3465), BundleID:com.tencent.tmgp.codev]
+11-13 11:20:22.388 19654 19654 I Quality : ActivityThread: activityStart delay 1537 com.tencent.tmgp.codev 19654
+11-13 11:20:22.391 19654 19654 D FanjiSdk: checkIfNFCLauncher:Intent { act=android.intent.action.MAIN flg=0x10010000 cmp=com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity (has extras) mCallingUid=10904 }
+11-13 11:20:22.395  1704  4549 W PackageManager: package unknown uid 10904 pid 26008 call SetEnabledSetting(com.tencent.tmgp.codev component = androidx.work.impl.background.systemjob.SystemJobService, 1, 0)
+11-13 11:20:22.410  1529  1647 I SurfaceFlinger: [SF client] NEW(0xb400007c7c383340) for (19654:com.tencent.tmgp.codev)
+11-13 11:20:22.412 19654 19654 D WindowManager: Add to mViews: DecorView@61f4f27[GameActivity],pkg= com.tencent.tmgp.codev
+11-13 11:20:22.414  1704  3923 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:20:22.415  1704  3923 I WindowManager: addWindow: New client android.os.BinderProxy@a599f28 : window=Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:20:22.417  1704  3961 D CoreBackPreview: Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@73d85d4, mPriority=0}
+11-13 11:20:22.419 19654 19654 I Quality : Skipped: false 2 cost 28.838905 refreshRate 11242531 bit true processName com.tencent.tmgp.codev
+11-13 11:20:22.421  1704  5613 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:20:22.421  1704  5613 V WindowManager: Relayout Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=0, req=2400x1080
+11-13 11:20:22.422  1704  5613 I WindowManager: Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+11-13 11:20:22.451  1704  5613 I MediaFocusControl: requestAudioFocus() from uid/pid 10904/19654 AA=USAGE_MEDIA/CONTENT_TYPE_MOVIE clientId=android.media.AudioManager@9af5c96 callingPack=com.tencent.tmgp.codev req=1 flags=0x0 sdk=30
+11-13 11:20:22.511  1917 14114 I ExtendedNuUtils: printFileName fd(7) -> /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk
+11-13 11:20:22.520 19654 19654 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:3,p:1917,c:19654) connect: api=3 producerControlledByApp=true
+11-13 11:20:22.550  1704  5613 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:20:22.550  1704  5613 V WindowManager: Relayout Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=4, req=2400x1080
+11-13 11:20:22.550  1704  5613 I WindowManager: Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+11-13 11:20:22.553  1529  1529 D OplusLayer: (5120,com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity#5120,com.tencent.tmgp.codev) setBuffer
+11-13 11:20:22.557  1704  5613 V WindowManager: Changing focus from null to Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity},diplayid=0
+11-13 11:20:22.580  1704  3923 D VRR [OPlusExternalRefreshRateManager]: isPkgTfcEnable: pkgName = com.tencent.tmgp.codev, enable = false
+11-13 11:20:22.580  1704  3923 D VRR [OPlusExternalRefreshRateManager]: getTfcMinFramerate: pkgName = com.tencent.tmgp.codev, min framerate = 0
+11-13 11:20:22.580 19654 19654 I DynamicFramerate [FRTCConfigManager]: FRTCConfigManager: FRTC_CAPABILITY = 120, package name = com.tencent.tmgp.codev, PACKAGE_ENABLE = false
+11-13 11:20:22.581 19654 19654 I DynamicFramerate [DynamicFrameRateController]: init info: mPackageName = com.tencent.tmgp.codev, mIsEnabled = false
+11-13 11:20:22.583 19654 19654 I AudioManager: In setBluetoothScoOn(), on: false, calling application: com.tencent.tmgp.codev
+11-13 11:20:22.585 19654 19654 D AudioManager: setMode mode=0 from com.tencent.tmgp.codev
+11-13 11:20:22.585 19654 19654 I Quality : Skipped: false 14 cost 159.90985 refreshRate 11255342 bit true processName com.tencent.tmgp.codev
+11-13 11:20:22.585  4641  4657 D OplusBluetoothAudioGuard: oplusSetMode, mode 0, pid 19654, pkg com.tencent.tmgp.codev
+11-13 11:20:22.587  1529  1529 D OplusLayer: (5125,com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity#5125,com.tencent.tmgp.codev) setBuffer
+11-13 11:20:22.588  1704  5613 I WindowManager: Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:20:22.588  1704  5613 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:20:22.588  1704  5613 I WindowManager: Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+11-13 11:20:22.588  1704  5613 D WindowManager: finishDrawingLocked forceApplyNow=false,2,Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:20:22.589  1704  2016 I WindowManager: Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:20:22.590  1704  2016 I WindowManager: Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+11-13 11:20:22.592  1704  2016 I WindowStateExtImpl: onSurfaceShowChange show = false mPackageName = com.tencent.tmgp.codev parentPkgName = com.tencent.tmgp.codev
+11-13 11:20:22.592  1704  2016 I WindowManager: Window{8114abd u0 Splash Screen com.tencent.tmgp.codev EXITING} state from DRAW_PENDING to NO_SURFACE; reason: destroySurface
+11-13 11:20:22.593  1704  2016 W InputManager-JNI: Input channel object '8114abd Splash Screen com.tencent.tmgp.codev (client)' was disposed without first being removed with the input manager!
+11-13 11:20:22.593  1704  2016 D OplusStartingWindowManager: interceptRemoveStartingWindow: packageName=com.tencent.tmgp.codev, isSnapshot=false, startingSurfaceRunnable=null
+11-13 11:20:22.598  1529  1529 D Layer   : reparent to null sequence=5093, seq[5], name=Splash Screen com.tencent.tmgp.codev#5093
+11-13 11:20:22.600  1704  2016 I OplusAppSwitchManagerService:  handleAppVisible , r = ActivityRecord{820d58c u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t58}
+11-13 11:20:22.601  1704  2016 I OplusAppSwitchManagerService:  handleAppVisible , r = ActivityRecord{820d58c u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t58}
+11-13 11:20:22.605  1704  2016 I WindowManager: Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+11-13 11:20:22.606  1704  2016 I WindowManager: Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+11-13 11:20:22.610  1704  2003 I Quality : LaunchTime2.0: com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity 1 2612 com.tencent.tmgp.codev 107 252 52857 191 325341184 0 0 Task-data:Please enable this feature first!!!;
+11-13 11:20:22.610  1704  2003 I ActivityTaskManager: Displayed com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity: +2s646ms
+11-13 11:20:22.613  1704  2016 D WindowManager: Acquiring screen wakelock due to Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:20:22.620  1529  1529 D Layer   : reparent to null sequence=5092, seq[3], name=8114abd Splash Screen com.tencent.tmgp.codev#5092
+11-13 11:20:22.622  1704  4466 I FocusResolver: updateFocusedWindow, 7972441 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity on display 0, reason: Window became focusable. Previous reason: NOT_VISIBLE, result:   FocusedWindows:
+11-13 11:20:22.622  1704  4466 I FocusResolver:     displayId=0, name='7972441 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity'
+11-13 11:20:22.689  1704  4466 D InputMethodManagerService: isSecurity: attribute.packageName = com.tencent.tmgp.codev mCurMethodId = com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME isSecurity = false ( enable = false needShow = false inBlackList = false isExist = true )
+11-13 11:20:22.699  1704  4466 D TaskFragmentExtImpl: remove ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t-1 f}} to mActivityRecordSum = Counter{ com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity(1) }
+11-13 11:20:22.701  1704  4466 W InputManager-JNI: Input channel object 'Letterbox_left_ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58} (client)' was disposed without first being removed with the input manager!
+11-13 11:20:22.703  1704  4466 W InputManager-JNI: Input channel object 'Letterbox_top_ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58} (client)' was disposed without first being removed with the input manager!
+11-13 11:20:22.704  1704  4466 W InputManager-JNI: Input channel object 'Letterbox_right_ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58} (client)' was disposed without first being removed with the input manager!
+11-13 11:20:22.704  1704  4466 W InputManager-JNI: Input channel object 'Letterbox_bottom_ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity} t58} (client)' was disposed without first being removed with the input manager!
+11-13 11:20:22.706  3983 11431 D AppStateRecord: getFgAppInStuckList: fgApp com.tencent.tmgp.codev
+11-13 11:20:22.712 21265 21265 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1614 onStartInput(EditorInfo{EditorInfo{packageName=com.tencent.tmgp.codev, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=-1, fieldName=null, extras=Bundle[{com.oplus.im.SCENES=8}], hintText=null, hintLocales=[], initialToolType=-1}}, false)
+11-13 11:20:22.715  1529  1529 D Layer   : reparent to null sequence=5091, seq[3], name=ActivityRecord{75a66f u0 com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}#5091
+11-13 11:20:22.717  1704  3465 I FocusResolver: updateFocusedWindow, 7972441 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity on display 0, reason: Window became focusable. Previous reason: NOT_VISIBLE, result:   FocusedWindows:
+11-13 11:20:22.717  1704  3465 I FocusResolver:     displayId=0, name='7972441 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity'
+11-13 11:20:22.719  1704  4466 D InputMethodManagerService: isSecurity: attribute.packageName = com.tencent.tmgp.codev mCurMethodId = com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME isSecurity = false ( enable = false needShow = false inBlackList = false isExist = true )
+11-13 11:20:22.723 21265 21265 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1614 onStartInput(EditorInfo{EditorInfo{packageName=com.tencent.tmgp.codev, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=-1, fieldName=null, extras=Bundle[{com.oplus.im.SCENES=8}], hintText=null, hintLocales=[], initialToolType=-1}}, false)
+11-13 11:20:22.770 19654 25836 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:3,p:1917,c:19654) disconnect: api 3
+11-13 11:20:22.773 19654 26006 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:3,p:1917,c:19654) connect: api=3 producerControlledByApp=true
+11-13 11:20:22.773 19654 25899 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:3,p:1917,c:19654) disconnect: api 3
+11-13 11:20:22.773 19654 26006 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:3,p:1917,c:19654) connect: api=3 producerControlledByApp=true
+11-13 11:20:22.940  5049 24990 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:20:22.958  5049 24990 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:20:22.964  5148  5196 W Battery : DeepThinkerProxy: onEventStateChanged DeviceEventResult :	eventType is :205	eventStateType is :0	pid is : 19654		packageName is : com.tencent.tmgp.codev
+11-13 11:20:23.009  1529  1529 D OplusLayer: (5123,SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity](BLAST)#5123,com.tencent.tmgp.codev) setBuffer
+11-13 11:20:23.056 19654 25962 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libtdmqimei.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!classes3.dex): ok
+11-13 11:20:23.070  3461  3717 D OplusScrollToTopManager: Splash Screen com.tencent.tmgp.codev,window dying
+11-13 11:20:23.070  3461  3717 D OplusScrollToTopManager: Splash Screen com.tencent.tmgp.codev,unregisterSystemUIBroadcastReceiver 
+11-13 11:20:23.070  3461  3717 D OplusScrollToTopManager: Splash Screen com.tencent.tmgp.codev, unregisterSystemUIBroadcastReceiver failed java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@4bdb288
+11-13 11:20:23.087 19654 25955 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#3(BLAST Consumer)3](id:4cc600000003,api:1,p:19654,c:19654) connect: api=1 producerControlledByApp=true
+11-13 11:20:23.091 19654 25955 D vulkan  : searching for layers in '/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64'
+11-13 11:20:23.092 19654 25955 D vulkan  : searching for layers in '/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!/lib/arm64-v8a'
+11-13 11:20:23.527 17274 17553 I Finsky  : [8782] com.tencent.tmgp.codev: Account from first account - [lp84nFK-eh0XBdEz0Tr0NoXbjptHcrpuv6eicw-vvZk]
+11-13 11:20:23.530 17274 17553 I Finsky  : [8782] Billing preferred account via installer for com.tencent.tmgp.codev: [lp84nFK-eh0XBdEz0Tr0NoXbjptHcrpuv6eicw-vvZk]
+11-13 11:20:23.547 17274 17554 I Finsky  : [8783] com.tencent.tmgp.codev: Account from first account - [lp84nFK-eh0XBdEz0Tr0NoXbjptHcrpuv6eicw-vvZk]
+11-13 11:20:23.547 17274 17554 I Finsky  : [8783] Billing preferred account via installer for com.tencent.tmgp.codev: [lp84nFK-eh0XBdEz0Tr0NoXbjptHcrpuv6eicw-vvZk]
+11-13 11:20:23.605 19654 25955 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#3(BLAST Consumer)3](id:4cc600000003,api:1,p:19654,c:19654) disconnect: api 1
+11-13 11:20:23.607 19654 25955 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#3(BLAST Consumer)3](id:4cc600000003,api:1,p:19654,c:19654) connect: api=1 producerControlledByApp=true
+11-13 11:20:23.718 19654 19654 D OplusScrollToTopManager: com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity,This DecorView@61f4f27[GameActivity] change focus to true
+11-13 11:20:23.734  1529  1529 D OplusLayer: (5130,SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity](BLAST)#5130,com.tencent.tmgp.codev) setBuffer
+11-13 11:20:25.176 19654 25955 D nativeloader: Load /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libgrobot_dynamic.so using class loader ns clns-7 (caller=/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk!classes2.dex): ok
+11-13 11:20:25.176 19654 25955 D cent.tmgp.codev: [jni.cpp:553][LogBeforeInit], Enter JNI_OnLoad
+11-13 11:20:25.177 19654 25955 I cent.tmgp.codev: [jni.cpp:366][LogBeforeInit], init jvm with 0xb400007026eade00
+11-13 11:20:25.177 19654 25955 I cent.tmgp.codev: [jni.cpp:84][LogBeforeInit], InitGRobotLoadClassCache, GRobot class and loadClass method cached successfully.
+11-13 11:20:25.177 19654 25955 I cent.tmgp.codev: Thread[14,tid=25955,Native,Thread*=0xb40000700c7f3000,peer=0x2900020,"GameThread"] recursive attempt to load library "/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libgrobot_dynamic.so"
+11-13 11:20:25.177 19654 25955 I cent.tmgp.codev: [jni.cpp:353][LogBeforeInit], LoadClassByGRobot, successfully loaded class: com/tencent/grobot/jni/JNIManager
+11-13 11:20:25.177 19654 25955 I cent.tmgp.codev: [grobot.cpp:25][LogBeforeInit], init rCls
+11-13 11:20:25.177 19654 25955 I cent.tmgp.codev: [jni.cpp:353][LogBeforeInit], LoadClassByGRobot, successfully loaded class: com/tencent/grobot/gcloud/account/MSDKAccount
+11-13 11:20:25.177 19654 25955 I cent.tmgp.codev: [jni.cpp:353][LogBeforeInit], LoadClassByGRobot, successfully loaded class: com/tencent/grobot/gcloud/GVoiceManager
+11-13 11:20:25.177 19654 25955 I cent.tmgp.codev: [jni.cpp:536][LogBeforeInit], set GRobot Plugin instance: 0xb40000700c677080 IPlugin:0xb40000700c677088
+11-13 11:20:25.177 19654 25955 I cent.tmgp.codev: [jni.cpp:546][LogBeforeInit], Enter JNI_OnLoad succ
+11-13 11:20:25.179 19654 25955 I GCloudCore: [2026-11-13 11:20:25 179] | Info | [GCloudCore] |25955| (AFileLogger.cpp:154)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/GCloudSDKLog/GRobot/GRobot_2026111311.xlog
+11-13 11:20:25.181 19654 25955 I GCloudCore: [2026-11-13 11:20:25 181] | Info | [GCloudCore] |25955| (AFileLogger.cpp:154)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/GCloudSDKLog/GRobot/GRobot_2026111311.xlog
+11-13 11:20:25.188 19654 25955 I GCloudCore: [2026-11-13 11:20:25 188] | Info | [GCloudCore] |25955| (AFileLogger.cpp:154)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/GCloudSDKLog/GRobot/GRobot_2026111311.xlog
+11-13 11:20:25.189 19654 26168 I GCloudCore: [2026-11-13 11:20:25 189] | Info | [GCloudCore] |26168| (AFileLogger.cpp:154)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/GCloudSDKLog/GRobot/GRobot_2026111311.xlog
+11-13 11:20:25.190 19654 25955 I cent.tmgp.codev: [log_service.cpp:67][LogBeforeInit], Empty config string provided
+11-13 11:20:25.190 19654 25955 I FileLoggerManager: [file_logger_manager.cc:66]Init[cache_dir]:/data/user/0/com.tencent.tmgp.codev/files/grobot/log/cache,[file_dir]:/data/user/0/com.tencent.tmgp.codev/files/grobot/log/file,[process]:, [keep_day]:7,[compress]:1
+11-13 11:20:25.191 19654 25955 I FileLoggerManager: [file_logger_manager.cc:103]Init inner[cache_dir]:/data/user/0/com.tencent.tmgp.codev/files/grobot/log/cache/,[file_dir]:/data/user/0/com.tencent.tmgp.codev/files/grobot/log/file/,[process]:, [keep_day]:7,[compress]:1
+11-13 11:20:25.191 19654 25955 I FileLoggerManager: [file_logger_manager.cc:191]getAbsoluteLogPath:/data/user/0/com.tencent.tmgp.codev/files/grobot/log/cache/2026-11-13_11-20-25__split.log.gz
+11-13 11:20:25.191 19654 25955 D Crossing: [mmap_file.cc:29]open log file for writing, /data/user/0/com.tencent.tmgp.codev/files/grobot/log/cache/2026-11-13_11-20-25__buffer.log
+11-13 11:20:25.208 19654 25955 D ResHub.RDeliveryRequest_f474cfd7ad_10010__APP: ---11:20:22.179 origin reqStr = {"systemID":"10010","appID":"f474cfd7ad","sign":"fd20c7a858bd91c871db8c53f4d38c12","timestamp":1794565222,"pullType":4,"target":2,"pullParams":{"properties":{"platform":2,"language":"it","sdkVersion":"0.0.1-for-grobot","guid":"541e16cc-2688-46c1-a083-8cc850f4bf88","appVersion":"1.25.0","osVersion":"33","is64Bit":true,"bundleId":"com.tencent.tmgp.codev","qimei":"541e16cc-2688-46c1-a083-8cc850f4bf88","uniqueId":"066326f7-e147-4e0d-90fc-dd6bf1cd501f","manufacturer":"OPPO"},"isDebugPackage":false,"customProperties":{"device_model":"","device_brand":"OPPO","app_version_code":"3465","msdk_game_id":"256572112","os_version":"13","device_manufacture":"OPPO","sdk_version":"5.2.6.184","os_sdk_int":"33","user_open_id":"","app_pkg_name":"com.tencent.tmgp.codev","device_full_name":"OPPO__33","game_id":"","reshubSdkVersion":"0.0.1-for-grobot-no-androidx"}},"taskChecksum":"0","context":""}
+11-13 11:20:25.213 19654 25955 D ResHub.RDeliveryRequest_f474cfd7ad_10010__APP: ---11:20:23.087 origin reqStr = {"systemID":"10010","appID":"f474cfd7ad","sign":"f3fb611ebbc95d1cd18ee91ef4a8c920","timestamp":1794565222,"pullType":3,"target":2,"pullParams":{"keys":["hotfix"],"properties":{"platform":2,"language":"it","sdkVersion":"0.0.1-for-grobot","guid":"541e16cc-2688-46c1-a083-8cc850f4bf88","appVersion":"1.25.0","osVersion":"33","is64Bit":true,"bundleId":"com.tencent.tmgp.codev","qimei":"541e16cc-2688-46c1-a083-8cc850f4bf88","uniqueId":"066326f7-e147-4e0d-90fc-dd6bf1cd501f","manufacturer":"OPPO"},"isDebugPackage":false,"customProperties":{"device_model":"","device_brand":"OPPO","app_version_code":"3465","msdk_game_id":"256572112","os_version":"13","device_manufacture":"OPPO","sdk_version":"5.2.6.184","os_sdk_int":"33","user_open_id":"","app_pkg_name":"com.tencent.tmgp.codev","device_full_name":"OPPO__33","game_id":"","reshubSdkVersion":"0.0.1-for-grobot-no-androidx"}},"context":""}
+11-13 11:20:25.216 19654 25955 I grobot_so: grobot_dynamic is not loaded, start load from:/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libgrobot_dynamic.so
+11-13 11:20:25.302 19654 25955 I GCloudCore: [2026-11-13 11:20:25 302] | Info | [GCloudCore] |25955| (AFileLogger.cpp:154)|_OpenLogFile| Open log file success: /storage/emulated/0/Android/data/com.tencent.tmgp.codev/cache/GCloudSDKLog/GPMSDK/GPMSDK_2026111311.log
+11-13 11:20:25.336  1704  5613 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:20:25.336  1704  5613 V WindowManager: Relayout Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=0, req=2400x1080
+11-13 11:20:25.425  1704  4548 I MediaFocusControl: requestAudioFocus() from uid/pid 10904/19654 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@9af5c96com.epicgames.ue4.GameActivity$24@c0b341e callingPack=com.tencent.tmgp.codev req=1 flags=0x0 sdk=30
+11-13 11:20:26.415  1704  5613 D OplusFullScreenDisplayManager: adjustWindowParamsLw com.tencent.tmgp.codev, no change cutoutMode: 1
+11-13 11:20:26.415  1704  5613 V WindowManager: Relayout Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: viewVisibility=0, oldvis=0, req=2400x1080
+11-13 11:20:26.422 19654 25955 D AudioManagerExtImpl: getStreamVolume packageName=com.tencent.tmgp.codev, index=0, streamType=3
+11-13 11:20:27.981  1704  3961 D OplusBatteryServiceFeature: setSmartCoolDown: coolDown = 3, normalCoolDown = 3, pkgName = com.tencent.tmgp.codev
+11-13 11:20:27.987  1704  3961 D VRR [OPlusRefreshRateService]:  setFrameRateTargetControl [ 0.0 , com.tencent.tmgp.codev , false , com.oplus.battery ]
+11-13 11:20:27.987  1704  3961 D VRR [OPlusExternalRefreshRateManager]:  [FRTC] FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery 0 1000
+11-13 11:20:27.987  1704  2808 D VRR [OPlusSurfaceFlingerController]:  add frtc FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery
+11-13 11:20:27.987  1529  1647 I VRR [FRTC]: setFrameRateTarget with [0, com.tencent.tmgp.codev, 0, com.oplus.battery, 1, 0, 1000]
+11-13 11:20:27.987  1529  1647 W VRR [FRTC]: invalid param { fps 0, proc_name com.tencent.tmgp.codev, strict_mode 0, description com.oplus.battery, proc_id 0, rate_status 0, backend Surface, version 1, pid 0, uid 1000, enable at 2026-11-13 11:20:27, disable waiting } for current status.
+11-13 11:20:29.178 26008 26045 F libc    : Fatal signal 7 (SIGBUS), code 1 (BUS_ADRALN), fault addr 0xb93 in tid 26045 (Thread-6), pid 26008 (gp.codev:plugin)
+11-13 11:20:29.315 26214 26214 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+11-13 11:20:29.325   807   807 I tombstoned: received crash request for pid 26045
+11-13 11:20:29.994 26214 26214 F DEBUG   : Process name is com.tencent.tmgp.codev:plugin, not key_process
+11-13 11:20:29.994 26214 26214 F DEBUG   : Cmdline: com.tencent.tmgp.codev:plugin
+11-13 11:20:29.994 26214 26214 F DEBUG   : pid: 26008, tid: 26045, name: Thread-6  >>> com.tencent.tmgp.codev:plugin <<<
+11-13 11:20:29.994 26214 26214 F DEBUG   : signal 7 (SIGBUS), code 1 (BUS_ADRALN), fault addr 0x0000000000000b93
+11-13 11:20:30.046   807   807 E tombstoned: Tombstone written to: tombstone_11
+11-13 11:20:30.054  3421  3433 D abnormalUtils: com.tencent.tmgp.codev:plugin is foreground =false
+11-13 11:20:30.069  1704  3009 I BootReceiver: Copying /data/tombstones/tombstone_11 to DropBox (SYSTEM_TOMBSTONE)
+11-13 11:20:30.074  1704  3009 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+11-13 11:20:30.090  1704  3009 D DropBoxManagerService: file :: /data/system/dropbox/SYSTEM_TOMBSTONE@1794565230089.txt.gz
+11-13 11:20:30.094  1704  3009 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE_PROTO isTagEnabled=true flags=0x4
+11-13 11:20:30.104  1704  3009 D DropBoxManagerService: file :: /data/system/dropbox/SYSTEM_TOMBSTONE_PROTO@1794565230103.dat.gz
+11-13 11:20:30.123  1704  3587 I ActivityManager: Process com.tencent.tmgp.codev:plugin (pid 26008) has died: svc SVC 
+11-13 11:20:30.125  1704  3587 D OplusUIFirst_FB: com.tencent.tmgp.codev remove pid: 26008
+11-13 11:20:30.126 19654 25832 W cent.tmgp.codev: Cleared Reference was only reachable from finalizer (only reported once)
+11-13 11:20:33.639  5148  6178 W Battery : DeepThinkerProxy: onEventStateChanged DeviceEventResult :	eventType is :205	eventStateType is :1	pid is : 19654		packageName is : com.tencent.tmgp.codev
+11-13 11:20:33.645  4681  5051 D OplusAtlasFeedback: uploadMMCollectData MM_FB_EventID#20002#StreamType#3#ChannelCount#2#PackageName#com.tencent.tmgp.codev#EffectChains#1#StartTime#2026/11/13 11:20:22#UsingDevice#2#StreamVolume#0#Flag#8#AppName#µùáþòÅÕÑæþ¦ª´+Üµ¦ÉÞâ¢ÞíîÕè¿#SampleRate#48000#Format#1#IsSpatialized#0#TotalTime#10699#Id#21#AudioID#4ff9143361e8
+11-13 11:20:33.727 19654 26006 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:3,p:1917,c:19654) disconnect: api 3
+11-13 11:20:33.735 19654 26006 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:3,p:1917,c:19654) connect: api=3 producerControlledByApp=true
+11-13 11:20:33.741 19654 19654 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:3,p:1917,c:19654) disconnect: api 3
+11-13 11:20:33.744 19654 19654 D OplusScrollToTopManager: com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity,window dying
+11-13 11:20:33.744 19654 19654 D OplusScrollToTopManager: com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity,unregisterSystemUIBroadcastReceiver 
+11-13 11:20:33.744 19654 19654 D OplusScrollToTopManager: com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity, unregisterSystemUIBroadcastReceiver failed java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@8748b00
+11-13 11:20:33.745  1704  4466 D CoreBackPreview: Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}: Setting back callback null
+11-13 11:20:33.745 19654 19654 D BufferQueueProducer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:0,p:-1,c:19654) disconnect: api -1
+11-13 11:20:33.746 19654 19654 D BufferQueueConsumer: [SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#1(BLAST Consumer)1](id:4cc600000001,api:0,p:-1,c:19654) disconnect
+11-13 11:20:33.748  1529  1529 D Layer   : reparent to null sequence=5123, seq[4], name=SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity](BLAST)#5123
+11-13 11:20:33.749  1529  1529 D Layer   : reparent to null sequence=5124, seq[3], name=Background for SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#5124
+11-13 11:20:33.749  1529  1529 D Layer   : reparent to null sequence=5122, seq[8], name=SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity]#5122
+11-13 11:20:33.751  1704  6041 W InputManager-JNI: Input channel object '67719f1 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity (client)' was disposed without first being removed with the input manager!
+11-13 11:20:33.753  1704  6041 I WindowManager: Window{67719f1 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} state from HAS_DRAWN to NO_SURFACE; reason: destroySurface
+11-13 11:20:33.757  4722  4771 W oiface  : recved frame stats, layer(SurfaceView[com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity](BLAST))
+11-13 11:20:33.760 19654 19654 I Quality : Skipped: false 3 cost 62.72406 refreshRate 16860686 bit true processName com.tencent.tmgp.codev
+11-13 11:20:33.765  1529  1529 D Layer   : reparent to null sequence=5120, seq[9], name=com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity#5120
+11-13 11:20:33.765  1529  1529 D Layer   : reparent to null sequence=5118, seq[2], name=67719f1 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity#5118
+11-13 11:20:33.796 19654 26158 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:20:33.803 19654 26158 D cent.tmgp.codev: PlayerBase::PlayerBase()
+11-13 11:20:33.803 19654 26158 D cent.tmgp.codev: TrackPlayerBase::TrackPlayerBase()
+11-13 11:20:33.836 19654 26158 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:20:33.863  5049 25268 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:20:33.864  5049 25268 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:20:35.130 19654 26158 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:20:35.939 19654 25875 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x5f5 in tid 25875 (Thread-6), pid 19654 (main)
+11-13 11:20:36.059  1704  3923 W ActivityManager: Receiver with filter android.content.IntentFilter@c2f91d3 already registered for pid 19654, callerPackage is com.tencent.tmgp.codev
+11-13 11:20:36.060 19654 25955 V SystemSensorManagerExtImpl: RegisterListener bmi160 Accelerometer Non-wakeup type:1 delay:20000us by com.epicgames.ue4.GameActivity@308158c from com.tencent.tmgp.codev
+11-13 11:20:36.292 19654 25955 V SystemSensorManagerExtImpl: RegisterListener mmc5603x Magnetometer Non-wakeup type:2 delay:20000us by com.epicgames.ue4.GameActivity@308158c from com.tencent.tmgp.codev
+11-13 11:20:36.300 26270 26270 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+11-13 11:20:36.301   807   807 I tombstoned: received crash request for pid 25875
+11-13 11:20:36.319 19654 25955 V SystemSensorManagerExtImpl: RegisterListener bmi160 Gyroscope Non-wakeup type:4 delay:20000us by com.epicgames.ue4.GameActivity@308158c from com.tencent.tmgp.codev
+11-13 11:20:36.369  4152  4273 D ControllerBackup: Check if it has been changed by user ---- Property record for: pkg: com.tencent.tmgp.codev; property: priority; record key: com.tencent.tmgp.codev_splitter_10904_splitter_permission_trigger_channel_splitter_priority; record: null; can be changed: false
+11-13 11:20:36.371  4152  4273 D ControllerBackup: Check if it has been changed by user ---- Property record for: pkg: com.tencent.tmgp.codev; property: show_icon; record key: com.tencent.tmgp.codev_splitter_10904_splitter_permission_trigger_channel_splitter_show_icon; record: null; can be changed: false
+11-13 11:20:36.380  4152  4273 D ControllerBackup: Check if it has been changed by user ---- Property record for: pkg: com.tencent.tmgp.codev; property: priority; record key: com.tencent.tmgp.codev_splitter_10904_splitter_permission_trigger_channel_splitter_priority; record: null; can be changed: false
+11-13 11:20:36.382  4152  4273 D ControllerBackup: Check if it has been changed by user ---- Property record for: pkg: com.tencent.tmgp.codev; property: show_icon; record key: com.tencent.tmgp.codev_splitter_10904_splitter_permission_trigger_channel_splitter_show_icon; record: null; can be changed: false
+11-13 11:20:36.445 19654 25955 V GetApkAbsPath: getapkpath success, path:/data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/base.apk
+11-13 11:20:36.475 19654 26284 D cent.tmgp.codev: PlayerBase::PlayerBase()
+11-13 11:20:36.478 19654 26284 D cent.tmgp.codev: TrackPlayerBase::TrackPlayerBase()
+11-13 11:20:36.515  5049 24990 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:20:36.516  5049 24990 D DetectSceneService: activeAudioAppList = [com.tencent.tmgp.codev]
+11-13 11:20:36.554 19654 26294 D cent.tmgp.codev: PlayerBase::stop() from IPlayer
+11-13 11:20:36.604 19654 26158 I AudioManager: In isBluetoothScoOn(), calling application: com.tencent.tmgp.codev
+11-13 11:20:36.847 26270 26270 F DEBUG   : Process name is com.tencent.tmgp.codev, not key_process
+11-13 11:20:36.847 26270 26270 F DEBUG   : Cmdline: com.tencent.tmgp.codev
+11-13 11:20:36.847 26270 26270 F DEBUG   : pid: 19654, tid: 25875, name: Thread-6  >>> com.tencent.tmgp.codev <<<
+11-13 11:20:36.847 26270 26270 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x00000000000005f5
+11-13 11:20:36.847 26270 26270 F DEBUG   :       #00 pc 0000000000bb8a5c  /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libpxcache-gadget.so
+11-13 11:20:36.847 26270 26270 F DEBUG   :       #01 pc 0000000000bb6f18  /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libpxcache-gadget.so
+11-13 11:20:36.847 26270 26270 F DEBUG   :       #02 pc 00000000009dcab4  /data/app/~~N6Zfv08LIDOr3j1ghlBCdw==/com.tencent.tmgp.codev-iNvhH6IYNEA8gxJxjwDxvg==/lib/arm64/libpxcache-gadget.so
+11-13 11:20:36.886   807   807 E tombstoned: Tombstone written to: tombstone_12
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: failed to open /data/tombstones/tombstone_12.pb
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: java.io.FileNotFoundException: open failed: ENOENT (No such file or directory)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at android.os.ParcelFileDescriptor.openInternal(ParcelFileDescriptor.java:342)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at android.os.ParcelFileDescriptor.open(ParcelFileDescriptor.java:229)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at com.android.server.os.NativeTombstoneManager.handleProtoTombstone(NativeTombstoneManager.java:151)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at com.android.server.os.NativeTombstoneManager.handleTombstone(NativeTombstoneManager.java:120)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at com.android.server.os.NativeTombstoneManager.-$$Nest$mhandleTombstone(Unknown Source:0)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at com.android.server.os.NativeTombstoneManager$TombstoneWatcher.lambda$onEvent$0$com-android-server-os-NativeTombstoneManager$TombstoneWatcher(NativeTombstoneManager.java:564)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at com.android.server.os.NativeTombstoneManager$TombstoneWatcher$$ExternalSyntheticLambda0.run(Unknown Source:4)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at android.os.Looper.loopOnce(Looper.java:240)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at android.os.Looper.loop(Looper.java:351)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-13 11:20:36.888  1704  3009 W NativeTombstoneManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+11-13 11:20:36.890  1704 26311 W ActivityTaskManager:   Force finishing activity com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity
+11-13 11:20:36.903  1704 26311 V WindowManager: Changing focus from Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} to null,diplayid=0
+11-13 11:20:36.909  1704  3009 I BootReceiver: Copying /data/tombstones/tombstone_12 to DropBox (SYSTEM_TOMBSTONE)
+11-13 11:20:36.916  3421  3433 D abnormalUtils: com.tencent.tmgp.codev is foreground =true
+11-13 11:20:36.920  1704  3009 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+11-13 11:20:36.988  1704  3009 D DropBoxManagerService: file :: /data/system/dropbox/SYSTEM_TOMBSTONE@1794565236986.txt.gz
+11-13 11:20:36.990  1704  3009 D TheiaManager: sendEvent {0x5 57002525 0x1003 19654 10904 com.tencent.tmgp.codev}
+11-13 11:20:36.990  1704  3009 W OplusEapManager handleErrorInfo sendEvent: : com.tencent.tmgp.codev Crashed
+11-13 11:20:36.995  2106  2106 I TheiaBinder: Bn sendFramworkEvent extraInfo: com.tencent.tmgp.codev
+11-13 11:20:37.001  1704  3009 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE_PROTO isTagEnabled=true flags=0x4
+11-13 11:20:37.025  1704  3009 D DropBoxManagerService: file :: /data/system/dropbox/SYSTEM_TOMBSTONE_PROTO@1794565237024.dat.gz
+11-13 11:20:37.049  2106 26315 I oplus_theia: [oplus_theia buildLogPathFolderName]: mkdir /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995
+11-13 11:20:37.156  1704  3923 I WindowManager: WIN DEATH: Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:20:37.156  1704  3923 W InputManager-JNI: Input channel object '7972441 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity (client)' was disposed without first being removed with the input manager!
+11-13 11:20:37.157  1704  3252 D ConnectivityService: releasing NetworkRequest [ REQUEST id=3212, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ] (release request)
+11-13 11:20:37.158  1704  3252 D ConnectivityService: releasing NetworkRequest [ REQUEST id=3214, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10904 RequestorUid: 10904 RequestorPkg: com.tencent.tmgp.codev UnderlyingNetworks: Null] ] (release request)
+11-13 11:20:37.161  1529  1647 I SurfaceFlinger: [SF client] REMOVE (0xb400007c7c3f23c0) for (19654:com.tencent.tmgp.codev)
+11-13 11:20:37.161  1529  2811 I SurfaceFlinger: [SF client] REMOVE (0xb400007c9fe4aa40) for (19654:com.tencent.tmgp.codev)
+11-13 11:20:37.161  1704  3596 I ActivityManager: Process com.tencent.tmgp.codev (pid 19654) has died: fg  TOP 
+11-13 11:20:37.161  1529  1647 I SurfaceFlinger: [SF client] REMOVE (0xb400007c7c383340) for (19654:com.tencent.tmgp.codev)
+11-13 11:20:37.161  1529  2811 I SurfaceFlinger: [SF client] REMOVE (0xb400007c7c382a40) for (19654:com.tencent.tmgp.codev)
+11-13 11:20:37.165  1704  3596 D OplusUIFirst_FB: com.tencent.tmgp.codev remove pid: 19654
+11-13 11:20:37.168  1704  3596 I OplusHansManager : front pkg: com.android.launcher, uid: 10184, prev pkg: com.tencent.tmgp.codev, prev uid: 10904
+11-13 11:20:37.170  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev enter SM
+11-13 11:20:37.170  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev R enter(), D stay=16
+11-13 11:20:37.173  1704  3333 I Osense-DecisionMaker: notifySceneToAthenaPolicy: SCENE_LAUNCHER, bundle: Bundle[{prevPkgName=com.tencent.tmgp.codev, curUid=10184, curPkgName=com.android.launcher, prevUid=10904}]
+11-13 11:20:37.174  1704  4096 I OplusHansManager : onUidGone(), 10904 com.tencent.tmgp.codev exit SM
+11-13 11:20:37.175  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev R exit SM
+11-13 11:20:37.175  1704  3956 I OplusHansManager : uid=10904, pkg=com.tencent.tmgp.codev R exit(), R stay=0
+11-13 11:20:37.179  1704  3970 I OplusResourcePreloadManager: resume pkg: com.android.launcher, uid:10184, prev pkg: com.tencent.tmgp.codev, prev uid: 10904
+11-13 11:20:37.189  2106 29159 I oplus_theia: [oplus_theia collectLogWithCmdExeceteThread]: dmesg > /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995/kernel.txt, ret is: 0
+11-13 11:20:37.190  1704  5613 D OplusWifiService: notifyGameInfoJsonStr: gameInfo = {"PKG_NAME":"com.tencent.tmgp.codev","GAME_PLAYING":0}
+11-13 11:20:37.192  1704  5613 D OplusSlaGameSwitch: notifyGamePlayingStatusChange:pkgName:com.tencent.tmgp.codev,playing:false
+11-13 11:20:37.192  1704  5613 D OplusGameFirstManager: notifyGamePlayingState:com.tencent.tmgp.codev:false
+11-13 11:20:37.276  1704  2016 W WindowManager: Failed to deliver inset state change to w=Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity EXITING}
+11-13 11:20:37.309  1704  2016 W WindowManager: Exception thrown during dispatchAppVisibility Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity EXITING}
+11-13 11:20:37.310  1704  2016 I WindowManager: Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity EXITING} state from HAS_DRAWN to NO_SURFACE; reason: destroySurface
+11-13 11:20:37.317  1529  1529 D Layer   : reparent to null sequence=5125, seq[7], name=com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity#5125
+11-13 11:20:37.340  1704  2016 I OplusScreenSecurityMask: onStackRemoved task = Task{49f585a #58 type=standard A=10904:com.tencent.tmgp.codev U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=0} record = null displayId = 0
+11-13 11:20:37.340  1704  2016 D OplusAlwaysAliveManager: removing: 58, ComponentInfo{com.tencent.tmgp.codev/com.epicgames.ue4.SplashActivity}
+11-13 11:20:37.340  1704  2016 D TaskFragmentExtImpl: remove ActivityRecord{820d58c u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t-1 f}} to mActivityRecordSum = Counter{ }
+11-13 11:20:37.352  4681  5051 D OplusAtlasFeedback: uploadMMCollectData MM_FB_EventID#20002#StreamType#3#ChannelCount#2#PackageName#com.tencent.tmgp.codev#EffectChains#0#StartTime#2026/11/13 11:20:33#UsingDevice#2#StreamVolume#0#Flag#6#AppName#µùáþòÅÕÑæþ¦ª´+Üµ¦ÉÞâ¢ÞíîÕè¿#SampleRate#48000#Format#1#IsSpatialized#0#TotalTime#3497#Id#13#AudioID#3a9f2f59423f
+11-13 11:20:37.356  1529  1529 D Layer   : reparent to null sequence=5119, seq[5], name=7972441 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity#5119
+11-13 11:20:37.356  1529  1529 D Layer   : reparent to null sequence=5112, seq[3], name=ActivityRecord{820d58c u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}#5112
+11-13 11:20:37.406  1704  2015 D WindowManager: Releasing screen wakelock due to Window{7972441 u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity}
+11-13 11:20:37.475  1704  2015 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{820d58c u0 com.tencent.tmgp.codev/com.epicgames.ue4.GameActivity} t-1 f}}
+11-13 11:20:37.476  1704  4134 D OplusAppSwitchListener: Detect com.tencent.tmgp.codev switch to background
+11-13 11:20:37.476  1704  4134 D OplusEapManager: mTargetExitName :com.tencent.tmgp.codev
+11-13 11:20:37.476  1704  4134 V DCSEX-AppSwitchManager: OnAppSwitchObserver: onAppExit, resuming = com.android.launcher, target = com.tencent.tmgp.codev, is ResumingFirstStart =  false, is ResumingMultiApp =  false, extensionInfo =  Bundle[{taskId=6, uid=10184}]
+11-13 11:20:37.477  1704  4134 D VRR [OPlusFrontAppManager]: OnAppSwitchObserver: onAppExit , info.targetName = com.tencent.tmgp.codev
+11-13 11:20:37.477  1704 11416 D DCSEX-AppLaunchEventRecorder: onAppSwitch from = com.tencent.tmgp.codev to = com.android.launcher
+11-13 11:20:37.477  1704 11416 D DCSEX-AppLaunchEventRecorder: recordExitApp = com.tencent.tmgp.codev
+11-13 11:20:37.478  1704  2808 D VRR [OPlusExternalRefreshRateManager]: setFrontPackageName pkgName: null CurPkgName: com.tencent.tmgp.codev
+11-13 11:20:37.482  1704  6041 D VRR [OPlusRefreshRateService]:  setFrameRateTargetControl [ 0.0 , com.tencent.tmgp.codev , false , com.oplus.battery ]
+11-13 11:20:37.482  1704  6041 D VRR [OPlusExternalRefreshRateManager]:  [FRTC] FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery 0 1000
+11-13 11:20:37.483  1704  2808 D VRR [OPlusSurfaceFlingerController]:  add frtc FrameRate : 0 com.tencent.tmgp.codev false com.oplus.battery
+11-13 11:20:37.483  1529  1647 I VRR [FRTC]: setFrameRateTarget with [0, com.tencent.tmgp.codev, 0, com.oplus.battery, 1, 0, 1000]
+11-13 11:20:37.483  1529  1647 W VRR [FRTC]: invalid param { fps 0, proc_name com.tencent.tmgp.codev, strict_mode 0, description com.oplus.battery, proc_id 0, rate_status 0, backend Surface, version 1, pid 0, uid 1000, enable at 2026-11-13 11:20:37, disable waiting } for current status.
+11-13 11:20:37.497  4099  4115 I Athena  : AthenaDynamicReceiver: pre_app:com.tencent.tmgp.codev, next_app:com.android.launcher(10184|3839)
+11-13 11:20:37.533  1704  3465 D OplusAppListInterceptManager: shouldFilterTask::packageName = com.tencent.tmgp.codev
+11-13 11:20:37.551  1704  4466 D OplusAppListInterceptManager: shouldFilterTask::packageName = com.tencent.tmgp.codev
+11-13 11:20:37.578  1463  1570 I gameoptHal: config is ---- packageName=com.tencent.tmgp.codev~feature_flag=null~gpa_config=null~fpsStabilizer=null~thermal_frame=null~unityGameBoost=null
+11-13 11:20:37.595  1704  6041 D OplusWifiService: Get notifyGameModeState: state = false pkgName = com.tencent.tmgp.codev
+11-13 11:20:37.597  1704  3686 D OplusWifiService: notifyGameInfoJsonStr: gameInfo = {"PKG_NAME":"com.tencent.tmgp.codev","APP_BACKGROUND":true}
+11-13 11:20:37.598  1704  1722 D VRR [OPlusRefreshRateService]:  setFrameRateTargetControl [ -1.0 , com.tencent.tmgp.codev , false , com.oplus.cosa ]
+11-13 11:20:37.598  1704  1722 D VRR [OPlusExternalRefreshRateManager]:  [FRTC] FrameRate : -1 com.tencent.tmgp.codev false com.oplus.cosa 19617 10146
+11-13 11:20:37.599  1704  2808 D VRR [OPlusSurfaceFlingerController]:  add frtc FrameRate : -1 com.tencent.tmgp.codev false com.oplus.cosa
+11-13 11:20:37.599  1529  2806 I VRR [FRTC]: setFrameRateTarget with [-1, com.tencent.tmgp.codev, 0, com.oplus.cosa, 1, 19617, 10146]
+11-13 11:20:37.599  1529  2806 W VRR [FRTC]: invalid param { fps -1, proc_name com.tencent.tmgp.codev, strict_mode 0, description com.oplus.cosa, proc_id 0, rate_status 0, backend Surface, version 1, pid 19617, uid 10146, enable at 2026-11-13 11:20:37, disable waiting } for current status.
+11-13 11:20:37.806 21265 21265 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1614 onStartInput(EditorInfo{EditorInfo{packageName=com.tencent.tmgp.codev, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=-1, fieldName=null, extras=Bundle[{com.oplus.im.SCENES=8}], hintText=null, hintLocales=[], initialToolType=-1}}, true)
+11-13 11:20:37.844  2106 29162 I oplus_theia: [oplus_theia collectLogWithCmdExeceteThread]: logcat -d -v threadtime > /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995/android.txt, ret is: 0
+11-13 11:20:37.859  2106 29160 I oplus_theia: [oplus_theia collectLogWithCmdExeceteThread]: logcat -d -b events > /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995/events.txt, ret is: 0
+11-13 11:20:38.291 27664 32257 D SceneSDK.1.0.4-SNAPSHOT.27664.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=0, eventType=2, targetName=com.tencent.tmgp.codev, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.android.launcher, resumingActivityName=com.android.launcher.Launcher, isResumingMultiApp=false, isResumingFirstStart=false)
+11-13 11:20:38.291 27664 32257 I metis_v2_AppSwitchDataCollector: AppExitEvent =  com.tencent.tmgp.codev, NextAppName = com.android.launcher
+11-13 11:20:38.292 27664 32257 D metis_v2_AppSwitchDataCollector: Delete Top Application: com.tencent.tmgp.codev
+11-13 11:20:40.345  1704  1704 D TrimMemoryHandler: Unable do gfx trim on fg process: ProcessRecord{f837003 0:com.tencent.tmgp.codev/u0a904}, state=2
+11-13 11:20:42.484  5148  5926 D AppSwitchObserverHelper: packageName: com.tencent.tmgp.codev,com.tencent.tmgp.codev
+11-13 11:21:07.077  2106 26316 I oplus_theia: [oplus_theia buildLogPathFolderName]: mkdir /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995
+11-13 11:21:07.209  2106 29157 I oplus_theia: [oplus_theia collectLogWithCmdExeceteThread]: dmesg > /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995/kernel.txt, ret is: 0
+11-13 11:21:07.230  2106 29158 I oplus_theia: [oplus_theia collectLogWithCmdExeceteThread]: logcat -d -b events > /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995/events.txt, ret is: 0
+11-13 11:21:07.237  2106 29162 I oplus_theia: [oplus_theia collectLogWithCmdExeceteThread]: logcat -d -v threadtime > /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995/android.txt, ret is: 0
+11-13 11:21:09.127  2106 26316 I oplus_theia: [oplus_theia trailLogPack]: tar czf /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995.tar.gz /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995/* && chown system:system /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995.tar.gz
+11-13 11:21:09.339  2106 26316 I oplus_theia: [oplus_theia trailLogPack]: mv /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995.tar.gz /data/persist_log/DCS/de/theia
+11-13 11:21:09.374  2106 26316 I oplus_theia: [oplus_theia trailLogPack]: rm -rf /data/persist_log/theia30/theia_appCrash_com.tencent.tmgp.codev@8d4ff8fc9666e5d5@2026-11-13-11-20-36-995
