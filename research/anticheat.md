@@ -154,3 +154,12 @@ This points to tersafe/ACE detecting the **Frida runtime's own presence/initiali
 
 ## Decision: root is not the end goal, only an experimental track
 User confirmed: attempting a root-based bypass is worth trying once a device is available, but the shipped mod must also work on non-rooted devices (the common case). Root-based injection (if it works) and the no-root path (gadget injection, blocked by tersafe as documented above) are two separate, parallel tracks — not a replacement of one by the other.
+
+## Root-track test 1: base_resign.apk (no Frida) on real rooted device — RESULT: PASSED
+- Device: Samsung Galaxy Tab A7 (SM-T500, `gta4lwifi`), Android 12 (SDK 31), arm64-v8a, rooted via Magisk (`uid=0`, `context=u:r:magisk:s0`)
+- Installed `apk/original/base_resign.apk` (re-signed only, no gadget), launched via monkey, accepted the runtime `AuthorityDialog` permission prompt manually
+- Process (pid 13956) stayed alive **8+ minutes**, progressed past `SplashActivity` into `com.epicgames.ue4.GameActivity`, Tencent GCloud SDK lifecycle listeners initialized normally (`GCloudAppLifecycleListener`, `PluginMSDKLifecycle`, `GRobotLifecycleListener`)
+- No `Fatal signal`, no `FATAL EXCEPTION`, no `root_alert`, no abort — process only went to background via a normal `onStop` (user action), not a crash
+- **Conclusion: tersafe does not hard-block root client-side**, at least not before/at `GameActivity` with the SDK fully initialized. This de-risks the root track significantly — unlike the 5 no-root Frida tests (which all crashed within 4-16s), the clean APK survives indefinitely on a rooted device.
+- Not yet tested: whether reaching the lobby/matchmaking triggers a server-side soft response to a root flag in the anti-data handshake (`tss_sdk_wait_verify` etc. — see "Server-side handshake" section above). That requires a real account/login, out of scope for this quick test.
+- Next step for the root track: attempt Frida injection (gadget or frida-server) on this same rooted device and see if root-level control (e.g. running frida-server as root, or a Magisk/Zygisk-based injection instead of a baked-in gadget) avoids the detection that killed all 5 no-root attempts.
