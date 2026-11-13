@@ -1,0 +1,57 @@
+
+STRING "check_ext_emu_feature" @ 00642fe4
+  refs: 2
+   <- 002ab748  in FUN_002ab5d0@002ab5d0
+   <- 002ab6f0  in FUN_002ab5d0@002ab5d0
+
+STRING "root_alert:%s" @ 00643bc7
+  refs: 1
+   <- 002cd7f8  in FUN_002cd7a8@002cd7a8
+
+STRING "root_alert" @ 00643bd5
+  refs: 1
+   <- 002cd834  in FUN_002cd7a8@002cd7a8
+
+STRING "check_state:%s" @ 006472a2
+  refs: 1
+   <- 002e5b70  in ?
+
+STRING "debugger:%s" @ 006472c9
+  refs: 1
+   <- 002e5bd4  in ?
+
+STRING "set_inline_hook_error" @ 0064e34b
+  refs: 3
+   <- 00464da8  in FUN_0046476c@0046476c
+   <- 00464dfc  in FUN_0046476c@0046476c
+   <- 00464de0  in FUN_0046476c@0046476c
+
+STRING "ms_set_inlie_hook" @ 0064e36f
+  refs: 1
+   <- 00464e78  in FUN_0046476c@0046476c
+
+STRING "inline_hook_opcode_dismatch" @ 0064e381
+  refs: 3
+   <- 00464ef0  in FUN_0046476c@0046476c
+   <- 00464f44  in FUN_0046476c@0046476c
+   <- 00464f28  in FUN_0046476c@0046476c
+
+STRING "ms_hook_opcode" @ 0064e39d
+  refs: 1
+   <- 00464fc0  in FUN_0046476c@0046476c
+
+STRING "mmap_fialed" @ 0064e544
+  refs: 3
+   <- 00465554  in FUN_0046476c@0046476c
+   <- 004655a8  in FUN_0046476c@0046476c
+   <- 0046558c  in FUN_0046476c@0046476c
+
+STRING "ms_mmap" @ 0064e55c
+  refs: 1
+   <- 00465624  in FUN_0046476c@0046476c
+
+STRING "TracerPid" @ 0078fd5b
+  refs: 0
+
+STRING "safe_ptrace:%d:%d" @ 0078fdb1
+  refs: 0

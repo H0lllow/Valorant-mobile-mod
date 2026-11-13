@@ -1,0 +1,2820 @@
+=== PROGRAM: libtersafe.so  base=00100000 ===
+addr 0x0055d324 -> function FUN_0055d324 @ 0055d324 (size 9712)
+addr 0x00293070 -> function caseD_1e @ 00293070 (size 2964)
+
+--- 2 unique target functions ---
+
+Callers of FUN_0055d324 @ 0055d324: 1
+   <- FUN_00560190 @ 00560190
+
+Callers of caseD_1e @ 00293070: 0
+
+=== DECOMPILING 3 FUNCTIONS ===
+
+===== FUN_0055d324 @ 0055d324 (size 9712 bytes) =====
+
+/* WARNING: Removing unreachable block (ram,0x0055d4e0) */
+/* WARNING: Removing unreachable block (ram,0x0055d418) */
+/* WARNING: Removing unreachable block (ram,0x0055d420) */
+/* WARNING: Removing unreachable block (ram,0x0055d478) */
+/* WARNING: Removing unreachable block (ram,0x0055d480) */
+/* WARNING: Removing unreachable block (ram,0x0055d4c8) */
+/* WARNING: Removing unreachable block (ram,0x0055d4d0) */
+/* WARNING: Removing unreachable block (ram,0x0055d428) */
+/* WARNING: Removing unreachable block (ram,0x0055d430) */
+/* WARNING: Removing unreachable block (ram,0x0055d440) */
+/* WARNING: Removing unreachable block (ram,0x0055d4a0) */
+/* WARNING: Removing unreachable block (ram,0x0055d474) */
+/* WARNING: Removing unreachable block (ram,0x0055d444) */
+/* WARNING: Removing unreachable block (ram,0x0055d44c) */
+/* WARNING: Removing unreachable block (ram,0x0055d454) */
+/* WARNING: Removing unreachable block (ram,0x0055d4a4) */
+/* WARNING: Removing unreachable block (ram,0x0055d4b4) */
+/* WARNING: Removing unreachable block (ram,0x0055d4dc) */
+/* WARNING: Removing unreachable block (ram,0x0055d4d4) */
+/* WARNING: Removing unreachable block (ram,0x0055d484) */
+/* WARNING: Removing unreachable block (ram,0x0055d48c) */
+/* WARNING: Removing unreachable block (ram,0x0055d40c) */
+/* WARNING: Removing unreachable block (ram,0x0055d49c) */
+/* WARNING: Removing unreachable block (ram,0x0055d414) */
+/* WARNING: Removing unreachable block (ram,0x0055d458) */
+/* WARNING: Removing unreachable block (ram,0x0055d460) */
+/* WARNING: Removing unreachable block (ram,0x0055d468) */
+/* WARNING: Removing unreachable block (ram,0x0055d4b8) */
+/* WARNING: Removing unreachable block (ram,0x0055d490) */
+/* WARNING: Removing unreachable block (ram,0x0055d498) */
+/* WARNING: Removing unreachable block (ram,0x0055d4e8) */
+/* WARNING: Type propagation algorithm not settling */
+
+void FUN_0055d324(undefined8 param_1,long *param_2)
+
+{
+  uint uVar1;
+  uint uVar2;
+  long **pplVar3;
+  bool bVar4;
+  int iVar5;
+  long *plVar6;
+  long *local_300;
+  undefined4 local_2f4;
+  undefined4 local_2f0;
+  int local_2ec;
+  undefined8 *local_2e8;
+  undefined8 *local_2e0;
+  undefined8 *local_2d8;
+  undefined8 *local_2d0;
+  undefined8 *local_2c8;
+  undefined8 *local_2c0;
+  undefined8 *local_2b8;
+  undefined8 *local_2b0;
+  undefined8 *local_2a8;
+  undefined8 *local_2a0;
+  undefined8 *local_298;
+  undefined8 *local_290;
+  undefined8 *local_288;
+  undefined8 *local_280;
+  undefined8 *local_278;
+  undefined8 *local_270;
+  undefined8 *local_268;
+  undefined8 *local_260;
+  undefined8 *local_258;
+  undefined8 *local_250;
+  undefined8 *local_248;
+  undefined8 *local_240;
+  undefined8 *local_238;
+  undefined8 *local_230;
+  undefined8 *local_228;
+  undefined8 *local_220;
+  undefined8 *local_218;
+  undefined8 *local_210;
+  undefined8 *local_208;
+  undefined8 *local_200;
+  undefined8 *local_1f8;
+  undefined8 *local_1f0;
+  uint *local_1e8;
+  uint *local_1e0;
+  uint *local_1d8;
+  uint *local_1d0;
+  uint *local_1c8;
+  uint *local_1c0;
+  uint *local_1b8;
+  uint *local_1b0;
+  uint *local_1a8;
+  uint *local_1a0;
+  uint *local_198;
+  uint *local_190;
+  uint *local_188;
+  uint *local_180;
+  uint *local_178;
+  uint *local_170;
+  uint *local_168;
+  uint *local_160;
+  uint *local_158;
+  uint *local_150;
+  uint *local_148;
+  uint *local_140;
+  uint *local_138;
+  uint *local_130;
+  uint *local_128;
+  uint *local_120;
+  uint *local_118;
+  uint *local_110;
+  uint *local_108;
+  uint *local_100;
+  undefined8 *local_f8;
+  undefined8 *local_f0;
+  undefined8 *local_e8;
+  undefined8 *local_e0;
+  undefined8 *local_d8;
+  undefined8 *local_d0;
+  undefined8 *local_c8;
+  undefined8 *local_c0;
+  undefined8 *local_b8;
+  undefined8 *local_b0;
+  undefined8 *local_a8;
+  undefined8 *local_a0;
+  undefined8 *local_98;
+  undefined8 *local_90;
+  undefined8 *local_88;
+  undefined8 *local_80;
+  long *local_78;
+  
+  pplVar3 = &local_300;
+  local_2ec = -0x4b3274d8;
+joined_r0x0055e0e0:
+  if (-0x4b3274d9 < local_2ec) {
+    if (local_2ec != -0x4b3274d8) goto joined_r0x0055d7d8;
+    local_2e8 = (undefined8 *)((long)pplVar3 + -0x10);
+    local_2e0 = (undefined8 *)((long)pplVar3 + -0x20);
+    local_2d8 = (undefined8 *)((long)pplVar3 + -0x30);
+    local_2d0 = (undefined8 *)((long)pplVar3 + -0x40);
+    local_2c8 = (undefined8 *)((long)pplVar3 + -0x50);
+    local_2c0 = (undefined8 *)((long)pplVar3 + -0x60);
+    local_2b8 = (undefined8 *)((long)pplVar3 + -0x70);
+    local_2b0 = (undefined8 *)((long)pplVar3 + -0x80);
+    local_2a8 = (undefined8 *)((long)pplVar3 + -0x90);
+    local_2a0 = (undefined8 *)((long)pplVar3 + -0xa0);
+    local_298 = (undefined8 *)((long)pplVar3 + -0xb0);
+    local_290 = (undefined8 *)((long)pplVar3 + -0xc0);
+    local_288 = (undefined8 *)((long)pplVar3 + -0xd0);
+    local_280 = (undefined8 *)((long)pplVar3 + -0xe0);
+    local_278 = (undefined8 *)((long)pplVar3 + -0xf0);
+    local_270 = (undefined8 *)((long)pplVar3 + -0x100);
+    local_268 = (undefined8 *)((long)pplVar3 + -0x110);
+    local_260 = (undefined8 *)((long)pplVar3 + -0x120);
+    local_258 = (undefined8 *)((long)pplVar3 + -0x130);
+    local_250 = (undefined8 *)((long)pplVar3 + -0x140);
+    local_248 = (undefined8 *)((long)pplVar3 + -0x150);
+    local_240 = (undefined8 *)((long)pplVar3 + -0x160);
+    local_238 = (undefined8 *)((long)pplVar3 + -0x170);
+    local_230 = (undefined8 *)((long)pplVar3 + -0x180);
+    local_228 = (undefined8 *)((long)pplVar3 + -400);
+    local_220 = (undefined8 *)((long)pplVar3 + -0x1a0);
+    local_218 = (undefined8 *)((long)pplVar3 + -0x1b0);
+    local_210 = (undefined8 *)((long)pplVar3 + -0x1c0);
+    local_208 = (undefined8 *)((long)pplVar3 + -0x1d0);
+    local_200 = (undefined8 *)((long)pplVar3 + -0x1e0);
+    local_1f8 = (undefined8 *)((long)pplVar3 + -0x1f0);
+    local_1f0 = (undefined8 *)((long)pplVar3 + -0x200);
+    local_1e8 = (uint *)((long)pplVar3 + -0x210);
+    local_1e0 = (uint *)((long)pplVar3 + -0x220);
+    local_1d8 = (uint *)((long)pplVar3 + -0x230);
+    local_1d0 = (uint *)((long)pplVar3 + -0x240);
+    local_1c8 = (uint *)((long)pplVar3 + -0x250);
+    local_1c0 = (uint *)((long)pplVar3 + -0x260);
+    local_1b8 = (uint *)((long)pplVar3 + -0x270);
+    local_1b0 = (uint *)((long)pplVar3 + -0x280);
+    local_1a8 = (uint *)((long)pplVar3 + -0x290);
+    local_1a0 = (uint *)((long)pplVar3 + -0x2a0);
+    local_198 = (uint *)((long)pplVar3 + -0x2b0);
+    local_190 = (uint *)((long)pplVar3 + -0x2c0);
+    local_188 = (uint *)((long)pplVar3 + -0x2d0);
+    local_180 = (uint *)((long)pplVar3 + -0x2e0);
+    local_178 = (uint *)((long)pplVar3 + -0x2f0);
+    local_170 = (uint *)((long)pplVar3 + -0x300);
+    local_168 = (uint *)((long)pplVar3 + -0x310);
+    local_160 = (uint *)((long)pplVar3 + -800);
+    local_158 = (uint *)((long)pplVar3 + -0x330);
+    local_150 = (uint *)((long)pplVar3 + -0x340);
+    local_148 = (uint *)((long)pplVar3 + -0x350);
+    local_140 = (uint *)((long)pplVar3 + -0x360);
+    local_138 = (uint *)((long)pplVar3 + -0x370);
+    local_130 = (uint *)((long)pplVar3 + -0x380);
+    local_128 = (uint *)((long)pplVar3 + -0x390);
+    local_120 = (uint *)((long)pplVar3 + -0x3a0);
+    local_118 = (uint *)((long)pplVar3 + -0x3b0);
+    local_110 = (uint *)((long)pplVar3 + -0x3c0);
+    local_108 = (uint *)((long)pplVar3 + -0x3d0);
+    pplVar3 = (long **)((long)pplVar3 + -0x3e0);
+    local_2f4 = 0xc5b26114;
+    local_2f0 = 0x37d93a3a;
+    local_2ec = -0xd94a4d2;
+    local_100 = (uint *)pplVar3;
+    goto joined_r0x0055d7d8;
+  }
+  if (local_2ec != -0x4edfdda0) goto joined_r0x0055d7d8;
+  FUN_0055f914(param_2,local_290);
+  *local_288 = PTR_getenv_00753858;
+  FUN_0055f914(param_2,local_288);
+  *local_280 = PTR_kill_00753358;
+  local_2f4 = 0x4b7fcb03;
+  local_2f0 = 0x811b628f;
+  local_2ec = -0x359b5674;
+joined_r0x0055e1c0:
+  if (-0xd6b821c < local_2ec) goto joined_r0x0055e1e4;
+joined_r0x0055e1c8:
+  if (-0x4781d894 < local_2ec) goto joined_r0x0055ecc8;
+joined_r0x0055e1d0:
+  if (-0x6fe03ea1 < local_2ec) {
+    if (local_2ec < -0x5bdad078) goto joined_r0x0055f3b8;
+    goto joined_r0x0055e268;
+  }
+  if (local_2ec < -0x7774e885) goto joined_r0x0055e7fc;
+joined_r0x0055e8e4:
+  if (local_2ec < -0x720f1ce2) {
+    if (local_2ec == -0x7774e885) {
+      FUN_0055f914(param_2,local_260);
+      *local_258 = PTR_send_007532d8;
+      FUN_0055f914(param_2,local_258);
+      *local_250 = PTR_recv_00753558;
+      return;
+    }
+  }
+  else if (local_2ec == -0x720f1ce2) {
+    FUN_0055f914(param_2,local_2d0);
+    *local_2c8 = PTR_fread_00753448;
+    FUN_0055f914(param_2,local_2c8);
+    local_e8 = local_2c0;
+    *local_2c0 = PTR_fgets_00753438;
+    *local_1c8 = 0x1212;
+    uVar1 = *local_1c8;
+    *local_1c0 = 0x8669;
+    uVar2 = *local_1c0;
+    local_2f4 = 0x96378d1b;
+    local_2f0 = 0x64a3f0fe;
+    bVar4 = (uVar1 ^ uVar2) + uVar2 * 2 + (uVar2 & (uVar1 ^ 0xffffffff)) * -2 == uVar1 + uVar2;
+    iVar5 = -0xd6b821b;
+    local_2ec = -0x4781d893;
+LAB_0055d5a0:
+    if (bVar4) {
+      local_2ec = iVar5;
+    }
+    goto joined_r0x0055e1c0;
+  }
+joined_r0x0055d7d8:
+  do {
+    if (local_2ec < -0xd6b821b) goto joined_r0x0055e1c8;
+    if (local_2ec < 0x434a4f7d) goto joined_r0x0055e1ec;
+    while (0x5fbd671a < local_2ec) {
+      if (local_2ec < 0x76628a21) {
+joined_r0x0055e8d0:
+        if (local_2ec < 0x686bb380) {
+          if (local_2ec == 0x5fbd671b) {
+            FUN_0055f914(param_2,local_220);
+            *local_218 = PTR_dlopen_007534b0;
+            FUN_0055f914(param_2,local_218);
+            *local_210 = PTR_dlclose_00753ba8;
+            return;
+          }
+        }
+        else if (local_2ec == 0x686bb380) {
+          FUN_0055f914(param_2,local_2e0);
+          *local_2d8 = PTR_write_00753c18;
+          FUN_0055f914(param_2,local_2d8);
+          *local_2d0 = PTR_fopen_00753db0;
+          return;
+        }
+        goto joined_r0x0055d7d8;
+      }
+      if (0x7e4606f0 < local_2ec) goto joined_r0x0055ea68;
+LAB_0055eb38:
+      if (local_2ec != 0x76628a21) goto joined_r0x0055d7d8;
+      FUN_0055f914(param_2,local_230);
+      *local_228 = PTR_fdopen_00753488;
+      FUN_0055f914(param_2,local_228);
+      *local_220 = PTR_getpid_007532a0;
+      local_2f4 = 0x225252a3;
+      local_2f0 = 0xfdb69199;
+      local_2ec = -0x201b3cc6;
+LAB_0055ec20:
+      if (local_2ec < -0xd6b821b) goto joined_r0x0055ec90;
+joined_r0x0055e1e4:
+      if (local_2ec < 0x434a4f7d) {
+joined_r0x0055e1ec:
+        if (local_2ec < 0x2b27c695) goto joined_r0x0055e818;
+        if (0x2e05b753 < local_2ec) {
+          if (0x375ca04b < local_2ec) {
+            do {
+              if (local_2ec < 0x408f5ee6) {
+                if (local_2ec != 0x375ca04c) goto joined_r0x0055d7d8;
+                local_2f4 = 0x4a45eec8;
+                local_2f0 = 0xda5a2fa8;
+                local_2ec = -0x6fe03ea0;
+                local_78 = local_300;
+                goto LAB_0055ec20;
+              }
+              if (local_2ec != 0x408f5ee6) goto joined_r0x0055d7d8;
+              FUN_0055f914(param_2,local_280);
+              *local_278 = PTR_gettimeofday_00753a90;
+              FUN_0055f914(param_2,local_278);
+              local_c0 = local_270;
+              *local_270 = PTR_sleep_00753930;
+              *local_178 = 0xba41;
+              uVar1 = *local_178;
+              *local_170 = 0xaf1f;
+              uVar2 = *local_170;
+              local_2f4 = 0x246af4ac;
+              local_2f0 = 0x89362d9;
+              local_2ec = -0x1836f6c0;
+              if ((uVar2 | uVar1 ^ 0xffffffff) + (uVar1 & uVar2) + (uVar1 & (uVar2 ^ 0xffffffff)) +
+                  1 == (uVar1 & uVar2)) {
+                local_2ec = 0x2cf99675;
+              }
+LAB_0055e76c:
+              while (local_2ec < -0xd6b821b) {
+                if (local_2ec < -0x4781d893) {
+                  if (local_2ec < -0x6fe03ea0) {
+                    if (local_2ec < -0x7774e885) goto joined_r0x0055e7fc;
+                    goto joined_r0x0055e8e4;
+                  }
+                  if (-0x5bdad079 < local_2ec) goto joined_r0x0055e268;
+joined_r0x0055f3b8:
+                  if (-0x6c64f6c0 < local_2ec) {
+                    if (local_2ec != -0x6c64f6bf) goto joined_r0x0055d7d8;
+                    FUN_0055f914(param_2,local_200);
+                    *local_1f8 = PTR_mmap_00753230;
+                    FUN_0055f914(param_2,local_1f8);
+                    *local_1f0 = PTR_tss_sdk_init_007538e8;
+                    local_2f4 = 0x5eb9975b;
+                    local_2f0 = 0x759e51ce;
+                    local_2ec = 0x2b27c695;
+                    goto joined_r0x0055e1c0;
+                  }
+                  if (local_2ec != -0x6fe03ea0) goto joined_r0x0055d7d8;
+                  plVar6 = (long *)*local_78;
+                  FUN_005879f0(local_78,0x18);
+                  local_2f4 = 0xf819960;
+                  local_2f0 = 0x38dd392c;
+                  local_2ec = -0x2a77f71c;
+                  if (plVar6 != (long *)0x0) {
+                    local_2ec = 0x375ca04c;
+                  }
+                  local_300 = plVar6;
+LAB_0055ee10:
+                  if (-0xd6b821c < local_2ec) goto joined_r0x0055e1e4;
+joined_r0x0055ec90:
+                  if (local_2ec < -0x4781d893) goto joined_r0x0055e1d0;
+joined_r0x0055ecc8:
+                  if (local_2ec < -0x201b3cc6) {
+                    if (local_2ec < -0x2ff63573) {
+joined_r0x0055e83c:
+                      if (local_2ec < -0x359b5674) {
+                        if (local_2ec == -0x4781d893) {
+                          FUN_0055f914(param_2,local_2c0);
+                          *local_2b8 = PTR_fseek_007534a8;
+                          FUN_0055f914(param_2,local_2b8);
+                          *local_2b0 = PTR_readdir_007535a8;
+                          return;
+                        }
+                        goto joined_r0x0055d7d8;
+                      }
+                      if (local_2ec != -0x359b5674) goto joined_r0x0055d7d8;
+                      FUN_0055f914(param_2,local_2a0);
+                      *local_298 = PTR_stat_00753370;
+                      FUN_0055f914(param_2,local_298);
+                      local_d0 = local_290;
+                      *local_290 = PTR_fstat_00753d18;
+                      *local_198 = 0x375e;
+                      uVar1 = *local_198;
+                      *local_190 = 0x4249;
+                      uVar2 = *local_190;
+                      local_2f4 = 0xed470be9;
+                      local_2f0 = 0x5c672989;
+                      local_2ec = -0x788dd0b7;
+                      if (uVar2 + (uVar1 | uVar2 ^ 0xffffffff) + (uVar1 ^ uVar2) + 1 !=
+                          (uVar1 | uVar2)) {
+                        local_2ec = -0x4edfdda0;
+                      }
+                    }
+                    else {
+LAB_0055dd90:
+                      if (local_2ec < -0x2a77f71c) {
+                        if (local_2ec == -0x2ff63573) {
+                          FUN_0055f914(param_2,local_1f0);
+                          return;
+                        }
+                        goto joined_r0x0055d7d8;
+                      }
+                      if (local_2ec != -0x2a77f71c) goto joined_r0x0055d7d8;
+                      *param_2 = 0;
+                      param_2[1] = 0;
+                      param_2[2] = 0;
+                      *local_2e8 = PTR_open_00753800;
+                      FUN_0055f914(param_2,local_2e8);
+                      local_f8 = local_2e0;
+                      *local_2e0 = PTR_read_007535d8;
+                      *local_1e8 = 0x43ac;
+                      uVar1 = *local_1e8;
+                      *local_1e0 = 0xbc1b;
+                      uVar2 = *local_1e0;
+                      local_2f4 = 0xb6bee677;
+                      local_2f0 = 0xded555f7;
+                      local_2ec = -0x5bdad078;
+                      if ((uVar2 | uVar1 ^ 0xffffffff) + (uVar1 & uVar2) +
+                          (uVar1 & (uVar2 ^ 0xffffffff)) + 1 != (uVar1 & uVar2)) {
+                        local_2ec = 0x686bb380;
+                      }
+                    }
+                    goto joined_r0x0055e1c0;
+                  }
+                  if (local_2ec < -0x19b815b9) {
+joined_r0x0055e8b4:
+                    if (-0x1e0ed3e8 < local_2ec) {
+                      if (local_2ec != -0x1e0ed3e7) goto joined_r0x0055d7d8;
+                      FUN_0055f914(param_2,local_240);
+                      *local_238 = PTR_execl_00753540;
+                      FUN_0055f914(param_2,local_238);
+                      local_a0 = local_230;
+                      *local_230 = PTR_clock_gettime_00753fa0;
+                      *local_138 = 0x67;
+                      uVar1 = *local_138;
+                      *local_130 = 0x66f4;
+                      uVar2 = *local_130;
+                      local_2f4 = 0x6452e90;
+                      local_2f0 = 0xd9a1edaa;
+                      local_2ec = 0x76628a21;
+                      if ((uVar2 | uVar1 ^ 0xffffffff) + (uVar1 & uVar2) +
+                          (uVar1 & (uVar2 ^ 0xffffffff)) + 1 == (uVar1 & uVar2)) {
+                        local_2ec = -0x201b3cc6;
+                      }
+                      goto joined_r0x0055e1c0;
+                    }
+                    if (local_2ec != -0x201b3cc6) goto joined_r0x0055d7d8;
+                    FUN_0055f914(param_2,local_230);
+                    *local_228 = PTR_fdopen_00753488;
+                    FUN_0055f914(param_2,local_228);
+                    local_98 = local_220;
+                    *local_220 = PTR_getpid_007532a0;
+                    *local_128 = 0x4cd9;
+                    uVar1 = *local_128;
+                    *local_120 = 0x39de;
+                    uVar2 = *local_120;
+                    local_2f4 = 0x627338d6;
+                    local_2f0 = 0xe7e9275f;
+                    bVar4 = (uVar1 ^ uVar2) + uVar2 * 2 + (uVar2 & (uVar1 ^ 0xffffffff)) * -2 ==
+                            uVar1 + uVar2;
+                    iVar5 = -0x7a65e077;
+                    local_2ec = 0x5fbd671b;
+                    goto LAB_0055d5a0;
+                  }
+                  if (local_2ec < -0x1836f6c0) {
+LAB_0055f700:
+                    if (local_2ec == -0x19b815b9) {
+                      FUN_0055f914(param_2,local_210);
+                      *local_208 = PTR_pthread_create_007533b0;
+                      FUN_0055f914(param_2,local_208);
+                      local_88 = local_200;
+                      *local_200 = PTR_fork_007532b8;
+                      *local_108 = 0xaa07;
+                      uVar1 = *local_108;
+                      *local_100 = 0x35d2;
+                      uVar2 = *local_100;
+                      local_2f4 = 0xa507ed31;
+                      local_2f0 = 0x8e202ba4;
+                      local_2ec = -0x6c64f6bf;
+                      if (((uVar1 | uVar2) + uVar2) - (uVar2 & (uVar1 ^ 0xffffffff)) ==
+                          uVar1 + uVar2) {
+                        local_2ec = 0x2b27c695;
+                      }
+                    }
+                    goto joined_r0x0055d7d8;
+                  }
+                }
+                else {
+                  if (local_2ec < -0x201b3cc6) {
+                    if (local_2ec < -0x2ff63573) goto joined_r0x0055e83c;
+                    goto LAB_0055dd90;
+                  }
+                  if (local_2ec < -0x19b815b9) goto joined_r0x0055e8b4;
+                  if (local_2ec < -0x1836f6c0) goto LAB_0055f700;
+                }
+                if (local_2ec < -0xd94a4d2) {
+                  if (local_2ec == -0x1836f6c0) {
+                    FUN_0055f914(param_2,local_270);
+                    *local_268 = PTR_select_00753318;
+                    FUN_0055f914(param_2,local_268);
+                    *local_260 = PTR_connect_00753f10;
+                    local_2f4 = 0xd566fbe4;
+                    local_2f0 = 0x95e9a502;
+                    local_2ec = 0x408f5ee6;
+                  }
+                  goto joined_r0x0055d7d8;
+                }
+                if (local_2ec != -0xd94a4d2) goto joined_r0x0055d7d8;
+                local_300 = (long *)*param_2;
+                local_2f4 = 0x60942723;
+                local_2f0 = 0x57c8876f;
+                local_2ec = -0x2a77f71c;
+                if (local_300 != (long *)0x0) {
+                  local_2ec = 0x375ca04c;
+                }
+              }
+              if (0x434a4f7c < local_2ec) {
+                if (local_2ec < 0x5fbd671b) {
+                  if (local_2ec < 0x5b0dc5e2) goto joined_r0x0055e860;
+                  goto joined_r0x0055e910;
+                }
+                if (local_2ec < 0x76628a21) goto joined_r0x0055e8d0;
+                if (local_2ec < 0x7e4606f1) goto LAB_0055eb38;
+joined_r0x0055ea68:
+                if (local_2ec < 0x7ee7d143) {
+                  if (local_2ec == 0x7e4606f1) {
+                    FUN_0055f914(param_2,local_280);
+                    *local_278 = PTR_gettimeofday_00753a90;
+                    FUN_0055f914(param_2,local_278);
+                    *local_270 = PTR_sleep_00753930;
+                    return;
+                  }
+                  goto joined_r0x0055d7d8;
+                }
+                if (local_2ec != 0x7ee7d143) goto joined_r0x0055d7d8;
+                FUN_0055f914(param_2,local_240);
+                *local_238 = PTR_execl_00753540;
+                FUN_0055f914(param_2,local_238);
+                *local_230 = PTR_clock_gettime_00753fa0;
+                local_2f4 = 0x98baeb58;
+                local_2f0 = 0x794bc741;
+                local_2ec = -0x1e0ed3e7;
+                goto LAB_0055e76c;
+              }
+              if (local_2ec < 0x2b27c695) {
+joined_r0x0055e818:
+                if (0xf9255a8 < local_2ec) {
+                  if (local_2ec < 0x2494266a) {
+                    if (local_2ec == 0xf9255a9) {
+                      FUN_0055f914(param_2,local_260);
+                      *local_258 = PTR_send_007532d8;
+                      FUN_0055f914(param_2,local_258);
+                      local_b0 = local_250;
+                      *local_250 = PTR_recv_00753558;
+                      *local_158 = 0x7aa2;
+                      uVar1 = *local_158;
+                      *local_150 = 0x855e;
+                      uVar2 = *local_150;
+                      local_2f0 = 0x66a06926;
+                      local_2f4 = 0x3be506b9;
+                      local_2ec = 0x2494266a;
+                      if (uVar2 - (uVar2 & (uVar1 ^ 0xffffffff)) == (uVar1 & uVar2)) {
+                        local_2ec = 0x5d456f9f;
+                      }
+                      goto LAB_0055ee10;
+                    }
+                  }
+                  else if (local_2ec == 0x2494266a) {
+                    FUN_0055f914(param_2,local_250);
+                    *local_248 = PTR_opendir_00753f88;
+                    FUN_0055f914(param_2,local_248);
+                    *local_240 = PTR_ptrace_00753a98;
+                    return;
+                  }
+                  goto joined_r0x0055d7d8;
+                }
+                if (-0xb4e9af4 < local_2ec) {
+                  if (local_2ec == -0xb4e9af3) {
+                    FUN_0055f914(param_2,local_2b0);
+                    *local_2a8 = PTR_syscall_00753e80;
+                    FUN_0055f914(param_2,local_2a8);
+                    local_d8 = local_2a0;
+                    *local_2a0 = PTR_access_007533e0;
+                    *local_1a8 = 0x6099;
+                    uVar1 = *local_1a8;
+                    *local_1a0 = 0xa12;
+                    uVar2 = *local_1a0;
+                    local_2f0 = 0x91216b48;
+                    local_2f4 = 0xdaaf18b3;
+                    local_2ec = -0x359b5674;
+                    if (uVar2 - (uVar2 & (uVar1 ^ 0xffffffff)) != (uVar1 & uVar2)) {
+                      local_2ec = 0x4b8e73fb;
+                    }
+                  }
+                  goto joined_r0x0055d7d8;
+                }
+                if (local_2ec != -0xd6b821b) goto joined_r0x0055d7d8;
+                FUN_0055f914(param_2,local_2c0);
+                *local_2b8 = PTR_fseek_007534a8;
+                FUN_0055f914(param_2,local_2b8);
+                local_e0 = local_2b0;
+                *local_2b0 = PTR_readdir_007535a8;
+                *local_1b8 = 0xc26a;
+                uVar1 = *local_1b8;
+                *local_1b0 = 0xa529;
+                uVar2 = *local_1b0;
+                local_2f4 = 0x3b0af1d2;
+                local_2f0 = 0xcfbb94df;
+                bVar4 = uVar2 + (uVar1 | uVar2 ^ 0xffffffff) + (uVar1 ^ uVar2) + 1 ==
+                        (uVar1 | uVar2);
+                iVar5 = -0xb4e9af3;
+                local_2ec = 0x434a4f7d;
+                goto LAB_0055d660;
+              }
+              if (local_2ec < 0x2e05b754) goto joined_r0x0055e898;
+            } while (0x375ca04b < local_2ec);
+          }
+          if (local_2ec != 0x2e05b754) goto joined_r0x0055d7d8;
+          FUN_0055f914(param_2,local_2d0);
+          *local_2c8 = PTR_fread_00753448;
+          FUN_0055f914(param_2,local_2c8);
+          *local_2c0 = PTR_fgets_00753438;
+          local_2f4 = 0xda3e222e;
+          local_2f0 = 0x57cec130;
+          local_2ec = -0x720f1ce2;
+          goto LAB_0055ec20;
+        }
+joined_r0x0055e898:
+        if (0x2cf99674 < local_2ec) {
+          if (local_2ec != 0x2cf99675) goto joined_r0x0055d7d8;
+          FUN_0055f914(param_2,local_270);
+          *local_268 = PTR_select_00753318;
+          FUN_0055f914(param_2,local_268);
+          local_b8 = local_260;
+          *local_260 = PTR_connect_00753f10;
+          *local_168 = 0x1e6e;
+          uVar1 = *local_168;
+          *local_160 = 0x27cc;
+          uVar2 = *local_160;
+          local_2f4 = 0xc376b242;
+          local_2f0 = 0xcce4e7eb;
+          local_2ec = -0x7774e885;
+          if (uVar2 + (uVar1 | uVar2 ^ 0xffffffff) + (uVar1 ^ uVar2) + 1 == (uVar1 | uVar2)) {
+            local_2ec = 0xf9255a9;
+          }
+          goto LAB_0055ec20;
+        }
+        if (local_2ec != 0x2b27c695) goto joined_r0x0055d7d8;
+        FUN_0055f914(param_2,local_200);
+        *local_1f8 = PTR_mmap_00753230;
+        FUN_0055f914(param_2,local_1f8);
+        local_80 = local_1f0;
+        *local_1f0 = PTR_tss_sdk_init_007538e8;
+        local_2f4 = 0xaeab0e1f;
+        local_2f0 = 0x7ea2c492;
+        local_2ec = -0x2ff63573;
+        goto joined_r0x0055e1c0;
+      }
+    }
+    if (local_2ec < 0x5b0dc5e2) {
+joined_r0x0055e860:
+      if (local_2ec < 0x4b8e73fb) {
+        if (local_2ec == 0x434a4f7d) {
+          FUN_0055f914(param_2,local_2b0);
+          *local_2a8 = PTR_syscall_00753e80;
+          FUN_0055f914(param_2,local_2a8);
+          *local_2a0 = PTR_access_007533e0;
+          local_2f4 = 0x22aa2d78;
+          local_2f0 = 0xd61b4875;
+          local_2ec = -0xb4e9af3;
+          goto joined_r0x0055e1c0;
+        }
+      }
+      else if (local_2ec == 0x4b8e73fb) {
+        FUN_0055f914(param_2,local_2a0);
+        *local_298 = PTR_stat_00753370;
+        FUN_0055f914(param_2,local_298);
+        *local_290 = PTR_fstat_00753d18;
+        local_2f4 = 0x9f31f8d3;
+        local_2f0 = 0x6b809dde;
+        local_2ec = -0xb4e9af3;
+        goto joined_r0x0055e1c0;
+      }
+    }
+    else {
+joined_r0x0055e910:
+      if (local_2ec < 0x5d456f9f) {
+        if (local_2ec == 0x5b0dc5e2) {
+          FUN_0055f914(param_2,local_210);
+          *local_208 = PTR_pthread_create_007533b0;
+          FUN_0055f914(param_2,local_208);
+          *local_200 = PTR_fork_007532b8;
+          local_2f4 = 0xdd84aafa;
+          local_2f0 = 0x581eb573;
+          local_2ec = -0x7a65e077;
+          goto joined_r0x0055e1c0;
+        }
+      }
+      else if (local_2ec == 0x5d456f9f) {
+        FUN_0055f914(param_2,local_250);
+        *local_248 = PTR_opendir_00753f88;
+        FUN_0055f914(param_2,local_248);
+        local_a8 = local_240;
+        *local_240 = PTR_ptrace_00753a98;
+        *local_148 = 0x64c3;
+        uVar1 = *local_148;
+        *local_140 = 0x9f59;
+        uVar2 = *local_140;
+        local_2f4 = 0x3191b133;
+        local_2f0 = 0x4f766070;
+        local_2ec = -0x1e0ed3e7;
+        if (uVar2 + (uVar1 | uVar2 ^ 0xffffffff) + (uVar1 ^ uVar2) + 1 != (uVar1 | uVar2)) {
+          local_2ec = 0x7ee7d143;
+        }
+        goto joined_r0x0055e1c0;
+      }
+    }
+  } while( true );
+joined_r0x0055e268:
+  if (-0x4edfdda1 < local_2ec) goto joined_r0x0055e0e0;
+  if (local_2ec == -0x5bdad078) {
+    FUN_0055f914(param_2,local_2e0);
+    *local_2d8 = PTR_write_00753c18;
+    FUN_0055f914(param_2,local_2d8);
+    local_f0 = local_2d0;
+    *local_2d0 = PTR_fopen_00753db0;
+    *local_1d8 = 0xaea1;
+    uVar1 = *local_1d8;
+    *local_1d0 = 0x5611;
+    uVar2 = *local_1d0;
+    local_2f4 = 0x944cc2fc;
+    local_2f0 = 0xba4975a8;
+    local_2ec = -0x720f1ce2;
+    if (((uVar1 | uVar2) + uVar2) - (uVar2 & (uVar1 ^ 0xffffffff)) != uVar1 + uVar2) {
+      local_2ec = 0x2e05b754;
+    }
+    goto joined_r0x0055e1c0;
+  }
+  goto joined_r0x0055d7d8;
+joined_r0x0055e7fc:
+  if (local_2ec < -0x788dd0b7) {
+    if (local_2ec == -0x7a65e077) {
+      FUN_0055f914(param_2,local_220);
+      *local_218 = PTR_dlopen_007534b0;
+      FUN_0055f914(param_2,local_218);
+      local_90 = local_210;
+      *local_210 = PTR_dlclose_00753ba8;
+      *local_118 = 0x5c8f;
+      uVar1 = *local_118;
+      *local_110 = 0xbca4;
+      uVar2 = *local_110;
+      local_2f4 = 0x6adb8fc7;
+      local_2f0 = 0x8c9c6580;
+      bVar4 = uVar2 + (uVar1 | uVar2 ^ 0xffffffff) + (uVar1 ^ uVar2) + 1 == (uVar1 | uVar2);
+      iVar5 = -0x19b815b9;
+      local_2ec = 0x5b0dc5e2;
+LAB_0055d660:
+      if (bVar4) {
+        local_2ec = iVar5;
+      }
+      goto joined_r0x0055e1c0;
+    }
+  }
+  else if (local_2ec == -0x788dd0b7) {
+    FUN_0055f914(param_2,local_290);
+    *local_288 = PTR_getenv_00753858;
+    FUN_0055f914(param_2,local_288);
+    local_c8 = local_280;
+    *local_280 = PTR_kill_00753358;
+    *local_188 = 0xe7c3;
+    uVar1 = *local_188;
+    *local_180 = 0xb350;
+    uVar2 = *local_180;
+    local_2f4 = 0xca18e45b;
+    local_2f0 = 0x8a97babd;
+    local_2ec = 0x7e4606f1;
+    if (((uVar1 | uVar2) + uVar2) - (uVar2 & (uVar1 ^ 0xffffffff)) == uVar1 + uVar2) {
+      local_2ec = 0x408f5ee6;
+    }
+  }
+  goto joined_r0x0055d7d8;
+}
+
+
+
+===== caseD_1e @ 00293070 (size 2964 bytes) =====
+
+code * switchD_002930c0::caseD_1e(code *param_1,undefined8 param_2,char *param_3,uint param_4)
+
+{
+  undefined4 uVar1;
+  uint uVar2;
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  undefined1 *puVar5;
+  undefined1 *puVar6;
+  undefined1 *puVar7;
+  undefined1 *puVar8;
+  undefined1 *puVar9;
+  int iVar10;
+  uint uVar11;
+  undefined8 uVar12;
+  code *UNRECOVERED_JUMPTABLE_00;
+  code *pcVar13;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  uint uVar14;
+  code *unaff_x19;
+  undefined **unaff_x20;
+  char *unaff_x21;
+  char *unaff_x22;
+  ulong unaff_x23;
+  undefined **unaff_x24;
+  undefined8 unaff_x25;
+  undefined8 unaff_x26;
+  undefined8 unaff_x27;
+  uint uVar15;
+  undefined8 unaff_x28;
+  undefined1 *unaff_x29;
+  undefined8 unaff_x30;
+  undefined1 auVar16 [16];
+  
+  puVar6 = (undefined1 *)register0x00000008;
+  UNRECOVERED_JUMPTABLE_00 = param_1;
+code_r0x00293070:
+  do {
+    pcVar13 = UNRECOVERED_JUMPTABLE_00;
+    puVar7 = puVar6;
+    *(undefined ***)(puVar7 + -0x20) = unaff_x20;
+    *(code **)(puVar7 + -0x18) = unaff_x19;
+    *(undefined1 **)(puVar7 + -0x10) = unaff_x29;
+    *(undefined8 *)(puVar7 + -8) = unaff_x30;
+    unaff_x29 = puVar7 + -0x10;
+    uVar1 = 6;
+    if (pcVar13 != (code *)0x0) {
+      uVar1 = 0x18;
+    }
+    unaff_x20 = &switchdataD_0075a9c0;
+    *(undefined4 *)(puVar7 + -0x28) = 0x8dd28b17;
+    *(undefined4 *)(puVar7 + -0x24) = 0x8dd28b0f;
+    puVar6 = puVar7 + -0x30;
+    UNRECOVERED_JUMPTABLE_00 = (code *)0x0;
+    unaff_x19 = pcVar13;
+    switch(uVar1) {
+    case 0:
+switchD_002930c0_caseD_0:
+      do {
+        uVar12 = FUN_005f009c(0x77d2);
+        unaff_x30 = 0x29395c;
+        iVar10 = FUN_005ae370(pcVar13,uVar12);
+        auVar16._8_8_ = extraout_x1_01;
+        auVar16._0_8_ = PTR_getpid_007532a0;
+        uVar14 = 0x8ab0b3db;
+        uVar11 = 0x25;
+        uVar2 = 6;
+        if (iVar10 != 0) {
+          uVar2 = uVar11;
+        }
+        *(undefined4 *)(puVar7 + -0x28) = 0x8ab0b3db;
+        *(undefined4 *)(puVar7 + -0x24) = 0x8ab0b3fe;
+        puVar5 = puVar7 + -0x30;
+        puVar9 = puVar7 + -0x30;
+        puVar6 = puVar7 + -0x30;
+        UNRECOVERED_JUMPTABLE_00 = (code *)PTR_getpid_007532a0;
+        switch(uVar2) {
+        case 1:
+switchD_002936c4_caseD_1:
+          uVar12 = FUN_005f1b30(0xc861);
+          iVar10 = FUN_005ae370(pcVar13,uVar12);
+          uVar1 = 6;
+          if (iVar10 != 0) {
+            uVar1 = 0xe;
+          }
+          *(undefined4 *)(puVar7 + -0x28) = 0xaba198bc;
+          *(undefined4 *)(puVar7 + -0x24) = 0xaba198b2;
+          UNRECOVERED_JUMPTABLE_00 = (code *)PTR_FUN_00753650;
+          switch(uVar1) {
+          case 2:
+switchD_002930c0_caseD_2:
+            do {
+              uVar12 = FUN_005f08b4(0x7711);
+              iVar10 = FUN_005ae370(pcVar13,uVar12);
+              uVar1 = 6;
+              if (iVar10 != 0) {
+                uVar1 = 4;
+              }
+              *(undefined4 *)(puVar7 + -0x28) = 0xa90e5ba8;
+              *(undefined4 *)(puVar7 + -0x24) = 0xa90e5bac;
+              UNRECOVERED_JUMPTABLE_00 = (code *)PTR_fseek_007534a8;
+              switch(uVar1) {
+              case 0:
+                goto switchD_002930c0_caseD_0;
+              case 4:
+switchD_002930c0_caseD_4:
+                do {
+                  uVar12 = FUN_005f11f4(0x7719);
+                  iVar10 = FUN_005ae370(pcVar13,uVar12);
+                  uVar1 = 6;
+                  if (iVar10 != 0) {
+                    uVar1 = 0xc;
+                  }
+                  *(undefined4 *)(puVar7 + -0x28) = 0x51cfa377;
+                  *(undefined4 *)(puVar7 + -0x24) = 0x51cfa37b;
+                  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_readdir_007535a8;
+                  switch(uVar1) {
+                  case 0:
+                    goto switchD_002930c0_caseD_0;
+                  case 2:
+                    goto switchD_002930c0_caseD_2;
+                  case 6:
+                    goto switchD_002930c0_caseD_6;
+                  case 8:
+switchD_002930c0_caseD_8:
+                    do {
+                      uVar12 = FUN_005eee2c(0x775e);
+                      iVar10 = FUN_005ae370(pcVar13,uVar12);
+                      uVar1 = 6;
+                      if (iVar10 != 0) {
+                        uVar1 = 0x17;
+                      }
+                      *(undefined4 *)(puVar7 + -0x28) = 0xd05b1bf0;
+                      *(undefined4 *)(puVar7 + -0x24) = 0xd05b1be7;
+                      UNRECOVERED_JUMPTABLE_00 = (code *)PTR_gettimeofday_00753a90;
+                      switch(uVar1) {
+                      case 0:
+                        goto switchD_002930c0_caseD_0;
+                      case 1:
+                        goto switchD_002936c4_caseD_1;
+                      case 2:
+                        goto switchD_002930c0_caseD_2;
+                      case 3:
+                        goto switchD_002936c4_caseD_3;
+                      case 4:
+                        goto switchD_002930c0_caseD_4;
+                      case 5:
+switchD_002936c4_caseD_5:
+                        do {
+                          uVar12 = FUN_005eb5b0(0x7791);
+                          iVar10 = FUN_005ae370(pcVar13,uVar12);
+                          uVar1 = 6;
+                          if (iVar10 != 0) {
+                            uVar1 = 1;
+                          }
+                          *(undefined4 *)(puVar7 + -0x28) = 0x74096afa;
+                          *(undefined4 *)(puVar7 + -0x24) = 0x74096afb;
+                          UNRECOVERED_JUMPTABLE_00 = (code *)PTR_strcmp_00753820;
+                          switch(uVar1) {
+                          case 0:
+                            goto switchD_002930c0_caseD_0;
+                          case 1:
+                            goto switchD_002936c4_caseD_1;
+                          case 2:
+                            goto switchD_002930c0_caseD_2;
+                          case 3:
+                            goto switchD_002936c4_caseD_3;
+                          case 4:
+                            goto switchD_002930c0_caseD_4;
+                          case 6:
+                            goto switchD_002930c0_caseD_6;
+                          case 7:
+switchD_002936c4_caseD_7:
+                            do {
+                              uVar12 = FUN_005eed04(0x77c1);
+                              unaff_x30 = 0x2937cc;
+                              iVar10 = FUN_005ae370(pcVar13,uVar12);
+                              uVar11 = 0xbccc182;
+                              uVar14 = 0xbccc1a6;
+                              uVar1 = 6;
+                              if (iVar10 != 0) {
+                                uVar1 = 0x24;
+                              }
+                              *(undefined4 *)(puVar7 + -0x28) = 0xbccc182;
+                              *(undefined4 *)(puVar7 + -0x24) = 0xbccc1a6;
+                              puVar9 = puVar7 + -0x30;
+                              puVar6 = puVar7 + -0x30;
+                              UNRECOVERED_JUMPTABLE_00 = (code *)PTR_execl_00753540;
+                              switch(uVar1) {
+                              case 0:
+                                goto switchD_002930c0_caseD_0;
+                              case 2:
+                                goto switchD_002930c0_caseD_2;
+                              case 4:
+                                goto switchD_002930c0_caseD_4;
+                              case 6:
+                                goto switchD_002930c0_caseD_6;
+                              case 8:
+                                goto switchD_002930c0_caseD_8;
+                              case 10:
+switchD_002930c0_caseD_a:
+                                uVar12 = FUN_005ee2a4(0xc894);
+                                iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                uVar1 = 6;
+                                if (iVar10 != 0) {
+                                  uVar1 = 3;
+                                }
+                                break;
+                              case 0xc:
+switchD_002930c0_caseD_c:
+                                do {
+                                  uVar12 = FUN_005f1d80(0x7723);
+                                  iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                  uVar1 = 6;
+                                  if (iVar10 != 0) {
+                                    uVar1 = 0x12;
+                                  }
+                                  *(undefined4 *)(puVar7 + -0x28) = 0x36fe073c;
+                                  *(undefined4 *)(puVar7 + -0x24) = 0x36fe072e;
+                                  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_syscall_00753e80;
+                                  switch(uVar1) {
+                                  case 0:
+                                    goto switchD_002930c0_caseD_0;
+                                  case 2:
+                                    goto switchD_002930c0_caseD_2;
+                                  case 4:
+                                    goto switchD_002930c0_caseD_4;
+                                  case 6:
+                                    goto switchD_002930c0_caseD_6;
+                                  case 8:
+                                    goto switchD_002930c0_caseD_8;
+                                  case 10:
+                                    goto switchD_002930c0_caseD_a;
+                                  case 0xe:
+switchD_002930c0_caseD_e:
+                                    do {
+                                      uVar12 = FUN_005eb5b0(0xc86d);
+                                      iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                      uVar1 = 6;
+                                      if (iVar10 != 0) {
+                                        uVar1 = 0x10;
+                                      }
+                                      *(undefined4 *)(puVar7 + -0x28) = 0x3475d145;
+                                      *(undefined4 *)(puVar7 + -0x24) = 0x3475d155;
+                                      UNRECOVERED_JUMPTABLE_00 = (code *)PTR_LAB_00753ac0;
+                                      switch(uVar1) {
+                                      case 0:
+                                        goto switchD_002930c0_caseD_0;
+                                      case 2:
+                                        goto switchD_002930c0_caseD_2;
+                                      case 4:
+                                        goto switchD_002930c0_caseD_4;
+                                      case 6:
+                                        goto switchD_002930c0_caseD_6;
+                                      case 8:
+                                        goto switchD_002930c0_caseD_8;
+                                      case 10:
+                                        goto switchD_002930c0_caseD_a;
+                                      case 0xc:
+                                        goto switchD_002930c0_caseD_c;
+                                      case 0x10:
+switchD_002930c0_caseD_10:
+                                        uVar12 = FUN_005eca6c(0xc87f);
+                                        iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                        uVar1 = 6;
+                                        if (iVar10 != 0) {
+                                          uVar1 = 10;
+                                        }
+                                        *(undefined4 *)(puVar7 + -0x28) = 0x8ec54a31;
+                                        *(undefined4 *)(puVar7 + -0x24) = 0x8ec54a3b;
+                                        UNRECOVERED_JUMPTABLE_00 = (code *)PTR_LAB_00753f48;
+                                        switch(uVar1) {
+                                        case 0:
+                                          goto switchD_002930c0_caseD_0;
+                                        case 2:
+                                          goto switchD_002930c0_caseD_2;
+                                        case 4:
+                                          goto switchD_002930c0_caseD_4;
+                                        case 6:
+                                          goto switchD_002930c0_caseD_6;
+                                        case 8:
+                                          goto switchD_002930c0_caseD_8;
+                                        case 10:
+                                          goto switchD_002930c0_caseD_a;
+                                        case 0xc:
+                                          goto switchD_002930c0_caseD_c;
+                                        }
+                                        break;
+                                      case 0x12:
+switchD_002930c0_caseD_12:
+                                        do {
+                                          uVar12 = FUN_005eb5b0(0x772d);
+                                          unaff_x30 = 0x2933b0;
+                                          iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                          uVar1 = 6;
+                                          if (iVar10 != 0) {
+                                            uVar1 = 0x19;
+                                          }
+                                          *(undefined4 *)(puVar7 + -0x28) = 0x1b7e8934;
+                                          *(undefined4 *)(puVar7 + -0x24) = 0x1b7e892d;
+                                          puVar6 = puVar7 + -0x30;
+                                          UNRECOVERED_JUMPTABLE_00 = (code *)PTR_access_007533e0;
+                                          switch(uVar1) {
+                                          case 0:
+                                            goto switchD_002930c0_caseD_0;
+                                          case 1:
+                                            goto switchD_002936c4_caseD_1;
+                                          case 2:
+                                            goto switchD_002930c0_caseD_2;
+                                          case 3:
+                                            goto switchD_002936c4_caseD_3;
+                                          case 4:
+                                            goto switchD_002930c0_caseD_4;
+                                          case 5:
+                                            goto switchD_002936c4_caseD_5;
+                                          case 6:
+                                            goto switchD_002930c0_caseD_6;
+                                          case 7:
+                                            goto switchD_002936c4_caseD_7;
+                                          case 8:
+                                            goto switchD_002930c0_caseD_8;
+                                          case 9:
+switchD_002936c4_caseD_9:
+                                            do {
+                                              uVar12 = FUN_005edbb4(0x774e);
+                                              iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                              uVar1 = 6;
+                                              if (iVar10 != 0) {
+                                                uVar1 = 0x13;
+                                              }
+                                              *(undefined4 *)(puVar7 + -0x28) = 0x648a04e0;
+                                              *(undefined4 *)(puVar7 + -0x24) = 0x648a04f3;
+                                              UNRECOVERED_JUMPTABLE_00 = (code *)PTR_getenv_00753858
+                                              ;
+                                              switch(uVar1) {
+                                              case 0:
+                                                goto switchD_002930c0_caseD_0;
+                                              case 1:
+                                                goto switchD_002936c4_caseD_1;
+                                              case 2:
+                                                goto switchD_002930c0_caseD_2;
+                                              case 3:
+                                                goto switchD_002936c4_caseD_3;
+                                              case 4:
+                                                goto switchD_002930c0_caseD_4;
+                                              case 5:
+                                                goto switchD_002936c4_caseD_5;
+                                              case 6:
+                                                goto switchD_002930c0_caseD_6;
+                                              case 7:
+                                                goto switchD_002936c4_caseD_7;
+                                              case 8:
+                                                goto switchD_002930c0_caseD_8;
+                                              case 10:
+                                                goto switchD_002930c0_caseD_a;
+                                              case 0xb:
+                                                goto switchD_002936c4_caseD_b;
+                                              case 0xc:
+                                                goto switchD_002930c0_caseD_c;
+                                              case 0xd:
+                                                goto switchD_002936c4_caseD_d;
+                                              case 0xe:
+                                                goto switchD_002930c0_caseD_e;
+                                              case 0xf:
+switchD_002936c4_caseD_f:
+                                                do {
+                                                  uVar12 = FUN_005ec81c(0x773d);
+                                                  unaff_x30 = 0x293870;
+                                                  iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                                  uVar14 = 0x1ebb6357;
+                                                  uVar11 = 0x22;
+                                                  uVar2 = 6;
+                                                  if (iVar10 != 0) {
+                                                    uVar2 = uVar11;
+                                                  }
+                                                  *(undefined4 *)(puVar7 + -0x28) = 0x1ebb6375;
+                                                  *(undefined4 *)(puVar7 + -0x24) = 0x1ebb6357;
+                                                  puVar9 = puVar7 + -0x30;
+                                                  puVar6 = puVar7 + -0x30;
+                                                  UNRECOVERED_JUMPTABLE_00 =
+                                                       (code *)PTR_statfs_00753348;
+                                                  switch(uVar2) {
+                                                  case 0:
+                                                    goto switchD_002930c0_caseD_0;
+                                                  case 2:
+                                                    goto switchD_002930c0_caseD_2;
+                                                  case 4:
+                                                    goto switchD_002930c0_caseD_4;
+                                                  case 6:
+                                                    goto switchD_002930c0_caseD_6;
+                                                  case 8:
+                                                    goto switchD_002930c0_caseD_8;
+                                                  case 10:
+                                                    goto switchD_002930c0_caseD_a;
+                                                  case 0xc:
+                                                    goto switchD_002930c0_caseD_c;
+                                                  case 0xe:
+                                                    goto switchD_002930c0_caseD_e;
+                                                  case 0x10:
+                                                    goto switchD_002930c0_caseD_10;
+                                                  case 0x12:
+                                                    goto switchD_002930c0_caseD_12;
+                                                  case 0x14:
+                                                    goto switchD_002930c0_caseD_14;
+                                                  case 0x16:
+switchD_002930c0_caseD_16:
+                                                    do {
+                                                      uVar12 = FUN_005f131c(0x777e);
+                                                      unaff_x30 = 0x29363c;
+                                                      iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                                      uVar1 = 6;
+                                                      if (iVar10 != 0) {
+                                                        uVar1 = 0x1c;
+                                                      }
+                                                      *(undefined4 *)(puVar7 + -0x28) = 0xd67e4f06;
+                                                      *(undefined4 *)(puVar7 + -0x24) = 0xd67e4f1a;
+                                                      puVar6 = puVar7 + -0x30;
+                                                      UNRECOVERED_JUMPTABLE_00 =
+                                                           (code *)PTR_connect_00753f10;
+                                                      switch(uVar1) {
+                                                      case 0:
+                                                        goto switchD_002930c0_caseD_0;
+                                                      case 2:
+                                                        goto switchD_002930c0_caseD_2;
+                                                      case 4:
+                                                        goto switchD_002930c0_caseD_4;
+                                                      case 6:
+                                                        goto switchD_002930c0_caseD_6;
+                                                      case 8:
+                                                        goto switchD_002930c0_caseD_8;
+                                                      case 10:
+                                                        goto switchD_002930c0_caseD_a;
+                                                      case 0xc:
+                                                        goto switchD_002930c0_caseD_c;
+                                                      case 0xe:
+                                                        goto switchD_002930c0_caseD_e;
+                                                      case 0x10:
+                                                        goto switchD_002930c0_caseD_10;
+                                                      case 0x12:
+                                                        goto switchD_002930c0_caseD_12;
+                                                      case 0x14:
+                                                        goto switchD_002930c0_caseD_14;
+                                                      case 0x18:
+switchD_002930c0_caseD_18:
+                                                        do {
+                                                          uVar12 = FUN_005ecb94(0x1f5c);
+                                                          unaff_x30 = 0x2930d8;
+                                                          iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                                          uVar14 = 0;
+                                                          uVar11 = 0x20;
+                                                          uVar2 = 6;
+                                                          if (iVar10 != 0) {
+                                                            uVar2 = uVar11;
+                                                          }
+                                                          *(undefined4 *)(puVar7 + -0x28) =
+                                                               0x2efd0871;
+                                                          *(undefined4 *)(puVar7 + -0x24) =
+                                                               0x2efd0851;
+                                                          puVar9 = puVar7 + -0x30;
+                                                          puVar6 = puVar7 + -0x30;
+                                                          UNRECOVERED_JUMPTABLE_00 =
+                                                               (code *)PTR_open_00753800;
+                                                          switch(uVar2) {
+                                                          case 0:
+                                                            goto switchD_002930c0_caseD_0;
+                                                          case 2:
+                                                            goto switchD_002930c0_caseD_2;
+                                                          case 4:
+                                                            goto switchD_002930c0_caseD_4;
+                                                          case 6:
+                                                            goto switchD_002930c0_caseD_6;
+                                                          case 8:
+                                                            goto switchD_002930c0_caseD_8;
+                                                          case 10:
+                                                            goto switchD_002930c0_caseD_a;
+                                                          case 0xc:
+                                                            goto switchD_002930c0_caseD_c;
+                                                          case 0xe:
+                                                            goto switchD_002930c0_caseD_e;
+                                                          case 0x10:
+                                                            goto switchD_002930c0_caseD_10;
+                                                          case 0x12:
+                                                            goto switchD_002930c0_caseD_12;
+                                                          case 0x14:
+                                                            goto switchD_002930c0_caseD_14;
+                                                          case 0x16:
+                                                            goto switchD_002930c0_caseD_16;
+                                                          case 0x1a:
+switchD_002930c0_caseD_1a:
+                                                            do {
+                                                              uVar12 = FUN_005edbb4(0x1f6a);
+                                                              unaff_x30 = 0x29317c;
+                                                              iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                                              uVar1 = 6;
+                                                              if (iVar10 != 0) {
+                                                                uVar1 = 0x1f;
+                                                              }
+                                                              *(undefined4 *)(puVar7 + -0x28) =
+                                                                   0x6847e408;
+                                                              *(undefined4 *)(puVar7 + -0x24) =
+                                                                   0x6847e417;
+                                                              puVar6 = puVar7 + -0x30;
+                                                              UNRECOVERED_JUMPTABLE_00 =
+                                                                   (code *)PTR_write_00753c18;
+                                                              switch(uVar1) {
+                                                              case 0:
+                                                                goto switchD_002930c0_caseD_0;
+                                                              case 1:
+                                                                goto switchD_002936c4_caseD_1;
+                                                              case 2:
+                                                                goto switchD_002930c0_caseD_2;
+                                                              case 3:
+                                                                goto switchD_002936c4_caseD_3;
+                                                              case 4:
+                                                                goto switchD_002930c0_caseD_4;
+                                                              case 5:
+                                                                goto switchD_002936c4_caseD_5;
+                                                              case 6:
+                                                                goto switchD_002930c0_caseD_6;
+                                                              case 7:
+                                                                goto switchD_002936c4_caseD_7;
+                                                              case 8:
+                                                                goto switchD_002930c0_caseD_8;
+                                                              case 9:
+                                                                goto switchD_002936c4_caseD_9;
+                                                              case 10:
+                                                                goto switchD_002930c0_caseD_a;
+                                                              case 0xb:
+                                                                goto switchD_002936c4_caseD_b;
+                                                              case 0xc:
+                                                                goto switchD_002930c0_caseD_c;
+                                                              case 0xd:
+                                                                goto switchD_002936c4_caseD_d;
+                                                              case 0xe:
+                                                                goto switchD_002930c0_caseD_e;
+                                                              case 0xf:
+                                                                goto switchD_002936c4_caseD_f;
+                                                              case 0x10:
+                                                                goto switchD_002930c0_caseD_10;
+                                                              case 0x11:
+                                                                goto switchD_002936c4_caseD_11;
+                                                              case 0x12:
+                                                                goto switchD_002930c0_caseD_12;
+                                                              case 0x13:
+                                                                goto switchD_002936c4_caseD_13;
+                                                              case 0x14:
+                                                                goto switchD_002930c0_caseD_14;
+                                                              case 0x15:
+                                                                goto switchD_002936c4_caseD_15;
+                                                              case 0x16:
+                                                                goto switchD_002930c0_caseD_16;
+                                                              case 0x17:
+                                                                goto switchD_002936c4_caseD_17;
+                                                              case 0x18:
+                                                                goto switchD_002930c0_caseD_18;
+                                                              case 0x19:
+                                                                goto switchD_002936c4_caseD_19;
+                                                              case 0x1b:
+switchD_002936c4_caseD_1b:
+                                                                do {
+                                                                  uVar12 = FUN_005ec81c(0x77a1);
+                                                                  unaff_x30 = 0x2936dc;
+                                                                  iVar10 = FUN_005ae370(pcVar13,
+                                                  uVar12);
+                                                  auVar16._8_8_ = extraout_x1_00;
+                                                  auVar16._0_8_ = PTR_recv_00753558;
+                                                  uVar14 = 0;
+                                                  uVar11 = 0x23;
+                                                  uVar2 = 6;
+                                                  if (iVar10 != 0) {
+                                                    uVar2 = uVar11;
+                                                  }
+                                                  *(undefined4 *)(puVar7 + -0x28) = 0x3af589d1;
+                                                  *(undefined4 *)(puVar7 + -0x24) = 0x3af589f2;
+                                                  puVar5 = puVar7 + -0x30;
+                                                  puVar9 = puVar7 + -0x30;
+                                                  puVar6 = puVar7 + -0x30;
+                                                  UNRECOVERED_JUMPTABLE_00 =
+                                                       (code *)PTR_recv_00753558;
+                                                  switch(uVar2) {
+                                                  case 0:
+                                                    goto switchD_002930c0_caseD_0;
+                                                  case 1:
+                                                    goto switchD_002936c4_caseD_1;
+                                                  case 2:
+                                                    goto switchD_002930c0_caseD_2;
+                                                  case 3:
+                                                    goto switchD_002936c4_caseD_3;
+                                                  case 4:
+                                                    goto switchD_002930c0_caseD_4;
+                                                  case 5:
+                                                    goto switchD_002936c4_caseD_5;
+                                                  case 6:
+                                                    goto switchD_002930c0_caseD_6;
+                                                  case 7:
+                                                    goto switchD_002936c4_caseD_7;
+                                                  case 8:
+                                                    goto switchD_002930c0_caseD_8;
+                                                  case 9:
+                                                    goto switchD_002936c4_caseD_9;
+                                                  case 10:
+                                                    goto switchD_002930c0_caseD_a;
+                                                  case 0xb:
+                                                    goto switchD_002936c4_caseD_b;
+                                                  case 0xc:
+                                                    goto switchD_002930c0_caseD_c;
+                                                  case 0xd:
+                                                    goto switchD_002936c4_caseD_d;
+                                                  case 0xe:
+                                                    goto switchD_002930c0_caseD_e;
+                                                  case 0xf:
+                                                    goto switchD_002936c4_caseD_f;
+                                                  case 0x10:
+                                                    goto switchD_002930c0_caseD_10;
+                                                  case 0x11:
+                                                    goto switchD_002936c4_caseD_11;
+                                                  case 0x12:
+                                                    goto switchD_002930c0_caseD_12;
+                                                  case 0x13:
+                                                    goto switchD_002936c4_caseD_13;
+                                                  case 0x14:
+                                                    goto switchD_002930c0_caseD_14;
+                                                  case 0x15:
+                                                    goto switchD_002936c4_caseD_15;
+                                                  case 0x16:
+                                                    goto switchD_002930c0_caseD_16;
+                                                  case 0x17:
+                                                    goto switchD_002936c4_caseD_17;
+                                                  case 0x18:
+                                                    goto switchD_002930c0_caseD_18;
+                                                  case 0x19:
+                                                    goto switchD_002936c4_caseD_19;
+                                                  case 0x1a:
+                                                    goto switchD_002930c0_caseD_1a;
+                                                  case 0x1c:
+switchD_002930c0_caseD_1c:
+                                                    do {
+                                                      uVar12 = FUN_005ec008(0x779a);
+                                                      unaff_x30 = 0x29368c;
+                                                      iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                                      uVar1 = 6;
+                                                      if (iVar10 != 0) {
+                                                        uVar1 = 0x1b;
+                                                      }
+                                                      *(undefined4 *)(puVar7 + -0x28) = 0xa62b756b;
+                                                      *(undefined4 *)(puVar7 + -0x24) = 0xa62b7570;
+                                                      puVar6 = puVar7 + -0x30;
+                                                      UNRECOVERED_JUMPTABLE_00 =
+                                                           (code *)PTR_send_007532d8;
+                                                      switch(uVar1) {
+                                                      case 0:
+                                                        goto switchD_002930c0_caseD_0;
+                                                      case 1:
+                                                        goto switchD_002936c4_caseD_1;
+                                                      case 2:
+                                                        goto switchD_002930c0_caseD_2;
+                                                      case 3:
+                                                        goto switchD_002936c4_caseD_3;
+                                                      case 4:
+                                                        goto switchD_002930c0_caseD_4;
+                                                      case 5:
+                                                        goto switchD_002936c4_caseD_5;
+                                                      case 6:
+                                                        goto switchD_002930c0_caseD_6;
+                                                      case 7:
+                                                        goto switchD_002936c4_caseD_7;
+                                                      case 8:
+                                                        goto switchD_002930c0_caseD_8;
+                                                      case 9:
+                                                        goto switchD_002936c4_caseD_9;
+                                                      case 10:
+                                                        goto switchD_002930c0_caseD_a;
+                                                      case 0xb:
+                                                        goto switchD_002936c4_caseD_b;
+                                                      case 0xc:
+                                                        goto switchD_002930c0_caseD_c;
+                                                      case 0xd:
+                                                        goto switchD_002936c4_caseD_d;
+                                                      case 0xe:
+                                                        goto switchD_002930c0_caseD_e;
+                                                      case 0xf:
+                                                        goto switchD_002936c4_caseD_f;
+                                                      case 0x10:
+                                                        goto switchD_002930c0_caseD_10;
+                                                      case 0x11:
+                                                        goto switchD_002936c4_caseD_11;
+                                                      case 0x12:
+                                                        goto switchD_002930c0_caseD_12;
+                                                      case 0x13:
+                                                        goto switchD_002936c4_caseD_13;
+                                                      case 0x14:
+                                                        goto switchD_002930c0_caseD_14;
+                                                      case 0x15:
+                                                        goto switchD_002936c4_caseD_15;
+                                                      case 0x16:
+                                                        goto switchD_002930c0_caseD_16;
+                                                      case 0x17:
+                                                        goto switchD_002936c4_caseD_17;
+                                                      case 0x18:
+                                                        goto switchD_002930c0_caseD_18;
+                                                      case 0x19:
+                                                        goto switchD_002936c4_caseD_19;
+                                                      case 0x1a:
+                                                        goto switchD_002930c0_caseD_1a;
+                                                      case 0x1b:
+                                                        goto switchD_002936c4_caseD_1b;
+                                                      case 0x1d:
+                                                        goto switchD_002936c4_caseD_1d;
+                                                      case 0x1e:
+                                                        goto code_r0x00293070;
+                                                      case 0x1f:
+switchD_002936c4_caseD_1f:
+                                                        do {
+                                                          uVar12 = FUN_005eed04(0x76f9);
+                                                          unaff_x30 = 0x2931cc;
+                                                          iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                                          auVar16._8_8_ = extraout_x1;
+                                                          auVar16._0_8_ = PTR_fopen_00753db0;
+                                                          uVar14 = 0;
+                                                          uVar11 = 0;
+                                                          uVar1 = 6;
+                                                          if (iVar10 != 0) {
+                                                            uVar1 = 0x21;
+                                                          }
+                                                          *(undefined4 *)(puVar7 + -0x28) =
+                                                               0xc6ce5d29;
+                                                          *(undefined4 *)(puVar7 + -0x24) =
+                                                               0xc6ce5d08;
+                                                          puVar5 = puVar7 + -0x30;
+                                                          puVar9 = puVar7 + -0x30;
+                                                          puVar6 = puVar7 + -0x30;
+                                                          UNRECOVERED_JUMPTABLE_00 =
+                                                               (code *)PTR_fopen_00753db0;
+                                                          switch(uVar1) {
+                                                          case 0:
+                                                            goto switchD_002930c0_caseD_0;
+                                                          case 1:
+                                                            goto switchD_002936c4_caseD_1;
+                                                          case 2:
+                                                            goto switchD_002930c0_caseD_2;
+                                                          case 3:
+                                                            goto switchD_002936c4_caseD_3;
+                                                          case 4:
+                                                            goto switchD_002930c0_caseD_4;
+                                                          case 5:
+                                                            goto switchD_002936c4_caseD_5;
+                                                          case 6:
+                                                            goto switchD_002930c0_caseD_6;
+                                                          case 7:
+                                                            goto switchD_002936c4_caseD_7;
+                                                          case 8:
+                                                            goto switchD_002930c0_caseD_8;
+                                                          case 9:
+                                                            goto switchD_002936c4_caseD_9;
+                                                          case 10:
+                                                            goto switchD_002930c0_caseD_a;
+                                                          case 0xb:
+                                                            goto switchD_002936c4_caseD_b;
+                                                          case 0xc:
+                                                            goto switchD_002930c0_caseD_c;
+                                                          case 0xd:
+                                                            goto switchD_002936c4_caseD_d;
+                                                          case 0xe:
+                                                            goto switchD_002930c0_caseD_e;
+                                                          case 0xf:
+                                                            goto switchD_002936c4_caseD_f;
+                                                          case 0x10:
+                                                            goto switchD_002930c0_caseD_10;
+                                                          case 0x11:
+                                                            goto switchD_002936c4_caseD_11;
+                                                          case 0x12:
+                                                            goto switchD_002930c0_caseD_12;
+                                                          case 0x13:
+                                                            goto switchD_002936c4_caseD_13;
+                                                          case 0x14:
+                                                            goto switchD_002930c0_caseD_14;
+                                                          case 0x15:
+                                                            goto switchD_002936c4_caseD_15;
+                                                          case 0x16:
+                                                            goto switchD_002930c0_caseD_16;
+                                                          case 0x17:
+                                                            goto switchD_002936c4_caseD_17;
+                                                          case 0x18:
+                                                            goto switchD_002930c0_caseD_18;
+                                                          case 0x19:
+                                                            goto switchD_002936c4_caseD_19;
+                                                          case 0x1a:
+                                                            goto switchD_002930c0_caseD_1a;
+                                                          case 0x1b:
+                                                            goto switchD_002936c4_caseD_1b;
+                                                          case 0x1c:
+                                                            goto switchD_002930c0_caseD_1c;
+                                                          case 0x1d:
+                                                            goto switchD_002936c4_caseD_1d;
+                                                          case 0x1e:
+                                                            goto code_r0x00293070;
+                                                          case 0x20:
+                                                            goto switchD_00293110_caseD_20;
+                                                          case 0x21:
+                                                            goto switchD_00293994_caseD_21;
+                                                          case 0x22:
+                                                            goto switchD_00293110_caseD_22;
+                                                          case 0x23:
+switchD_00293994_caseD_23:
+                                                            uVar12 = FUN_005eaff8(0x77f0);
+                                                            unaff_x30 = 0x29372c;
+                                                            iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                                            uVar1 = 6;
+                                                            if (iVar10 != 0) {
+                                                              uVar1 = 0x1d;
+                                                            }
+                                                            *(undefined4 *)(puVar7 + -0x28) =
+                                                                 0x622d6e65;
+                                                            *(undefined4 *)(puVar7 + -0x24) =
+                                                                 0x622d6e78;
+                                                            puVar6 = puVar7 + -0x30;
+                                                            UNRECOVERED_JUMPTABLE_00 =
+                                                                 (code *)PTR_opendir_00753f88;
+                                                            switch(uVar1) {
+                                                            case 0:
+                                                              goto switchD_002930c0_caseD_0;
+                                                            case 1:
+                                                              goto switchD_002936c4_caseD_1;
+                                                            case 2:
+                                                              goto switchD_002930c0_caseD_2;
+                                                            case 3:
+                                                              goto switchD_002936c4_caseD_3;
+                                                            case 4:
+                                                              goto switchD_002930c0_caseD_4;
+                                                            case 5:
+                                                              goto switchD_002936c4_caseD_5;
+                                                            case 6:
+                                                              goto switchD_002930c0_caseD_6;
+                                                            case 7:
+                                                              goto switchD_002936c4_caseD_7;
+                                                            case 8:
+                                                              goto switchD_002930c0_caseD_8;
+                                                            case 9:
+                                                              goto switchD_002936c4_caseD_9;
+                                                            case 10:
+                                                              goto switchD_002930c0_caseD_a;
+                                                            case 0xb:
+                                                              goto switchD_002936c4_caseD_b;
+                                                            case 0xc:
+                                                              goto switchD_002930c0_caseD_c;
+                                                            case 0xd:
+                                                              goto switchD_002936c4_caseD_d;
+                                                            case 0xe:
+                                                              goto switchD_002930c0_caseD_e;
+                                                            case 0xf:
+                                                              goto switchD_002936c4_caseD_f;
+                                                            case 0x10:
+                                                              goto switchD_002930c0_caseD_10;
+                                                            case 0x11:
+                                                              goto switchD_002936c4_caseD_11;
+                                                            case 0x12:
+                                                              goto switchD_002930c0_caseD_12;
+                                                            case 0x13:
+                                                              goto switchD_002936c4_caseD_13;
+                                                            case 0x14:
+                                                              goto switchD_002930c0_caseD_14;
+                                                            case 0x15:
+                                                              goto switchD_002936c4_caseD_15;
+                                                            case 0x16:
+                                                              goto switchD_002930c0_caseD_16;
+                                                            case 0x17:
+                                                              goto switchD_002936c4_caseD_17;
+                                                            case 0x18:
+                                                              goto switchD_002930c0_caseD_18;
+                                                            case 0x19:
+                                                              goto switchD_002936c4_caseD_19;
+                                                            case 0x1a:
+                                                              goto switchD_002930c0_caseD_1a;
+                                                            case 0x1b:
+                                                              goto switchD_002936c4_caseD_1b;
+                                                            case 0x1c:
+                                                              goto switchD_002930c0_caseD_1c;
+                                                            case 0x1d:
+                                                              goto switchD_002936c4_caseD_1d;
+                                                            case 0x1e:
+                                                              goto code_r0x00293070;
+                                                            }
+                                                            break;
+                                                          case 0x24:
+                                                            goto switchD_00293110_caseD_24;
+                                                          case 0x25:
+                                                            goto switchD_00293994_caseD_25;
+                                                          case 0x26:
+                                                            goto switchD_00293c5c_caseD_0;
+                                                          case 0x27:
+                                                            goto switchD_00293c5c_caseD_1;
+                                                          }
+                                                        } while( true );
+                                                      }
+                                                    } while( true );
+                                                  case 0x1d:
+                                                    goto switchD_002936c4_caseD_1d;
+                                                  case 0x1e:
+                                                    goto code_r0x00293070;
+                                                  case 0x1f:
+                                                    goto switchD_002936c4_caseD_1f;
+                                                  case 0x20:
+                                                    goto switchD_00293110_caseD_20;
+                                                  case 0x21:
+                                                    goto switchD_00293994_caseD_21;
+                                                  case 0x22:
+                                                    goto switchD_00293110_caseD_22;
+                                                  case 0x23:
+                                                    goto switchD_00293994_caseD_23;
+                                                  case 0x24:
+                                                    goto switchD_00293110_caseD_24;
+                                                  case 0x25:
+                                                    goto switchD_00293994_caseD_25;
+                                                  case 0x26:
+                                                    goto switchD_00293c5c_caseD_0;
+                                                  case 0x27:
+                                                    goto switchD_00293c5c_caseD_1;
+                                                  }
+                                                  } while( true );
+                                                  case 0x1c:
+                                                    goto switchD_002930c0_caseD_1c;
+                                                  case 0x1d:
+                                                    goto switchD_002936c4_caseD_1d;
+                                                  case 0x1e:
+                                                    goto code_r0x00293070;
+                                                  case 0x1f:
+                                                    goto switchD_002936c4_caseD_1f;
+                                                  }
+                                                  } while( true );
+                                                  case 0x1c:
+                                                    goto switchD_002930c0_caseD_1c;
+                                                  case 0x1e:
+                                                    goto code_r0x00293070;
+                                                  case 0x20:
+                                                    goto switchD_00293110_caseD_20;
+                                                  case 0x22:
+                                                    goto switchD_00293110_caseD_22;
+                                                  case 0x24:
+                                                    goto switchD_00293110_caseD_24;
+                                                  case 0x26:
+                                                    goto switchD_00293c5c_caseD_0;
+                                                  }
+                                                  } while( true );
+                                                  case 0x1a:
+                                                    goto switchD_002930c0_caseD_1a;
+                                                  case 0x1c:
+                                                    goto switchD_002930c0_caseD_1c;
+                                                  case 0x1e:
+                                                    goto code_r0x00293070;
+                                                  }
+                                                  } while( true );
+                                                  case 0x18:
+                                                    goto switchD_002930c0_caseD_18;
+                                                  case 0x1a:
+                                                    goto switchD_002930c0_caseD_1a;
+                                                  case 0x1c:
+                                                    goto switchD_002930c0_caseD_1c;
+                                                  case 0x1e:
+                                                    goto code_r0x00293070;
+                                                  case 0x20:
+                                                    goto switchD_00293110_caseD_20;
+                                                  case 0x22:
+                                                    goto switchD_00293110_caseD_22;
+                                                  case 0x24:
+switchD_00293110_caseD_24:
+                                                    uVar12 = FUN_005ed028(0x77a8);
+                                                    iVar10 = FUN_005ae370(pcVar13,uVar12);
+                                                    uVar1 = 6;
+                                                    if (iVar10 != 0) {
+                                                      uVar1 = 0xf;
+                                                    }
+                                                    break;
+                                                  case 0x26:
+                                                    goto switchD_00293c5c_caseD_0;
+                                                  }
+                                                  *(undefined4 *)(puVar7 + -0x28) = 0xf687f5e7;
+                                                  *(undefined4 *)(puVar7 + -0x24) = 0xf687f5e8;
+                                                  UNRECOVERED_JUMPTABLE_00 =
+                                                       (code *)PTR_clock_gettime_00753fa0;
+                                                  switch(uVar1) {
+                                                  case 0:
+                                                    goto switchD_002930c0_caseD_0;
+                                                  case 1:
+                                                    goto switchD_002936c4_caseD_1;
+                                                  case 2:
+                                                    goto switchD_002930c0_caseD_2;
+                                                  case 3:
+                                                    goto switchD_002936c4_caseD_3;
+                                                  case 4:
+                                                    goto switchD_002930c0_caseD_4;
+                                                  case 5:
+                                                    goto switchD_002936c4_caseD_5;
+                                                  case 6:
+                                                    goto switchD_002930c0_caseD_6;
+                                                  case 7:
+                                                    goto switchD_002936c4_caseD_7;
+                                                  case 8:
+                                                    goto switchD_002930c0_caseD_8;
+                                                  case 9:
+                                                    goto switchD_002936c4_caseD_9;
+                                                  case 10:
+                                                    goto switchD_002930c0_caseD_a;
+                                                  case 0xb:
+                                                    goto switchD_002936c4_caseD_b;
+                                                  case 0xc:
+                                                    goto switchD_002930c0_caseD_c;
+                                                  case 0xd:
+                                                    goto switchD_002936c4_caseD_d;
+                                                  case 0xe:
+                                                    goto switchD_002930c0_caseD_e;
+                                                  }
+                                                } while( true );
+                                              case 0x10:
+                                                goto switchD_002930c0_caseD_10;
+                                              case 0x11:
+                                                goto switchD_002936c4_caseD_11;
+                                              case 0x12:
+                                                goto switchD_002930c0_caseD_12;
+                                              case 0x13:
+                                                goto switchD_002936c4_caseD_13;
+                                              case 0x14:
+                                                goto switchD_002930c0_caseD_14;
+                                              case 0x15:
+                                                goto switchD_002936c4_caseD_15;
+                                              case 0x16:
+                                                goto switchD_002930c0_caseD_16;
+                                              case 0x17:
+                                                goto switchD_002936c4_caseD_17;
+                                              }
+                                            } while( true );
+                                          case 10:
+                                            goto switchD_002930c0_caseD_a;
+                                          case 0xb:
+                                            goto switchD_002936c4_caseD_b;
+                                          case 0xc:
+                                            goto switchD_002930c0_caseD_c;
+                                          case 0xd:
+                                            goto switchD_002936c4_caseD_d;
+                                          case 0xe:
+                                            goto switchD_002930c0_caseD_e;
+                                          case 0xf:
+                                            goto switchD_002936c4_caseD_f;
+                                          case 0x10:
+                                            goto switchD_002930c0_caseD_10;
+                                          case 0x11:
+                                            goto switchD_002936c4_caseD_11;
+                                          case 0x13:
+                                            goto switchD_002936c4_caseD_13;
+                                          case 0x14:
+                                            goto switchD_002930c0_caseD_14;
+                                          case 0x15:
+                                            goto switchD_002936c4_caseD_15;
+                                          case 0x16:
+                                            goto switchD_002930c0_caseD_16;
+                                          case 0x17:
+                                            goto switchD_002936c4_caseD_17;
+                                          case 0x18:
+                                            goto switchD_002930c0_caseD_18;
+                                          case 0x19:
+                                            goto switchD_002936c4_caseD_19;
+                                          case 0x1a:
+                                            goto switchD_002930c0_caseD_1a;
+                                          case 0x1b:
+                                            goto switchD_002936c4_caseD_1b;
+                                          case 0x1c:
+                                            goto switchD_002930c0_caseD_1c;
+                                          case 0x1d:
+                                            goto switchD_002936c4_caseD_1d;
+                                          case 0x1e:
+                                            goto code_r0x00293070;
+                                          case 0x1f:
+                                            goto switchD_002936c4_caseD_1f;
+                                          }
+                                        } while( true );
+                                      case 0x14:
+                                        goto switchD_002930c0_caseD_14;
+                                      case 0x16:
+                                        goto switchD_002930c0_caseD_16;
+                                      }
+                                    } while( true );
+                                  case 0x10:
+                                    goto switchD_002930c0_caseD_10;
+                                  case 0x12:
+                                    goto switchD_002930c0_caseD_12;
+                                  case 0x14:
+                                    goto switchD_002930c0_caseD_14;
+                                  case 0x16:
+                                    goto switchD_002930c0_caseD_16;
+                                  }
+                                } while( true );
+                              case 0xe:
+                                goto switchD_002930c0_caseD_e;
+                              case 0x10:
+                                goto switchD_002930c0_caseD_10;
+                              case 0x12:
+                                goto switchD_002930c0_caseD_12;
+                              case 0x14:
+                                goto switchD_002930c0_caseD_14;
+                              case 0x16:
+                                goto switchD_002930c0_caseD_16;
+                              case 0x18:
+                                goto switchD_002930c0_caseD_18;
+                              case 0x1a:
+                                goto switchD_002930c0_caseD_1a;
+                              case 0x1c:
+                                goto switchD_002930c0_caseD_1c;
+                              case 0x1e:
+                                goto code_r0x00293070;
+                              case 0x20:
+                                goto switchD_00293110_caseD_20;
+                              case 0x22:
+                                goto switchD_00293110_caseD_22;
+                              case 0x24:
+                                goto switchD_00293110_caseD_24;
+                              case 0x26:
+                                goto switchD_00293c5c_caseD_0;
+                              }
+                              *(undefined4 *)(puVar7 + -0x28) = 0x86f8b6e0;
+                              *(undefined4 *)(puVar7 + -0x24) = 0x86f8b6e3;
+                              UNRECOVERED_JUMPTABLE_00 = (code *)PTR_LAB_00753b08;
+                              switch(uVar1) {
+                              case 0:
+                                goto switchD_002930c0_caseD_0;
+                              case 1:
+                                goto switchD_002936c4_caseD_1;
+                              case 2:
+                                goto switchD_002930c0_caseD_2;
+                              case 3:
+                                goto switchD_002936c4_caseD_3;
+                              case 4:
+                                goto switchD_002930c0_caseD_4;
+                              case 5:
+                                goto switchD_002936c4_caseD_5;
+                              case 6:
+                                goto switchD_002930c0_caseD_6;
+                              }
+                            } while( true );
+                          }
+                        } while( true );
+                      case 6:
+                        goto switchD_002930c0_caseD_6;
+                      case 7:
+                        goto switchD_002936c4_caseD_7;
+                      case 9:
+                        goto switchD_002936c4_caseD_9;
+                      case 10:
+                        goto switchD_002930c0_caseD_a;
+                      case 0xb:
+                        goto switchD_002936c4_caseD_b;
+                      case 0xc:
+                        goto switchD_002930c0_caseD_c;
+                      case 0xd:
+                        goto switchD_002936c4_caseD_d;
+                      case 0xe:
+                        goto switchD_002930c0_caseD_e;
+                      case 0xf:
+                        goto switchD_002936c4_caseD_f;
+                      case 0x10:
+                        goto switchD_002930c0_caseD_10;
+                      case 0x11:
+                        goto switchD_002936c4_caseD_11;
+                      case 0x12:
+                        goto switchD_002930c0_caseD_12;
+                      case 0x13:
+                        goto switchD_002936c4_caseD_13;
+                      case 0x14:
+                        goto switchD_002930c0_caseD_14;
+                      case 0x15:
+                        goto switchD_002936c4_caseD_15;
+                      case 0x16:
+                        goto switchD_002930c0_caseD_16;
+                      case 0x17:
+                        goto switchD_002936c4_caseD_17;
+                      }
+                    } while( true );
+                  case 10:
+                    goto switchD_002930c0_caseD_a;
+                  case 0xc:
+                    goto switchD_002930c0_caseD_c;
+                  case 0xe:
+                    goto switchD_002930c0_caseD_e;
+                  }
+                } while( true );
+              case 6:
+                goto switchD_002930c0_caseD_6;
+              }
+            } while( true );
+          case 4:
+            goto switchD_002930c0_caseD_4;
+          case 6:
+            goto switchD_002930c0_caseD_6;
+          case 8:
+            goto switchD_002930c0_caseD_8;
+          case 10:
+            goto switchD_002930c0_caseD_a;
+          case 0xc:
+            goto switchD_002930c0_caseD_c;
+          case 0xe:
+            goto switchD_002930c0_caseD_e;
+          }
+          break;
+        case 2:
+          goto switchD_002930c0_caseD_2;
+        case 3:
+switchD_002936c4_caseD_3:
+          uVar12 = FUN_005ef884(0xc8a7);
+          iVar10 = FUN_005ae370(pcVar13,uVar12);
+          UNRECOVERED_JUMPTABLE_00 = (code *)PTR_LAB_00753dc0;
+          if (iVar10 != 0) {
+            UNRECOVERED_JUMPTABLE_00 = (code *)0x0;
+          }
+          return UNRECOVERED_JUMPTABLE_00;
+        case 4:
+          goto switchD_002930c0_caseD_4;
+        case 5:
+          goto switchD_002936c4_caseD_5;
+        case 6:
+          goto switchD_002930c0_caseD_6;
+        case 7:
+          goto switchD_002936c4_caseD_7;
+        case 8:
+          goto switchD_002930c0_caseD_8;
+        case 9:
+          goto switchD_002936c4_caseD_9;
+        case 10:
+          goto switchD_002930c0_caseD_a;
+        case 0xb:
+          goto switchD_002936c4_caseD_b;
+        case 0xc:
+          goto switchD_002930c0_caseD_c;
+        case 0xd:
+          goto switchD_002936c4_caseD_d;
+        case 0xe:
+          goto switchD_002930c0_caseD_e;
+        case 0xf:
+          goto switchD_002936c4_caseD_f;
+        case 0x10:
+          goto switchD_002930c0_caseD_10;
+        case 0x11:
+          goto switchD_002936c4_caseD_11;
+        case 0x12:
+          goto switchD_002930c0_caseD_12;
+        case 0x13:
+          goto switchD_002936c4_caseD_13;
+        case 0x14:
+          goto switchD_002930c0_caseD_14;
+        case 0x15:
+          goto switchD_002936c4_caseD_15;
+        case 0x16:
+          goto switchD_002930c0_caseD_16;
+        case 0x17:
+          goto switchD_002936c4_caseD_17;
+        case 0x18:
+          goto switchD_002930c0_caseD_18;
+        case 0x19:
+          goto switchD_002936c4_caseD_19;
+        case 0x1a:
+          goto switchD_002930c0_caseD_1a;
+        case 0x1b:
+          goto switchD_002936c4_caseD_1b;
+        case 0x1c:
+          goto switchD_002930c0_caseD_1c;
+        case 0x1d:
+          goto switchD_002936c4_caseD_1d;
+        case 0x1e:
+          goto code_r0x00293070;
+        case 0x1f:
+          goto switchD_002936c4_caseD_1f;
+        case 0x20:
+          goto switchD_00293110_caseD_20;
+        case 0x21:
+          goto switchD_00293994_caseD_21;
+        case 0x22:
+          goto switchD_00293110_caseD_22;
+        case 0x23:
+          goto switchD_00293994_caseD_23;
+        case 0x24:
+          goto switchD_00293110_caseD_24;
+        case 0x25:
+          goto switchD_00293994_caseD_25;
+        case 0x26:
+          goto switchD_00293c5c_caseD_0;
+        case 0x27:
+          goto switchD_00293c5c_caseD_1;
+        }
+      } while( true );
+    case 2:
+      goto switchD_002930c0_caseD_2;
+    case 4:
+      goto switchD_002930c0_caseD_4;
+    case 6:
+switchD_002930c0_caseD_6:
+      return UNRECOVERED_JUMPTABLE_00;
+    case 8:
+      goto switchD_002930c0_caseD_8;
+    case 10:
+      goto switchD_002930c0_caseD_a;
+    case 0xc:
+      goto switchD_002930c0_caseD_c;
+    case 0xe:
+      goto switchD_002930c0_caseD_e;
+    case 0x10:
+      goto switchD_002930c0_caseD_10;
+    case 0x12:
+      goto switchD_002930c0_caseD_12;
+    case 0x14:
+      goto switchD_002930c0_caseD_14;
+    case 0x16:
+      goto switchD_002930c0_caseD_16;
+    case 0x18:
+      goto switchD_002930c0_caseD_18;
+    case 0x1a:
+      goto switchD_002930c0_caseD_1a;
+    case 0x1c:
+      goto switchD_002930c0_caseD_1c;
+    }
+  } while( true );
+  do {
+    unaff_x24 = &switchD_00293c5c::switchdataD_0075aaf0;
+    iVar10 = (int)(&switchD_00293c5c::switchdataD_0075aaf0)[uVar2];
+    *(undefined4 *)(puVar8 + -0x68) = 0xbcac7d10;
+    *(undefined4 *)(puVar8 + -100) = 0xbcac7d12;
+    puVar5 = puVar8 + -0x70;
+    puVar9 = puVar8 + -0x70;
+    switch(uVar2) {
+    case 0:
+switchD_00293c5c_caseD_0:
+      uVar15 = (uint)unaff_x28;
+      uVar2 = (uint)unaff_x26 ^ (uint)unaff_x26 + 4;
+      if ((uVar11 >> 1 & (uint)((uVar14 >> 1 & 1) == 0)) == 0) {
+        uVar2 = uVar15 + 3 ^ uVar15;
+      }
+      UNRECOVERED_JUMPTABLE_00 = (code *)unaff_x24[(int)uVar2];
+      *(uint *)(puVar9 + 8) = uVar15 + 3;
+      *(uint *)(puVar9 + 0xc) = uVar15;
+                    /* WARNING: Could not recover jumptable at 0x00293da4. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      UNRECOVERED_JUMPTABLE_00 = (code *)(*UNRECOVERED_JUMPTABLE_00)();
+      return UNRECOVERED_JUMPTABLE_00;
+    case 1:
+switchD_00293c5c_caseD_1:
+      puVar8 = puVar5;
+      auVar4._8_8_ = unaff_x22;
+      auVar4._0_8_ = pcVar13;
+      UNRECOVERED_JUMPTABLE_00 = auVar16._0_8_;
+      auVar3._8_8_ = unaff_x22;
+      auVar3._0_8_ = UNRECOVERED_JUMPTABLE_00;
+      *(undefined8 *)(puVar8 + -0x60) = unaff_x28;
+      *(undefined8 *)(puVar8 + -0x58) = unaff_x27;
+      *(undefined8 *)(puVar8 + -0x50) = unaff_x26;
+      *(undefined8 *)(puVar8 + -0x48) = unaff_x25;
+      *(undefined ***)(puVar8 + -0x40) = unaff_x24;
+      *(ulong *)(puVar8 + -0x38) = unaff_x23;
+      *(char **)(puVar8 + -0x30) = unaff_x22;
+      *(char **)(puVar8 + -0x28) = unaff_x21;
+      *(undefined ***)(puVar8 + -0x20) = unaff_x20;
+      *(code **)(puVar8 + -0x18) = pcVar13;
+      *(undefined1 **)(puVar8 + -0x10) = unaff_x29;
+      *(undefined8 *)(puVar8 + -8) = unaff_x30;
+      unaff_x29 = puVar8 + -0x10;
+      uVar14 = 0;
+      uVar11 = 2;
+      uVar2 = 7;
+      if (auVar16._8_8_ != 0) {
+        uVar2 = uVar11;
+      }
+      break;
+    case 2:
+switchD_00293c5c_caseD_2:
+      do {
+        unaff_x22 = auVar16._8_8_;
+        auVar4._8_8_ = unaff_x22;
+        auVar4._0_8_ = pcVar13;
+        UNRECOVERED_JUMPTABLE_00 = auVar16._0_8_;
+        uVar11 = 0;
+        uVar14 = 7;
+        uVar2 = uVar14;
+        if (*unaff_x22 != '\0' && param_3 != (char *)0x0) {
+          uVar2 = 3;
+        }
+        iVar10 = (int)(&switchD_00293c5c::switchdataD_0075aaf0)[uVar2];
+        *(undefined4 *)(puVar8 + -0x68) = 0xe60d8a9e;
+        *(undefined4 *)(puVar8 + -100) = 0xe60d8a9d;
+        puVar5 = puVar8 + -0x70;
+        puVar9 = puVar8 + -0x70;
+        unaff_x21 = param_3;
+        auVar3 = auVar16;
+        switch(uVar2) {
+        case 0:
+          goto switchD_00293c5c_caseD_0;
+        case 1:
+          goto switchD_00293c5c_caseD_1;
+        case 3:
+switchD_00293c5c_caseD_3:
+          do {
+            unaff_x22 = auVar4._8_8_;
+            pcVar13 = auVar4._0_8_;
+            UNRECOVERED_JUMPTABLE_00 = auVar16._0_8_;
+            auVar3._8_8_ = unaff_x22;
+            auVar3._0_8_ = UNRECOVERED_JUMPTABLE_00;
+            uVar11 = 0x33a0750b;
+            uVar14 = 7;
+            uVar2 = uVar14;
+            if (*unaff_x21 != '\0') {
+              uVar2 = 6;
+            }
+            iVar10 = (int)(&switchD_00293c5c::switchdataD_0075aaf0)[uVar2];
+            *(undefined4 *)(puVar8 + -0x68) = 0x33a0750d;
+            *(undefined4 *)(puVar8 + -100) = 0x33a0750b;
+            puVar5 = puVar8 + -0x70;
+            puVar9 = puVar8 + -0x70;
+            switch(uVar2) {
+            case 0:
+              goto switchD_00293c5c_caseD_0;
+            case 1:
+              goto switchD_00293c5c_caseD_1;
+            case 2:
+              goto switchD_00293c5c_caseD_2;
+            case 4:
+              goto switchD_00293c5c_caseD_4;
+            case 5:
+              goto switchD_00293c5c_caseD_5;
+            case 6:
+switchD_00293c5c_caseD_6:
+              unaff_x22 = auVar3._8_8_;
+              pcVar13 = auVar3._0_8_;
+              unaff_x20 = (undefined **)(ulong)param_4;
+              unaff_x25 = 0xf72ce119;
+              unaff_x26 = 0x7959fee9;
+              unaff_x27 = 0x2eab0d88;
+              unaff_x28 = 0x2b1c57eb;
+              uVar12 = FUN_005ae418(unaff_x22);
+              unaff_x30 = 0x293d18;
+              auVar16 = FUN_0059dfb0(unaff_x22,uVar12);
+              uVar14 = *(uint *)(pcVar13 + 0x10);
+              uVar11 = auVar16._0_4_;
+              uVar1 = 4;
+              if ((uVar11 & (uVar14 & 1) == 0) == 0) {
+                uVar1 = 5;
+              }
+              unaff_x23 = auVar16._0_8_ & 0xffffffff;
+              iVar10 = 0;
+              *(undefined4 *)(puVar8 + -0x68) = 0x2b1c57ee;
+              *(undefined4 *)(puVar8 + -100) = 0x2b1c57eb;
+              puVar5 = puVar8 + -0x70;
+              puVar9 = puVar8 + -0x70;
+              auVar4 = auVar3;
+              switch(uVar1) {
+              case 0:
+                goto switchD_00293c5c_caseD_0;
+              case 1:
+                goto switchD_00293c5c_caseD_1;
+              case 2:
+                goto switchD_00293c5c_caseD_2;
+              case 4:
+                goto switchD_00293c5c_caseD_4;
+              case 5:
+                goto switchD_00293c5c_caseD_5;
+              }
+              break;
+            case 7:
+              goto switchD_00293c5c_caseD_7;
+            }
+          } while( true );
+        case 4:
+          goto switchD_00293c5c_caseD_4;
+        case 5:
+          goto switchD_00293c5c_caseD_5;
+        case 6:
+          goto switchD_00293c5c_caseD_6;
+        case 7:
+          goto switchD_00293c5c_caseD_7;
+        }
+      } while( true );
+    case 3:
+      goto switchD_00293c5c_caseD_3;
+    case 4:
+switchD_00293c5c_caseD_4:
+      UNRECOVERED_JUMPTABLE_00 = (code *)FUN_00286c5c(auVar4._8_8_,unaff_x21,unaff_x20);
+      *(uint *)(auVar4._0_8_ + 0x10) = *(uint *)(auVar4._0_8_ + 0x10) | (uint)unaff_x23;
+      return UNRECOVERED_JUMPTABLE_00;
+    case 5:
+switchD_00293c5c_caseD_5:
+      uVar2 = (uint)unaff_x27 ^ (uint)unaff_x27 + 7;
+      if (iVar10 != 0x1f) {
+        uVar2 = 0;
+      }
+      UNRECOVERED_JUMPTABLE_00 = (code *)(&switchD_00293c5c::switchdataD_0075aaf0)[uVar2];
+      *(int *)(puVar8 + -0x68) = (int)unaff_x25;
+      *(int *)(puVar8 + -100) = (int)unaff_x25;
+                    /* WARNING: Could not recover jumptable at 0x00293d70. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      UNRECOVERED_JUMPTABLE_00 = (code *)(*UNRECOVERED_JUMPTABLE_00)();
+      return UNRECOVERED_JUMPTABLE_00;
+    case 6:
+      goto switchD_00293c5c_caseD_6;
+    case 7:
+switchD_00293c5c_caseD_7:
+      return UNRECOVERED_JUMPTABLE_00;
+    }
+  } while( true );
+switchD_00293994_caseD_25:
+  uVar12 = FUN_005ebb74(0x77fa);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 0xd;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0xba39be5f;
+  *(undefined4 *)(puVar7 + -0x24) = 0xba39be52;
+  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_tss_sdk_init_007538e8;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 1:
+    goto switchD_002936c4_caseD_1;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 3:
+    goto switchD_002936c4_caseD_3;
+  case 4:
+    goto switchD_002930c0_caseD_4;
+  case 5:
+    goto switchD_002936c4_caseD_5;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  case 7:
+    goto switchD_002936c4_caseD_7;
+  case 8:
+    goto switchD_002930c0_caseD_8;
+  case 9:
+    goto switchD_002936c4_caseD_9;
+  case 10:
+    goto switchD_002930c0_caseD_a;
+  case 0xb:
+    goto switchD_002936c4_caseD_b;
+  case 0xc:
+    goto switchD_002930c0_caseD_c;
+  case 0xd:
+    goto switchD_002936c4_caseD_d;
+  case 0xe:
+    goto switchD_002930c0_caseD_e;
+  }
+  goto switchD_002936c4_caseD_f;
+switchD_00293110_caseD_22:
+  uVar12 = FUN_005ed5ec(0x7875);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 0x14;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0x65d65456;
+  *(undefined4 *)(puVar7 + -0x24) = 0x65d65442;
+  UNRECOVERED_JUMPTABLE_00 = FUN_005af300;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 4:
+    goto switchD_002930c0_caseD_4;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  case 8:
+    goto switchD_002930c0_caseD_8;
+  case 10:
+    goto switchD_002930c0_caseD_a;
+  case 0xc:
+    goto switchD_002930c0_caseD_c;
+  case 0xe:
+    goto switchD_002930c0_caseD_e;
+  case 0x10:
+    goto switchD_002930c0_caseD_10;
+  case 0x12:
+    goto switchD_002930c0_caseD_12;
+  case 0x14:
+    goto switchD_002930c0_caseD_14;
+  }
+  goto switchD_002930c0_caseD_16;
+switchD_00293994_caseD_21:
+  uVar12 = FUN_005ef634(0x7701);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 0xb;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0x52c5df2d;
+  *(undefined4 *)(puVar7 + -0x24) = 0x52c5df26;
+  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_fread_00753448;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 1:
+    goto switchD_002936c4_caseD_1;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 3:
+    goto switchD_002936c4_caseD_3;
+  case 4:
+    goto switchD_002930c0_caseD_4;
+  case 5:
+    goto switchD_002936c4_caseD_5;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  case 7:
+    goto switchD_002936c4_caseD_7;
+  case 8:
+    goto switchD_002930c0_caseD_8;
+  case 9:
+    goto switchD_002936c4_caseD_9;
+  case 10:
+    goto switchD_002930c0_caseD_a;
+  case 0xb:
+    goto switchD_002936c4_caseD_b;
+  case 0xc:
+    goto switchD_002930c0_caseD_c;
+  case 0xd:
+    goto switchD_002936c4_caseD_d;
+  case 0xe:
+    goto switchD_002930c0_caseD_e;
+  }
+  goto switchD_002936c4_caseD_f;
+switchD_00293110_caseD_20:
+  uVar12 = FUN_005ed39c(0x1f63);
+  unaff_x30 = 0x293128;
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 0x1a;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0x59758364;
+  *(undefined4 *)(puVar7 + -0x24) = 0x5975837e;
+  puVar6 = puVar7 + -0x30;
+  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_read_007535d8;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 4:
+    goto switchD_002930c0_caseD_4;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  case 8:
+    goto switchD_002930c0_caseD_8;
+  case 10:
+    goto switchD_002930c0_caseD_a;
+  case 0xc:
+    goto switchD_002930c0_caseD_c;
+  case 0xe:
+    goto switchD_002930c0_caseD_e;
+  case 0x10:
+    goto switchD_002930c0_caseD_10;
+  case 0x12:
+    goto switchD_002930c0_caseD_12;
+  case 0x14:
+    goto switchD_002930c0_caseD_14;
+  case 0x16:
+    goto switchD_002930c0_caseD_16;
+  case 0x18:
+    goto switchD_002930c0_caseD_18;
+  case 0x1a:
+    goto switchD_002930c0_caseD_1a;
+  case 0x1e:
+    goto code_r0x00293070;
+  }
+  goto switchD_002930c0_caseD_1c;
+switchD_002936c4_caseD_1d:
+  uVar12 = FUN_005ee2a4(0x77b8);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 7;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0x6cd056e3;
+  *(undefined4 *)(puVar7 + -0x24) = 0x6cd056e4;
+  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_ptrace_00753a98;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 1:
+    goto switchD_002936c4_caseD_1;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 3:
+    goto switchD_002936c4_caseD_3;
+  case 4:
+    goto switchD_002930c0_caseD_4;
+  case 5:
+    goto switchD_002936c4_caseD_5;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  }
+  goto switchD_002936c4_caseD_7;
+switchD_002936c4_caseD_19:
+  uVar12 = FUN_005ec008(0x7736);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 0x11;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0x7c9485a2;
+  *(undefined4 *)(puVar7 + -0x24) = 0x7c9485b3;
+  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_stat_00753370;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 1:
+    goto switchD_002936c4_caseD_1;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 3:
+    goto switchD_002936c4_caseD_3;
+  case 4:
+    goto switchD_002930c0_caseD_4;
+  case 5:
+    goto switchD_002936c4_caseD_5;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  case 7:
+    goto switchD_002936c4_caseD_7;
+  case 8:
+    goto switchD_002930c0_caseD_8;
+  case 9:
+    goto switchD_002936c4_caseD_9;
+  case 10:
+    goto switchD_002930c0_caseD_a;
+  case 0xb:
+    goto switchD_002936c4_caseD_b;
+  case 0xc:
+    goto switchD_002930c0_caseD_c;
+  case 0xd:
+    goto switchD_002936c4_caseD_d;
+  case 0xe:
+    goto switchD_002930c0_caseD_e;
+  case 0xf:
+    goto switchD_002936c4_caseD_f;
+  case 0x10:
+    goto switchD_002930c0_caseD_10;
+  case 0x11:
+    goto switchD_002936c4_caseD_11;
+  case 0x12:
+    goto switchD_002930c0_caseD_12;
+  case 0x13:
+    goto switchD_002936c4_caseD_13;
+  case 0x14:
+    goto switchD_002930c0_caseD_14;
+  case 0x15:
+switchD_002936c4_caseD_15:
+    uVar12 = FUN_005f08b4(0x7775);
+    iVar10 = FUN_005ae370(pcVar13,uVar12);
+    uVar1 = 6;
+    if (iVar10 != 0) {
+      uVar1 = 0x16;
+    }
+    *(undefined4 *)(puVar7 + -0x28) = 0x9605406f;
+    *(undefined4 *)(puVar7 + -0x24) = 0x96054079;
+    UNRECOVERED_JUMPTABLE_00 = (code *)PTR_select_00753318;
+    switch(uVar1) {
+    case 0:
+      goto switchD_002930c0_caseD_0;
+    case 2:
+      goto switchD_002930c0_caseD_2;
+    case 4:
+      goto switchD_002930c0_caseD_4;
+    case 6:
+      goto switchD_002930c0_caseD_6;
+    case 8:
+      goto switchD_002930c0_caseD_8;
+    case 10:
+      goto switchD_002930c0_caseD_a;
+    case 0xc:
+      goto switchD_002930c0_caseD_c;
+    case 0xe:
+      goto switchD_002930c0_caseD_e;
+    case 0x10:
+      goto switchD_002930c0_caseD_10;
+    case 0x12:
+      goto switchD_002930c0_caseD_12;
+    case 0x14:
+      goto switchD_002930c0_caseD_14;
+    }
+    break;
+  case 0x17:
+switchD_002936c4_caseD_17:
+    do {
+      uVar12 = FUN_005eff74(0x776d);
+      iVar10 = FUN_005ae370(pcVar13,uVar12);
+      uVar1 = 6;
+      if (iVar10 != 0) {
+        uVar1 = 0x15;
+      }
+      *(undefined4 *)(puVar7 + -0x28) = 0x1add2d1d;
+      *(undefined4 *)(puVar7 + -0x24) = 0x1add2d08;
+      UNRECOVERED_JUMPTABLE_00 = (code *)PTR_sleep_00753930;
+      switch(uVar1) {
+      case 0:
+        goto switchD_002930c0_caseD_0;
+      case 1:
+        goto switchD_002936c4_caseD_1;
+      case 2:
+        goto switchD_002930c0_caseD_2;
+      case 3:
+        goto switchD_002936c4_caseD_3;
+      case 4:
+        goto switchD_002930c0_caseD_4;
+      case 5:
+        goto switchD_002936c4_caseD_5;
+      case 6:
+        goto switchD_002930c0_caseD_6;
+      case 7:
+        goto switchD_002936c4_caseD_7;
+      case 8:
+        goto switchD_002930c0_caseD_8;
+      case 9:
+        goto switchD_002936c4_caseD_9;
+      case 10:
+        goto switchD_002930c0_caseD_a;
+      case 0xb:
+        goto switchD_002936c4_caseD_b;
+      case 0xc:
+        goto switchD_002930c0_caseD_c;
+      case 0xd:
+        goto switchD_002936c4_caseD_d;
+      case 0xe:
+        goto switchD_002930c0_caseD_e;
+      case 0xf:
+        goto switchD_002936c4_caseD_f;
+      case 0x10:
+        goto switchD_002930c0_caseD_10;
+      case 0x11:
+        goto switchD_002936c4_caseD_11;
+      case 0x12:
+        goto switchD_002930c0_caseD_12;
+      case 0x13:
+        goto switchD_002936c4_caseD_13;
+      case 0x14:
+        goto switchD_002930c0_caseD_14;
+      case 0x15:
+        goto switchD_002936c4_caseD_15;
+      case 0x16:
+        goto switchD_002930c0_caseD_16;
+      }
+    } while( true );
+  }
+  goto switchD_002930c0_caseD_16;
+switchD_002936c4_caseD_13:
+  uVar12 = FUN_005ee618(0x7757);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 8;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0xc6f2a77b;
+  *(undefined4 *)(puVar7 + -0x24) = 0xc6f2a773;
+  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_kill_00753358;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 4:
+    goto switchD_002930c0_caseD_4;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  case 8:
+    goto switchD_002930c0_caseD_8;
+  case 10:
+    goto switchD_002930c0_caseD_a;
+  case 0xc:
+    goto switchD_002930c0_caseD_c;
+  }
+  goto switchD_002930c0_caseD_e;
+switchD_002936c4_caseD_11:
+  uVar12 = FUN_005ed274(0x7746);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 9;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0xa34c865;
+  *(undefined4 *)(puVar7 + -0x24) = 0xa34c86c;
+  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_fstat_00753d18;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 1:
+    goto switchD_002936c4_caseD_1;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 3:
+    goto switchD_002936c4_caseD_3;
+  case 4:
+    goto switchD_002930c0_caseD_4;
+  case 5:
+    goto switchD_002936c4_caseD_5;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  case 7:
+    goto switchD_002936c4_caseD_7;
+  case 8:
+    goto switchD_002930c0_caseD_8;
+  case 9:
+    goto switchD_002936c4_caseD_9;
+  case 10:
+    goto switchD_002930c0_caseD_a;
+  case 0xb:
+    goto switchD_002936c4_caseD_b;
+  case 0xc:
+    goto switchD_002930c0_caseD_c;
+  case 0xd:
+    goto switchD_002936c4_caseD_d;
+  case 0xe:
+    goto switchD_002930c0_caseD_e;
+  }
+  goto switchD_002936c4_caseD_f;
+switchD_002930c0_caseD_14:
+  uVar12 = FUN_005ef634(0x77c9);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 0;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0x1af8907c;
+  *(undefined4 *)(puVar7 + -0x24) = 0x1af8907c;
+  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_fdopen_00753488;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  }
+  goto switchD_002930c0_caseD_4;
+switchD_002936c4_caseD_d:
+  uVar12 = FUN_005ef510(0x7890);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 5;
+  }
+  UNRECOVERED_JUMPTABLE_00 = (code *)0x0;
+  *(undefined4 *)(puVar7 + -0x28) = 0x55dca764;
+  *(undefined4 *)(puVar7 + -0x24) = 0x55dca761;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 1:
+    goto switchD_002936c4_caseD_1;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 3:
+    goto switchD_002936c4_caseD_3;
+  case 4:
+    goto switchD_002930c0_caseD_4;
+  case 5:
+    goto switchD_002936c4_caseD_5;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  }
+  goto switchD_002936c4_caseD_7;
+switchD_002936c4_caseD_b:
+  uVar12 = FUN_005eff74(0x7709);
+  iVar10 = FUN_005ae370(pcVar13,uVar12);
+  uVar1 = 6;
+  if (iVar10 != 0) {
+    uVar1 = 2;
+  }
+  *(undefined4 *)(puVar7 + -0x28) = 0xb84df002;
+  *(undefined4 *)(puVar7 + -0x24) = 0xb84df000;
+  UNRECOVERED_JUMPTABLE_00 = (code *)PTR_fgets_00753438;
+  switch(uVar1) {
+  case 0:
+    goto switchD_002930c0_caseD_0;
+  case 2:
+    goto switchD_002930c0_caseD_2;
+  case 6:
+    goto switchD_002930c0_caseD_6;
+  }
+  goto switchD_002930c0_caseD_4;
+}
+
+
+
+===== FUN_00560190 @ 00560190 (size 132 bytes) =====
+
+uint FUN_00560190(undefined8 param_1)
+
+{
+  uint uVar1;
+  ulong uVar2;
+  long *plVar3;
+  undefined1 auStack_50 [24];
+  long local_38;
+  undefined8 uStack_30;
+  undefined8 local_28;
+  
+  local_28 = 0;
+  local_38 = 0;
+  uStack_30 = 0;
+                    /* try { // try from 005601a4 to 005601ab has its CatchHandler @ 0056021c */
+  FUN_0055d324(param_1,&local_38);
+                    /* try { // try from 005601ac to 005601bb has its CatchHandler @ 00560218 */
+  uVar2 = FUN_005d0110(auStack_50,0,0);
+  plVar3 = (long *)local_38;
+  do {
+    if (plVar3 == (long *)0x0) {
+                    /* try { // try from 005601e0 to 005601e3 has its CatchHandler @ 00560214 */
+      uVar1 = FUN_005600a4();
+LAB_005601f0:
+      FUN_00561c8c(auStack_50);
+      FUN_00560240(&local_38);
+      return uVar1 & 1;
+    }
+                    /* try { // try from 005601c8 to 005601d3 has its CatchHandler @ 00560224 */
+    uVar2 = FUN_0055ce24(uVar2,auStack_50,plVar3[2],0x10);
+    if ((uVar2 & 1) != 0) {
+      uVar1 = 1;
+      goto LAB_005601f0;
+    }
+    plVar3 = (long *)*plVar3;
+  } while( true );
+}
+
+

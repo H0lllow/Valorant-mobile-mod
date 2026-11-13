@@ -45,7 +45,8 @@
 | 3b | Anti-cheat static analysis (tprt/tersafe) | in progress |
 | 3c | Patch tprt APK-verify + tersafe self-check | done — resign alone works, no deobf needed |
 | 3e | LIEF ELF-injection method (no-root, no apktool) | tested — gadget loads but tersafe detects it, delayed crash (SIGBUS) |
-| 3f | Anti-Frida-detection bypass (hide gadget from tersafe) | FAILED across 5 tests, including injecting into an unmonitored library (libmmkv.so) — same crash every time. Confirms detection targets the Frida runtime itself, not file checksums or string markers. Next: root/Zygisk, or deep RE of tersafe's detection routine |
+| 3f | Anti-Frida-detection bypass (hide gadget from tersafe), no-root track | FAILED across 5 injection tests (same crash every time). Deep RE found the real detection gate (`FUN_00559c3c`, ORs thread-scan + GOT-integrity + blacklist checks → shared violation handler). No patch applied yet — in progress |
+| 3g | Root-based injection track (parallel, experimental) | pending — needs a rooted device (new phone). Not a replacement for 3f: final mod must support non-rooted devices too |
 | 3d | Handle server-side cert/crc handshake | pending (hard) |
 | 4 | Runtime SDK dump (GWorld, GNames, offsets) | pending |
 | 5 | Wallhack/ESP | pending |

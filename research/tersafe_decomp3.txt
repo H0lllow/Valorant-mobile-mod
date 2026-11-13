@@ -1,0 +1,87 @@
+=== PROGRAM: libtersafe.so  base=00100000 ===
+addr 0x003cafcc -> function FUN_003cafcc @ 003cafcc (size 784)
+
+--- 1 unique target functions ---
+
+Callers of FUN_003cafcc @ 003cafcc: 0
+
+=== DECOMPILING 1 FUNCTIONS ===
+
+===== FUN_003cafcc @ 003cafcc (size 784 bytes) =====
+
+/* WARNING: Removing unreachable block (ram,0x003cb184) */
+
+void FUN_003cafcc(long param_1,long param_2)
+
+{
+  long lVar1;
+  void *__ptr;
+  int iVar2;
+  int iVar3;
+  undefined4 uVar4;
+  ulong uVar5;
+  undefined8 uVar6;
+  char *__s;
+  size_t sVar7;
+  long *plVar8;
+  undefined8 local_28;
+  undefined8 local_20;
+  long local_18;
+  
+  lVar1 = tpidr_el0;
+  local_18 = *(long *)(lVar1 + 0x28);
+  if ((param_2 != 0) &&
+     (uVar5 = (**(code **)(**(long **)(param_1 + 8) + 0x18))(*(long **)(param_1 + 8)),
+     (uVar5 & 1) != 0)) {
+    uVar6 = FUN_00464238();
+    FUN_0046476c(uVar6,param_2);
+    iVar2 = FUN_003cab44(param_2);
+    iVar3 = (**(code **)(**(long **)(param_1 + 8) + 0x58))(*(long **)(param_1 + 8));
+    if (iVar2 <= iVar3) {
+      plVar8 = *(long **)(param_1 + 8);
+      uVar4 = FUN_003cab2c(param_2);
+      (**(code **)(*plVar8 + 0xb0))(plVar8,uVar4,1);
+      plVar8 = *(long **)(param_1 + 8);
+      uVar4 = FUN_00350900(param_2 + 8);
+      (**(code **)(*plVar8 + 0xa0))(plVar8,uVar4);
+      uVar5 = FUN_003ca684(param_2 + 8);
+      if ((uVar5 & 1) == 0) {
+        local_20 = FUN_003ca6b4(param_2 + 8);
+        local_28 = FUN_003ca6e8(param_2 + 8);
+        while (uVar5 = FUN_003ca71c(&local_20,&local_28), (uVar5 & 1) != 0) {
+          FUN_003ca7f4(&local_20);
+          __s = (char *)FUN_00358a30();
+          plVar8 = *(long **)(param_1 + 8);
+          sVar7 = strlen(__s);
+          (**(code **)(*plVar8 + 0x98))(plVar8,__s,sVar7 & 0xff,0xb6);
+          FUN_003ca80c(&local_20);
+        }
+      }
+      (**(code **)(**(long **)(param_1 + 8) + 0x40))(*(long **)(param_1 + 8));
+    }
+    uVar4 = FUN_003cab2c(param_2);
+    uVar5 = FUN_003caea4(param_1,uVar4);
+    if ((uVar5 & 1) != 0) {
+      FUN_003582fc(&DAT_007d7738);
+      __ptr = DAT_007d7730;
+      if ((DAT_007d7730 != (void *)0x0) && (DAT_007d7730 != (void *)0x0)) {
+        FUN_0034faf8(DAT_007d7730);
+        switchD_004b673c::caseD_23fe00(__ptr);
+      }
+      DAT_007d7730 = (void *)FUN_003ca51c(param_2);
+      FUN_00358334(&DAT_007d7738);
+      FUN_00350f88();
+      FUN_00353120();
+    }
+    (**(code **)(**(long **)(param_1 + 8) + 0x20))(*(long **)(param_1 + 8));
+  }
+  lVar1 = tpidr_el0;
+  lVar1 = *(long *)(lVar1 + 0x28) - local_18;
+  if (lVar1 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(lVar1);
+  }
+  return;
+}
+
+

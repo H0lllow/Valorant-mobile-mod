@@ -1,0 +1,252 @@
+
+=== WINDOW AROUND 0x00364da4 ===
+00364d44  str w10,[sp, #0x1bc]
+00364d48  str x11,[sp, #0x1b0]
+00364d4c  ldr x9,[sp, #0x1c0]
+00364d50  str x9,[sp, #0x1a8]
+00364d54  ldr x9,[sp, #0x1a8]
+00364d58  adds x9,x9,#0x1
+00364d5c  b.eq 0x00364d80
+00364d60  b 0x00364d64
+00364d64  ldr x0,[sp, #0x1c8]
+00364d68  ldr w1,[sp, #0x1bc]
+00364d6c  ldr x2,[sp, #0x1b0]
+00364d70  ldr x3,[sp, #0x1a8]
+00364d74  bl 0x0023fe70
+00364d78  str x0,[sp, #0x1d0]
+00364d7c  b 0x00364da4
+00364d80  ldr x8,[sp, #0x1c8]
+00364d84  ldr w1,[sp, #0x1bc]
+00364d88  ldr x2,[sp, #0x1b0]
+00364d8c  mov x0,x8
+00364d90  str x8,[sp, #0x38]
+00364d94  bl 0x00240140
+00364d98  ldr x8,[sp, #0x38]
+00364d9c  str x8,[sp, #0x1d0]
+00364da0  b 0x00364da4
+00364da4  ldrh w8,[sp, #0xd0] <== TARGET
+00364da8  ldr x9,[sp, #0x80]
+00364dac  ldr x10,[x9, #0x10]
+00364db0  strh w8,[x10]
+00364db4  ldr x10,[x9, #0x10]
+00364db8  add x10,x10,#0x2
+00364dbc  ldr x11,[sp, #0x228]
+00364dc0  ldr x12,[sp, #0x220]
+00364dc4  ldr w8,[x12]
+00364dc8  mov w12,w8
+00364dcc  add x11,x11,x12
+00364dd0  ldr w8,[sp, #0xbc]
+00364dd4  mov w12,w8
+00364dd8  add x12,x12,#0x4
+00364ddc  str x10,[sp, #0x1f8]
+00364de0  mov x10,#-0x1
+
+=== WINDOW AROUND 0x00364e78 ===
+00364e18  bl 0x002408a0
+00364e1c  str x0,[sp, #0x200]
+00364e20  b 0x00364e48
+00364e24  ldr x8,[sp, #0x1f8]
+00364e28  ldr x1,[sp, #0x1e8]
+00364e2c  ldr x2,[sp, #0x1e0]
+00364e30  mov x0,x8
+00364e34  str x8,[sp, #0x30]
+00364e38  bl 0x00240670
+00364e3c  ldr x8,[sp, #0x30]
+00364e40  str x8,[sp, #0x200]
+00364e44  b 0x00364e48
+00364e48  b 0x00364e4c
+00364e4c  ldr w8,[sp, #0xd4]
+00364e50  ldr x9,[sp, #0x220]
+00364e54  ldr w10,[x9]
+00364e58  add w8,w8,w10
+00364e5c  add w8,w8,#0x4
+00364e60  mov w0,w8
+00364e64  str w0,[x9]
+00364e68  b 0x00364e70
+00364e6c  b 0x00364e70
+00364e70  b 0x00364e74
+00364e74  b 0x00364e78
+00364e78  b 0x00364e7c <== TARGET
+00364e7c  b 0x00364e80
+00364e80  b 0x00364e84
+00364e84  b 0x00364e88
+00364e88  b 0x0036524c
+00364e8c  ldr x8,[sp, #0x80]
+00364e90  ldrb w9,[x8, #0x18]
+00364e94  subs w9,w9,#0x2
+00364e98  b.eq 0x00364eb4
+00364e9c  b 0x00364ea0
+00364ea0  ldr x8,[sp, #0x80]
+00364ea4  ldrb w9,[x8, #0x18]
+00364ea8  subs w9,w9,#0x3
+00364eac  b.ne 0x003650b0
+00364eb0  b 0x00364eb4
+00364eb4  ldr x8,[sp, #0x80]
+
+=== WINDOW AROUND 0x00364eec ===
+00364e8c  ldr x8,[sp, #0x80]
+00364e90  ldrb w9,[x8, #0x18]
+00364e94  subs w9,w9,#0x2
+00364e98  b.eq 0x00364eb4
+00364e9c  b 0x00364ea0
+00364ea0  ldr x8,[sp, #0x80]
+00364ea4  ldrb w9,[x8, #0x18]
+00364ea8  subs w9,w9,#0x3
+00364eac  b.ne 0x003650b0
+00364eb0  b 0x00364eb4
+00364eb4  ldr x8,[sp, #0x80]
+00364eb8  ldrb w9,[x8, #0x19]
+00364ebc  subs w9,w9,#0x1d
+00364ec0  b.eq 0x00364edc
+00364ec4  b 0x00364ec8
+00364ec8  ldr x8,[sp, #0x80]
+00364ecc  ldrb w9,[x8, #0x19]
+00364ed0  subs w9,w9,#0x1b
+00364ed4  b.ne 0x00364ef8
+00364ed8  b 0x00364edc
+00364edc  ldr x0,[sp, #0x228]
+00364ee0  ldr x1,[sp, #0x220]
+00364ee4  mov w2,wzr
+00364ee8  bl 0x0037c12c
+00364eec  ldr x8,[sp, #0x80] <== TARGET
+00364ef0  strh w0,[x8, #0x1c]
+00364ef4  b 0x00364ef8
+00364ef8  ldr x0,[sp, #0x228]
+00364efc  ldr x1,[sp, #0x220]
+00364f00  bl 0x0037c0e4
+00364f04  ldr x8,[sp, #0x80]
+00364f08  strb w0,[x8, #0x1a]
+00364f0c  mov w9,wzr
+00364f10  str w9,[sp, #0xb8]
+00364f14  b 0x00364f18
+00364f18  ldr w8,[sp, #0xb8]
+00364f1c  ldr x9,[sp, #0x80]
+00364f20  ldrb w10,[x9, #0x1a]
+00364f24  subs w8,w8,w10
+00364f28  b.ge 0x00364fb0
+
+=== WINDOW AROUND 0x00364fc0 ===
+00364f60  ldr x1,[sp, #0x228]
+00364f64  ldr x2,[sp, #0x220]
+00364f68  ldr x3,[sp, #0x108]
+00364f6c  ldrb w9,[sp, #0x104]
+00364f70  and w4,w9,#0x1
+00364f74  bl 0x0036446c
+00364f78  ldr x8,[sp, #0x80]
+00364f7c  add x0,x8,#0x40
+00364f80  add x1,sp,#0x218
+00364f84  bl 0x00364334
+00364f88  b 0x00364f8c
+00364f8c  ldr w8,[sp, #0xb8]
+00364f90  add w8,w8,#0x1
+00364f94  str w8,[sp, #0xb8]
+00364f98  b 0x00364f18
+00364f9c  str x0,[sp, #0xb0]
+00364fa0  str w1,[sp, #0xac]
+00364fa4  ldr x0,[sp, #0x28]
+00364fa8  bl 0x00611098
+00364fac  b 0x003652c8
+00364fb0  ldr x8,[sp, #0x80]
+00364fb4  ldrb w9,[x8, #0x18]
+00364fb8  subs w9,w9,#0x3
+00364fbc  b.ne 0x003650ac
+00364fc0  b 0x00364fc4 <== TARGET
+00364fc4  ldr x8,[sp, #0x80]
+00364fc8  ldrb w9,[x8, #0x19]
+00364fcc  subs w9,w9,#0x2
+00364fd0  b.eq 0x0036503c
+00364fd4  b 0x00364fd8
+00364fd8  ldr x8,[sp, #0x80]
+00364fdc  ldrb w9,[x8, #0x19]
+00364fe0  subs w9,w9,#0x1
+00364fe4  b.eq 0x0036503c
+00364fe8  b 0x00364fec
+00364fec  ldr x8,[sp, #0x80]
+00364ff0  ldrb w9,[x8, #0x19]
+00364ff4  subs w9,w9,#0x42
+00364ff8  b.eq 0x0036503c
+00364ffc  b 0x00365000
+
+=== WINDOW AROUND 0x00365550 ===
+003654f0  cmp x9,x10
+003654f4  cset w8,eq
+003654f8  tbnz w8,#0x0,0x00365620
+003654fc  ldr x8,[sp, #0x60]
+00365500  mov x9,#-0x1
+00365504  ldrb w10,[sp, #0x6f]
+00365508  add w10,w10,#0x1
+0036550c  mov w11,w10
+00365510  sxtw x11,w11
+00365514  stur x8,[x29, #-0x40]
+00365518  stur x9,[x29, #-0x48]
+0036551c  stur wzr,[x29, #-0x4c]
+00365520  stur x11,[x29, #-0x58]
+00365524  ldur x8,[x29, #-0x48]
+00365528  stur x8,[x29, #-0x60]
+0036552c  ldur x8,[x29, #-0x60]
+00365530  mov x9,#-0x1
+00365534  cmp x8,x9
+00365538  cset w10,eq
+0036553c  tbnz w10,#0x0,0x0036555c
+00365540  ldur x0,[x29, #-0x40]
+00365544  ldur w1,[x29, #-0x4c]
+00365548  ldur x2,[x29, #-0x58]
+0036554c  ldur x3,[x29, #-0x60]
+00365550  bl 0x0023fe70 <== TARGET
+00365554  stur x0,[x29, #-0x38]
+00365558  b 0x00365580
+0036555c  ldur x8,[x29, #-0x40]
+00365560  ldur w9,[x29, #-0x4c]
+00365564  ldur x2,[x29, #-0x58]
+00365568  mov x0,x8
+0036556c  mov w1,w9
+00365570  str x8,[sp, #0x28]
+00365574  bl 0x00240140
+00365578  ldr x8,[sp, #0x28]
+0036557c  stur x8,[x29, #-0x38]
+00365580  mov w8,#0x0
+00365584  strb w8,[sp, #0x5f]
+00365588  ldrb w8,[sp, #0x5f]
+0036558c  ldrb w9,[sp, #0x6f]
+
+=== WINDOW AROUND 0x00365624 ===
+003655c4  eor w10,w10,w11
+003655c8  ldr x8,[sp, #0x60]
+003655cc  ldrb w11,[sp, #0x5f]
+003655d0  mov w9,w11
+003655d4  add x8,x8,x9
+003655d8  strb w10,[x8]
+003655dc  ldrb w8,[sp, #0x5f]
+003655e0  add w8,w8,#0x1
+003655e4  strb w8,[sp, #0x5f]
+003655e8  b 0x00365588
+003655ec  ldr x1,[sp, #0x60]
+003655f0  mov x8,#0x18
+003655f4  ldr x9,[sp, #0x38]
+003655f8  add x0,x9,x8
+003655fc  bl 0x00364440
+00365600  ldr x8,[sp, #0x60]
+00365604  mov x9,#0x0
+00365608  cmp x8,x9
+0036560c  cset w10,eq
+00365610  str x8,[sp, #0x20]
+00365614  tbnz w10,#0x0,0x00365620
+00365618  ldr x0,[sp, #0x20]
+0036561c  bl 0x006110a4
+00365620  ldrb w8,[sp, #0x6f]
+00365624  ldr x9,[sp, #0x78] <== TARGET
+00365628  ldr w10,[x9]
+0036562c  add w8,w10,w8
+00365630  str w8,[x9]
+00365634  ldur x0,[x29, #-0x70]
+00365638  ldr x1,[sp, #0x78]
+0036563c  bl 0x0037c0e4
+00365640  ldr x9,[sp, #0x38]
+00365644  strb w0,[x9, #0x12]
+00365648  ldrb w8,[x9, #0x10]
+0036564c  cmp w8,#0xd
+00365650  cset w8,ne
+00365654  tbnz w8,#0x0,0x0036580c
+00365658  ldur x0,[x29, #-0x70]
+0036565c  ldr x1,[sp, #0x78]
+00365660  bl 0x0037c0e4

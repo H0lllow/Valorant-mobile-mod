@@ -1,0 +1,291 @@
+
+IMPORT mmap @ EXTERNAL:00000001
+
+IMPORT fgets @ EXTERNAL:0000001f
+
+IMPORT mincore @ EXTERNAL:0000002e
+
+IMPORT read @ EXTERNAL:0000003f
+
+IMPORT __system_property_read @ EXTERNAL:00000053
+
+IMPORT open @ EXTERNAL:00000059
+
+IMPORT ptrace @ EXTERNAL:00000085
+
+IMPORT __openat_2 @ EXTERNAL:00000096
+
+IMPORT fopen @ EXTERNAL:000000b8
+
+IMPORT __open_2 @ EXTERNAL:000000ba
+
+IMPORT madvise @ EXTERNAL:000000c3
+
+IMPORT __fgets_chk @ EXTERNAL:000000c7
+
+IMPORT __read_chk @ EXTERNAL:000000d7
+
+IMPORT mprotect @ EXTERNAL:000000dc
+
+--- thunks/PLT referencing these imports ---
+
+THUNK mmap @ 0023f8d0 -> mmap  (11 callers)
+   <- 005a23c8  in FUN_005a236c@005a236c
+   <- 00418370  in FUN_004182d4@004182d4
+   <- 0035cf68  in FUN_0035ce34@0035ce34
+   <- 0041fa8c  in FUN_0041f7d4@0041f7d4
+   <- 0048e5b8  in FUN_0048e4c8@0048e4c8
+   <- 0048eaf4  in FUN_0048ea60@0048ea60
+   <- 00421798  in FUN_00421594@00421594
+   <- 004424a0  in FUN_00442444@00442444
+   <- 0046ab2c  in FUN_0046aa28@0046aa28
+   <- 005ade68  in FUN_005ade5c@005ade5c
+   <- 003033e0  in caseD_6@0030336c
+
+THUNK fgets @ 0023fad0 -> fgets  (7 callers)
+   <- 005e95e8  in FUN_005e958c@005e958c
+   <- 0046f8d8  in FUN_0046f274@0046f274
+   <- 0046e074  in FUN_0046dd84@0046dd84
+   <- 0047562c  in FUN_004754c0@004754c0
+   <- 0046eac0  in FUN_0046e58c@0046e58c
+   <- 00449f20  in FUN_00449de0@00449de0
+   <- 005adaac  in FUN_005ada40@005ada40
+
+THUNK mincore @ 0023fbc0 -> mincore  (3 callers)
+   <- 004188c0  in FUN_004187dc@004187dc
+   <- 005adf3c  in FUN_005adefc@005adefc
+   <- 004a0bcc  in caseD_1@004a0b90
+
+THUNK read @ 0023fd00 -> read  (6 callers)
+   <- 005634fc  in FUN_005633f4@005633f4
+   <- 00571584  in caseD_8@00571334
+   <- 002be348  in FUN_002be254@002be254
+   <- 0033ee38  in FUN_0033ed90@0033ed90
+   <- 0033ee50  in FUN_0033ed90@0033ed90
+   <- 0049716c  in ?
+
+THUNK __system_property_read @ 0023fe90 -> __system_property_read  (1 callers)
+   <- 005d2230  in FUN_005d21d0@005d21d0
+
+THUNK open @ 0023ff10 -> open  (4 callers)
+   <- 00362a50  in FUN_003629cc@003629cc
+   <- 005adbdc  in FUN_005adbd0@005adbd0
+   <- 005ab9cc  in ?
+   <- 005ab9d4  in ?
+
+THUNK ptrace @ 00240280 -> ptrace  (22 callers)
+   <- 00282788  in FUN_00282754@00282754
+   <- 00282834  in FUN_002827e8@002827e8
+   <- 002844ac  in FUN_00284468@00284468
+   <- 00284564  in FUN_00284468@00284468
+   <- 0027c770  in FUN_0027c648@0027c648
+   <- 0027c470  in caseD_4@0027c440
+   <- 0027c7d8  in caseD_3@0027c798
+   <- 00282884  in FUN_0028284c@0028284c
+   <- 00282e5c  in FUN_00282e38@00282e38
+   <- 00282eb8  in FUN_00282e38@00282e38
+   <- 00282efc  in FUN_00282e38@00282e38
+   <- 0033ef24  in FUN_0033ed90@0033ed90
+   <- 0033ef64  in FUN_0033ed90@0033ed90
+   <- 0033ef78  in FUN_0033ed90@0033ed90
+   <- 005abe98  in ?
+   <- 00282f24  in ?
+   <- 0027c628  in caseD_4@0027c440
+   <- 0027c570  in caseD_4@0027c440
+   <- 002847f0  in caseD_6@0028477c
+   <- 0027c984  in FUN_0027c880@0027c880
+   <- 00282cf4  in caseD_282a78@00282a78
+   <- 00282e08  in caseD_282a78@00282a78
+
+THUNK __openat_2 @ 00240380 -> __openat_2  (7 callers)
+   <- 0056349c  in FUN_005633f4@005633f4
+   <- 005634c4  in FUN_005633f4@005633f4
+   <- 00570cac  in FUN_00570c20@00570c20
+   <- 005714a8  in caseD_8@00571334
+   <- 00571500  in caseD_8@00571334
+   <- 0049706c  in caseD_1@00497030
+   <- 004970d4  in caseD_1@00497030
+
+THUNK fopen @ 002405f0 -> fopen  (25 callers)
+   <- 005acc78  in FUN_005acb64@005acb64
+   <- 005e95d0  in FUN_005e958c@005e958c
+   <- 00348c5c  in caseD_0@00348c10
+   <- 00446934  in FUN_00446890@00446890
+   <- 00446344  in FUN_00446298@00446298
+   <- 0043a5d0  in FUN_0043a4f8@0043a4f8
+   <- 0043ee10  in FUN_0043e8fc@0043e8fc
+   <- 0046f5d8  in FUN_0046f274@0046f274
+   <- 0046df54  in FUN_0046dd84@0046dd84
+   <- 00475598  in FUN_004754c0@004754c0
+   <- 0046e7b4  in FUN_0046e58c@0046e58c
+   <- 00447aa0  in FUN_004477ac@004477ac
+   <- 00449e98  in FUN_00449de0@00449de0
+   <- 00446ca8  in ?
+   <- 004873b4  in FUN_00487398@00487398
+   <- 00550fa8  in FUN_005507e8@005507e8
+   <- 005549b8  in FUN_0055489c@0055489c
+   <- 00554b98  in FUN_0055489c@0055489c
+   <- 005ad408  in fopen@005ad408
+   <- 005ad458  in FUN_005ad40c@005ad40c
+   <- 00323eb4  in FUN_00323d54@00323d54
+   <- 005acaa4  in FUN_005aca88@005aca88
+   <- 005acf3c  in FUN_005acf20@005acf20
+   <- 005ad020  in FUN_005acf5c@005acf5c
+   <- 005ad1f0  in FUN_005acf5c@005acf5c
+
+THUNK __open_2 @ 00240610 -> __open_2  (4 callers)
+   <- 002b99d8  in caseD_b@002b993c
+   <- 002b9a28  in caseD_b@002b993c
+   <- 004b209c  in FUN_004b2024@004b2024
+   <- 005abb5c  in ?
+
+THUNK madvise @ 002406d0 -> madvise  (3 callers)
+   <- 005adcd0  in FUN_005adbf8@005adbf8
+   <- 005adef8  in madvise@005adef8
+   <- 005adcf8  in ?
+
+THUNK __fgets_chk @ 00240710 -> __fgets_chk  (5 callers)
+   <- 0046f8b8  in FUN_0046f274@0046f274
+   <- 0046e054  in FUN_0046dd84@0046dd84
+   <- 00475614  in FUN_004754c0@004754c0
+   <- 0046eaa8  in FUN_0046e58c@0046e58c
+   <- 00449f08  in FUN_00449de0@00449de0
+
+THUNK __read_chk @ 00240820 -> __read_chk  (3 callers)
+   <- 00362b10  in FUN_00362a68@00362a68
+   <- 005ab9dc  in FUN_005ab9d8@005ab9d8
+   <- 004971bc  in ?
+
+THUNK mprotect @ 00240890 -> mprotect  (29 callers)
+   <- 005ac058  in FUN_005abf4c@005abf4c
+   <- 00418130  in FUN_004180f8@004180f8
+   <- 0035d27c  in FUN_0035ce34@0035ce34
+   <- 0046b204  in FUN_0046b130@0046b130
+   <- 0044a428  in FUN_0044a350@0044a350
+   <- 004704c0  in FUN_00470444@00470444
+   <- 00470534  in FUN_00470444@00470444
+   <- 004b21b8  in FUN_004b2198@004b2198
+   <- 004b3a48  in FUN_004b399c@004b399c
+   <- 004b3af4  in FUN_004b399c@004b399c
+   <- 0046b038  in FUN_0046af68@0046af68
+   <- 0048e55c  in FUN_0048e4c8@0048e4c8
+   <- 0048e604  in FUN_0048e4c8@0048e4c8
+   <- 0048e67c  in FUN_0048e4c8@0048e4c8
+   <- 0048e704  in FUN_0048e4c8@0048e4c8
+   <- 0048eb40  in FUN_0048ea60@0048ea60
+   <- 0048ebb8  in FUN_0048ea60@0048ea60
+   <- 00421744  in FUN_00421594@00421594
+   <- 00421824  in FUN_00421594@00421594
+   <- 00421af0  in ?
+   <- 00421b58  in ?
+   <- 004423f8  in FUN_0044238c@0044238c
+   <- 004b35e0  in FUN_004b350c@004b350c
+   <- 00445fe8  in ?
+   <- 0046aad4  in FUN_0046aa28@0046aa28
+   <- 0046ab80  in FUN_0046aa28@0046aa28
+   <- 0046abf8  in FUN_0046aa28@0046aa28
+   <- 0046ac7c  in FUN_0046aa28@0046aa28
+   <- 005ae2e4  in FUN_005ae2a0@005ae2a0
+
+THUNK fopen @ 005ad408 -> fopen  (5 callers)
+   <- 0069cdc8  in ?
+   <- 0071e0a8  in ?
+   <- 0058c6cc  in ?
+   <- 0058a828  in ?
+   <- 002f12a8  in caseD_13@002f1104
+
+THUNK madvise @ 005adef8 -> madvise  (6 callers)
+   <- 00753768  in ?
+   <- 0069cea0  in ?
+   <- 0071e3d0  in ?
+   <- 003461cc  in FUN_00346170@00346170
+   <- 0054246c  in FUN_0054239c@0054239c
+   <- 005abe4c  in ?
+
+THUNK mmap @ 007ed000 -> mmap  (5 callers)
+   <- 00752a18  in ?
+   <- 00753230  in ?
+   <- 0023f8dc  in mmap@0023f8d0
+   <- 0055daa8  in FUN_0055d324@0055d324
+   <- 0055f3e4  in FUN_0055d324@0055d324
+
+THUNK fgets @ 007ed0f0 -> fgets  (7 callers)
+   <- 00752b18  in ?
+   <- 00753438  in ?
+   <- 0023fadc  in fgets@0023fad0
+   <- 002932a4  in caseD_1e@00293070
+   <- 0055ebfc  in FUN_0055d324@0055d324
+   <- 0055d540  in FUN_0055d324@0055d324
+   <- 00292c2c  in ?
+
+THUNK mincore @ 007ed168 -> mincore  (2 callers)
+   <- 00752b90  in ?
+   <- 0023fbcc  in mincore@0023fbc0
+
+THUNK read @ 007ed1f0 -> read  (11 callers)
+   <- 00752c30  in ?
+   <- 007535d8  in ?
+   <- 0023fd0c  in read@0023fd00
+   <- 00293160  in caseD_1e@00293070
+   <- 0042f0e8  in FUN_0042f028@0042f028
+   <- 005760d0  in caseD_1a@00575a7c
+   <- 00575e64  in caseD_1a@00575a7c
+   <- 00575ea0  in caseD_1a@00575a7c
+   <- 00575ee0  in caseD_1a@00575a7c
+   <- 0055ddfc  in FUN_0055d324@0055d324
+   <- 00292bbc  in ?
+
+THUNK __system_property_read @ 007ed290 -> __system_property_read  (2 callers)
+   <- 00752cf8  in ?
+   <- 0023fe9c  in __system_property_read@0023fe90
+
+THUNK open @ 007ed2c8 -> open  (7 callers)
+   <- 00752d38  in ?
+   <- 00753800  in ?
+   <- 0023ff1c  in open@0023ff10
+   <- 0029310c  in caseD_1e@00293070
+   <- 0042f088  in FUN_0042f028@0042f028
+   <- 0055ddcc  in FUN_0055d324@0055d324
+   <- 00292ba0  in ?
+
+THUNK ptrace @ 007ed428 -> ptrace  (7 callers)
+   <- 00752ef0  in ?
+   <- 00753a98  in ?
+   <- 0024028c  in ptrace@00240280
+   <- 002937b0  in caseD_1e@00293070
+   <- 0055dd80  in FUN_0055d324@0055d324
+   <- 0055df44  in FUN_0055d324@0055d324
+   <- 00292e78  in ?
+
+THUNK __openat_2 @ 007ed4b0 -> __openat_2  (2 callers)
+   <- 00752f70  in ?
+   <- 0024038c  in __openat_2@00240380
+
+THUNK fopen @ 007ed5c0 -> fopen  (7 callers)
+   <- 007530a8  in ?
+   <- 00753db0  in ?
+   <- 002405fc  in fopen@002405f0
+   <- 00293204  in caseD_1e@00293070
+   <- 0055f698  in FUN_0055d324@0055d324
+   <- 0055dc64  in FUN_0055d324@0055d324
+   <- 00292bf4  in ?
+
+THUNK __open_2 @ 007ed5d0 -> __open_2  (2 callers)
+   <- 007530b8  in ?
+   <- 0024061c  in __open_2@00240610
+
+THUNK madvise @ 007ed618 -> madvise  (2 callers)
+   <- 00753118  in ?
+   <- 002406dc  in madvise@002406d0
+
+THUNK __fgets_chk @ 007ed638 -> __fgets_chk  (2 callers)
+   <- 00753138  in ?
+   <- 0024071c  in __fgets_chk@00240710
+
+THUNK __read_chk @ 007ed6b8 -> __read_chk  (2 callers)
+   <- 007531c0  in ?
+   <- 0024082c  in __read_chk@00240820
+
+THUNK mprotect @ 007ed6e0 -> mprotect  (2 callers)
+   <- 007531f8  in ?
+   <- 0024089c  in mprotect@00240890
