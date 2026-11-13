@@ -45,7 +45,7 @@
 | 3b | Anti-cheat static analysis (tprt/tersafe) | in progress |
 | 3c | Patch tprt APK-verify + tersafe self-check | done — resign alone works, no deobf needed |
 | 3e | LIEF ELF-injection method (no-root, no apktool) | tested — gadget loads but tersafe detects it, delayed crash (SIGBUS) |
-| 3f | Anti-Frida-detection bypass (hide gadget from tersafe) | pending, unexplored, no guarantee |
+| 3f | Anti-Frida-detection bypass (hide gadget from tersafe) | in progress — stealth gadget (undetected-frida) injected + signed, awaiting device test go-ahead |
 | 3d | Handle server-side cert/crc handshake | pending (hard) |
 | 4 | Runtime SDK dump (GWorld, GNames, offsets) | pending |
 | 5 | Wallhack/ESP | pending |

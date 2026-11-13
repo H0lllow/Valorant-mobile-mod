@@ -5,9 +5,9 @@ import sys, os, shutil, zipfile, tempfile
 import lief
 
 APK_IN = r"C:\Users\giada\Documents\Forge\Valorant-mobile-mod\apk\original\base.apk"
-APK_OUT = r"C:\Users\giada\Documents\Forge\Valorant-mobile-mod\apk\original\base_lief.apk"
-TARGET_SO = "lib/arm64-v8a/libWGRecorderApi.so"
-GADGET_SRC = r"C:\Users\giada\.objection\android\arm64-v8a\libfrida-gadget.so"
+APK_OUT = r"C:\Users\giada\Documents\Forge\Valorant-mobile-mod\apk\original\base_lief3.apk"
+TARGET_SO = "lib/arm64-v8a/libpxauth.so"
+GADGET_SRC = r"C:\Users\giada\Documents\Forge\Valorant-mobile-mod\research\gadgets\undetected-frida-gadget-17.26.2-android-arm64.so"
 GADGET_NAME = "libgadget.so"
 GADGET_CONF_NAME = "libgadget.config.so"
 SCRIPT_PATH_ON_DEVICE = "/data/local/tmp/frida_script.js"

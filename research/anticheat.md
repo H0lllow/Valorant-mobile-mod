@@ -78,3 +78,9 @@ The wall is **not** the zip/signature check (that one is bypassed fine by both r
 ### Next directions (unexplored)
 - Anti-Frida-detection techniques exist in the wild for Tencent-hardened apps (found during research: community threads on bypassing a "加固"'s Sept 2023 Frida detection). These typically: rename the gadget library/thread names, strip Frida signature strings, delay/unload the gadget after initial hooks are set, or avoid common detection vectors (checking `/proc/self/maps`, named pipes, `TracerPid`).
 - This is a deeper rabbit hole than the zip-check fix and not guaranteed to work — tersafe's self-defense is specifically designed to catch this.
+
+## Test 3 (prepared, not yet installed): undetected-frida stealth gadget on `libpxauth.so`
+- Gadget: `zer0def/undetected-frida` release `17.26.2`, android-arm64, decompressed to `research/gadgets/undetected-frida-gadget-17.26.2-android-arm64.so`
+- `scripts/lief_inject.py` updated: `GADGET_SRC` → stealth gadget, `APK_OUT` → `apk/original/base_lief3.apk`
+- Injection + signing done: `apk/original/base_lief3_signed.apk` (v1/v2/v3 verified true, same as prior working builds)
+- Not installed on device yet — awaiting user go-ahead per project rule.
