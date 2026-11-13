@@ -45,7 +45,7 @@
 | 3b | Anti-cheat static analysis (tprt/tersafe) | in progress |
 | 3c | Patch tprt APK-verify + tersafe self-check | done — resign alone works, no deobf needed |
 | 3e | LIEF ELF-injection method (no-root, no apktool) | tested — gadget loads but tersafe detects it, delayed crash (SIGBUS) |
-| 3f | Anti-Frida-detection bypass (hide gadget from tersafe) | undetected-frida tested on device — still detected (same SIGBUS pattern, now in :plugin process). Next: phantom-frida or root |
+| 3f | Anti-Frida-detection bypass (hide gadget from tersafe) | undetected-frida: still detected. phantom-frida custom build (Frida 17.16.4, strict-wx, extended patches) done, injected + signed, awaiting device test go-ahead |
 | 3d | Handle server-side cert/crc handshake | pending (hard) |
 | 4 | Runtime SDK dump (GWorld, GNames, offsets) | pending |
 | 5 | Wallhack/ESP | pending |

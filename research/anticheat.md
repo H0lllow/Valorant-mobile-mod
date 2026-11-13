@@ -96,3 +96,13 @@ The wall is **not** the zip/signature check (that one is bypassed fine by both r
 ### Next direction
 - `undetected-frida` (fixed string/name patches) ruled out as a solution on its own.
 - Remaining options: `phantom-frida` (deeper patch set, 90 patches/16 vectors — may hit vectors undetected-frida doesn't cover, e.g. `--strict-wx` memory protection scanning) or root/Zygisk once the new phone arrives.
+
+## Test 4 (prepared, not yet installed): phantom-frida custom build on `libpxauth.so`
+- Environment: WSL2 Ubuntu 22.04, JDK17, Android NDK r29, Android SDK (build-tools 34.0.0 + platform 34, Linux-native, for `d8`/`android.jar`), Node 20.20.2
+- Built `TheQmaks/phantom-frida` from source: Frida 17.16.4, arch android-arm64, name `pxcache`, port 27342, `--extended --strict-wx --verify`
+- Build succeeded, forbidden-marker scan passed (both pxcache-server and pxcache-gadget), SHA256SUMS verified
+- Output: `research/gadgets/pxcache-gadget-17.16.4-android-arm64.so` (24MB stripped), `pxcache-build-info.json`
+- `scripts/lief_inject.py` updated: `GADGET_SRC` → pxcache gadget, library/config names → `libpxcache-gadget.so` / `libpxcache-gadget.config.so` (per phantom-frida's naming convention), `APK_OUT` → `apk/original/base_lief4.apk`
+- Injection + signing done: `apk/original/base_lief4_signed.apk` (v1/v2/v3 verified true)
+- Not installed on device yet — awaiting user go-ahead per project rule.
+- Caveat from phantom-frida's own docs: marker absence does not prove resistance to behavioral/integrity/timing detection — tersafe's crash pattern in tests 1-3 did not key off simple string markers, so this is a deeper patch set than undetected-frida but still not a guarantee.
